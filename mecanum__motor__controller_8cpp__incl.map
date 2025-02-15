@@ -1,0 +1,21 @@
+<map id="src/mecanum_motor_controller.cpp" name="src/mecanum_motor_controller.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="84,5,308,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="90,79,148,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,34,145,70,141,66,181,30"/>
+<area shape="rect" id="Node000003" href="$motor__controller_8hpp.html" title=" " alt="" coords="172,79,378,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,30,252,66,249,70,208,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,153,73,178"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="236,108,88,152,87,147,234,103"/>
+<area shape="rect" id="Node000005" href="$improved__motor_8hpp.html" title=" " alt="" coords="97,153,301,178"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="264,107,225,144,221,140,260,103"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="324,153,380,178"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="290,103,330,140,326,144,286,107"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="405,153,462,178"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="303,103,394,144,392,148,301,108"/>
+<area shape="rect" id="Node000006" href="$ticks_8hpp.html" title=" " alt="" coords="12,226,120,252"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="178,181,103,221,101,216,175,177"/>
+<area shape="rect" id="Node000007" href="$easing_8hpp.html" title=" " alt="" coords="143,226,255,252"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="202,179,202,211,196,211,196,179"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="278,226,418,252"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="225,176,310,217,308,222,223,181"/>
+</map>

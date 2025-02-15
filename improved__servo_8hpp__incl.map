@@ -1,0 +1,9 @@
+<map id="include/movement/improved_servo.hpp" name="include/movement/improved_servo.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="101,5,285,46"/>
+<area shape="rect" id="Node000002" href="$ticks_8hpp.html" title=" " alt="" coords="5,94,114,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,49,94,88,92,83,158,44"/>
+<area shape="rect" id="Node000003" href="$easing_8hpp.html" title=" " alt="" coords="137,94,248,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,46,196,78,190,78,190,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="273,94,411,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,44,307,84,305,89,229,49"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="include/navigation/line_manager.hpp" name="include/navigation/line_manager.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="155,5,281,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,156,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,49,116,88,113,84,182,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="179,94,256,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="220,46,220,78,215,78,215,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="280,94,348,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="243,44,289,82,286,86,240,48"/>
+</map>
