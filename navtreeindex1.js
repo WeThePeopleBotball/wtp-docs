@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"dir_7a286d6d70ad718e4d75d986101764c3.html":[1,0,0,4],
 "dir_7b271abf9afd8594ceaf3484d66fcdf7.html":[1,0,0,5],
 "dir_821002d4f10779a80d4fb17bc32f21f1.html":[1,0,0,7],
 "dir_ca930d033be57d703a34bf99bb5a03c5.html":[1,0,0,0],
@@ -37,6 +38,8 @@ var NAVTREEINDEX1 =
 "globals_func.html":[1,1,1],
 "globals_type.html":[1,1,2],
 "heartbeat_8hpp.html":[1,0,0,0,1],
+"heartbeat_8hpp.html#a47b20ca9bd215d52c9afd9d3edcd7b8e":[1,0,0,0,1,0],
+"heartbeat_8hpp.html#a9ce0fad53624012c821bc8fbec6e86b5":[1,0,0,0,1,1],
 "heartbeat_8hpp_source.html":[1,0,0,0,1],
 "hierarchy.html":[0,2],
 "improved__motor_8cpp.html":[1,0,1,0,0],

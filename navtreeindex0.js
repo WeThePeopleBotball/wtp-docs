@@ -242,12 +242,12 @@ var NAVTREEINDEX0 =
 "classWrist.html#ac3e9d1dc4ba4ca16c77b8324a8f021f3":[0,0,18,1],
 "classes.html":[0,1],
 "client_8hpp.html":[1,0,0,0,0],
+"client_8hpp.html#ad1833fb9f154da47198357df3b4e624b":[1,0,0,0,0,0],
 "client_8hpp_source.html":[1,0,0,0,0],
 "config_8hpp.html":[1,0,0,8],
 "config_8hpp_source.html":[1,0,0,8],
 "dir_0ad255a918b7fba820a1ddafed6fa637.html":[1,0,0,6],
 "dir_0cdd1667b955f726f508381e5717a497.html":[1,0,0,2],
 "dir_3c3b062525f3b887eb50e782b5b052f0.html":[1,0,1,0],
-"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[1,0,1],
-"dir_7a286d6d70ad718e4d75d986101764c3.html":[1,0,0,4]
+"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[1,0,1]
 };
