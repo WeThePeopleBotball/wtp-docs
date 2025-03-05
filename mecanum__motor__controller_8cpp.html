@@ -102,38 +102,70 @@ $(function(){initNavTree('mecanum__motor__controller_8cpp.html',''); initResizab
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">mecanum_motor_controller.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cmath&gt;</code><br />
+<div class="textblock"><code>#include &quot;kipr/gyro/gyro.hpp&quot;</code><br />
+<code>#include &quot;kipr/time/time.h&quot;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;<a class="el" href="motor__controller_8hpp_source.html">component/motor_controller.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mecanum_motor_controller.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="mecanum__motor__controller_8cpp__incl.png" border="0" usemap="#asrc_2mecanum__motor__controller_8cpp" alt=""/></div>
 <map name="asrc_2mecanum__motor__controller_8cpp" id="asrc_2mecanum__motor__controller_8cpp">
-<area shape="rect" title=" " alt="" coords="84,5,308,31"/>
-<area shape="rect" title=" " alt="" coords="90,79,148,105"/>
-<area shape="poly" title=" " alt="" coords="185,34,145,70,141,66,181,30"/>
-<area shape="rect" href="motor__controller_8hpp.html" title=" " alt="" coords="172,79,378,105"/>
-<area shape="poly" title=" " alt="" coords="211,30,252,66,249,70,208,34"/>
-<area shape="rect" title=" " alt="" coords="5,153,73,178"/>
-<area shape="poly" title=" " alt="" coords="236,108,88,152,87,147,234,103"/>
-<area shape="rect" href="improved__motor_8hpp.html" title=" " alt="" coords="97,153,301,178"/>
-<area shape="poly" title=" " alt="" coords="264,107,225,144,221,140,260,103"/>
-<area shape="rect" title=" " alt="" coords="324,153,380,178"/>
-<area shape="poly" title=" " alt="" coords="290,103,330,140,326,144,286,107"/>
-<area shape="rect" title=" " alt="" coords="405,153,462,178"/>
-<area shape="poly" title=" " alt="" coords="303,103,394,144,392,148,301,108"/>
-<area shape="rect" href="ticks_8hpp.html" title=" " alt="" coords="12,226,120,252"/>
-<area shape="poly" title=" " alt="" coords="178,181,103,221,101,216,175,177"/>
-<area shape="rect" href="easing_8hpp.html" title=" " alt="" coords="143,226,255,252"/>
-<area shape="poly" title=" " alt="" coords="202,179,202,211,196,211,196,179"/>
-<area shape="rect" title=" " alt="" coords="278,226,418,252"/>
-<area shape="poly" title=" " alt="" coords="225,176,310,217,308,222,223,181"/>
+<area shape="rect" title=" " alt="" coords="148,5,372,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,128,105"/>
+<area shape="poly" title=" " alt="" coords="228,34,115,76,113,71,226,29"/>
+<area shape="rect" title=" " alt="" coords="151,79,262,105"/>
+<area shape="poly" title=" " alt="" coords="253,33,227,68,223,65,249,30"/>
+<area shape="rect" title=" " alt="" coords="286,79,343,105"/>
+<area shape="poly" title=" " alt="" coords="271,30,298,65,294,68,267,33"/>
+<area shape="rect" href="motor__controller_8hpp.html" title=" " alt="" coords="367,79,574,105"/>
+<area shape="poly" title=" " alt="" coords="296,29,421,71,419,76,295,34"/>
+<area shape="rect" title=" " alt="" coords="200,153,267,178"/>
+<area shape="poly" title=" " alt="" coords="431,108,283,152,281,147,429,103"/>
+<area shape="rect" href="improved__motor_8hpp.html" title=" " alt="" coords="292,153,495,178"/>
+<area shape="poly" title=" " alt="" coords="459,107,419,144,415,140,456,103"/>
+<area shape="rect" title=" " alt="" coords="518,153,575,178"/>
+<area shape="poly" title=" " alt="" coords="485,103,525,140,521,144,482,107"/>
+<area shape="rect" title=" " alt="" coords="599,153,656,178"/>
+<area shape="poly" title=" " alt="" coords="498,103,588,143,586,148,496,108"/>
+<area shape="rect" href="ticks_8hpp.html" title=" " alt="" coords="206,226,314,252"/>
+<area shape="poly" title=" " alt="" coords="372,181,297,221,295,216,369,177"/>
+<area shape="rect" href="easing_8hpp.html" title=" " alt="" coords="338,226,449,252"/>
+<area shape="poly" title=" " alt="" coords="396,179,396,211,390,211,390,179"/>
+<area shape="rect" title=" " alt="" coords="472,226,613,252"/>
+<area shape="poly" title=" " alt="" coords="420,176,505,217,502,222,417,181"/>
 </map>
 </div>
-</div></div><!-- contents -->
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:acb13648496571cffba6c60f46b544d44" id="r_acb13648496571cffba6c60f46b544d44"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb13648496571cffba6c60f46b544d44">getGyroValue</a> ()</td></tr>
+<tr class="separator:acb13648496571cffba6c60f46b544d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="acb13648496571cffba6c60f46b544d44" name="acb13648496571cffba6c60f46b544d44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb13648496571cffba6c60f46b544d44">&#9670;&#160;</a></span>getGyroValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getGyroValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

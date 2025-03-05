@@ -57,6 +57,7 @@ var NAVTREEINDEX1 =
 "main_8cpp.html#a6cc4be774dadeaf480e764af8f5fb8a2":[1,0,1,1,0],
 "main_8cpp.html#a8c528baf37154d347366083f0f816846":[1,0,1,1,2],
 "mecanum__motor__controller_8cpp.html":[1,0,1,2],
+"mecanum__motor__controller_8cpp.html#acb13648496571cffba6c60f46b544d44":[1,0,1,2,0],
 "motor__controller_8hpp.html":[1,0,0,1,2],
 "motor__controller_8hpp_source.html":[1,0,0,1,2],
 "pages.html":[],

@@ -18,12 +18,13 @@ var searchData=
   ['get_5fz_15',['get_z',['../classVector3D.html#a1cb969e7e5163244ccf14556d635dc74',1,'Vector3D']]],
   ['getd_16',['getD',['../classImprovedMotor.html#a4581c8186709f4ef0cf781d732c3b11c',1,'ImprovedMotor']]],
   ['getduration_17',['getDuration',['../classEasing.html#ab9ed6bee242b00b7a5943c25996bec2b',1,'Easing']]],
-  ['geti_18',['getI',['../classImprovedMotor.html#a8b69649243ed270af79c9b1c07173b99',1,'ImprovedMotor']]],
-  ['getmaxy_19',['getMaxY',['../classEasing.html#a46d84221d7d58520f073d9ff1709c7da',1,'Easing']]],
-  ['getminy_20',['getMinY',['../classEasing.html#a5624459e0b23253e9abc30bbe0eac750',1,'Easing']]],
-  ['getp_21',['getP',['../classImprovedMotor.html#a66f5c4c9cbb98d9fbc9b0924e9b66009',1,'ImprovedMotor']]],
-  ['gyro_5fcalibrate_22',['gyro_calibrate',['../classSensorRegistry.html#ac6d24f9c7aa03264dd9ae942a67a354f',1,'SensorRegistry']]],
-  ['gyro_5fx_23',['gyro_x',['../classSensorRegistry.html#a34de0d8ac5365abf4e148e78a8618dfd',1,'SensorRegistry']]],
-  ['gyro_5fy_24',['gyro_y',['../classSensorRegistry.html#a12d4d5c82e0b76a11b9c27b75722b960',1,'SensorRegistry']]],
-  ['gyro_5fz_25',['gyro_z',['../classSensorRegistry.html#a315e233da3a89967fde7e84e4acf915f',1,'SensorRegistry']]]
+  ['getgyrovalue_18',['getGyroValue',['../mecanum__motor__controller_8cpp.html#acb13648496571cffba6c60f46b544d44',1,'mecanum_motor_controller.cpp']]],
+  ['geti_19',['getI',['../classImprovedMotor.html#a8b69649243ed270af79c9b1c07173b99',1,'ImprovedMotor']]],
+  ['getmaxy_20',['getMaxY',['../classEasing.html#a46d84221d7d58520f073d9ff1709c7da',1,'Easing']]],
+  ['getminy_21',['getMinY',['../classEasing.html#a5624459e0b23253e9abc30bbe0eac750',1,'Easing']]],
+  ['getp_22',['getP',['../classImprovedMotor.html#a66f5c4c9cbb98d9fbc9b0924e9b66009',1,'ImprovedMotor']]],
+  ['gyro_5fcalibrate_23',['gyro_calibrate',['../classSensorRegistry.html#ac6d24f9c7aa03264dd9ae942a67a354f',1,'SensorRegistry']]],
+  ['gyro_5fx_24',['gyro_x',['../classSensorRegistry.html#a34de0d8ac5365abf4e148e78a8618dfd',1,'SensorRegistry']]],
+  ['gyro_5fy_25',['gyro_y',['../classSensorRegistry.html#a12d4d5c82e0b76a11b9c27b75722b960',1,'SensorRegistry']]],
+  ['gyro_5fz_26',['gyro_z',['../classSensorRegistry.html#a315e233da3a89967fde7e84e4acf915f',1,'SensorRegistry']]]
 ];
