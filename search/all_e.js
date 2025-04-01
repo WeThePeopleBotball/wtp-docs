@@ -21,6 +21,5 @@ var searchData=
   ['setminy_18',['setMinY',['../classEasing.html#afa0c43979a89463a4500fceeca73733e',1,'Easing']]],
   ['setup_5froutes_19',['setup_routes',['../server_8hpp.html#a3f77ad5cfc7ae1d04c9dee24aa20cd04',1,'server.hpp']]],
   ['side_20',['Side',['../classLineManager.html#a8e39389c78487208e813c6871f7a1c05',1,'LineManager']]],
-  ['square_5fup_2ehpp_21',['square_up.hpp',['../square__up_8hpp.html',1,'']]],
-  ['stop_22',['stop',['../main_8cpp.html#a8c528baf37154d347366083f0f816846',1,'main.cpp']]]
+  ['square_5fup_2ehpp_21',['square_up.hpp',['../square__up_8hpp.html',1,'']]]
 ];

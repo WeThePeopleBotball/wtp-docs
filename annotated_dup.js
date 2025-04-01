@@ -9,6 +9,7 @@ var annotated_dup =
     [ "Elbow", "classElbow.html", "classElbow" ],
     [ "ImprovedMotor", "classImprovedMotor.html", "classImprovedMotor" ],
     [ "ImprovedServo", "classImprovedServo.html", "classImprovedServo" ],
+    [ "InverseKinematiks", "classInverseKinematiks.html", "classInverseKinematiks" ],
     [ "LineManager", "classLineManager.html", "classLineManager" ],
     [ "LineSquareUp", "classLineSquareUp.html", "classLineSquareUp" ],
     [ "Logger", "classLogger.html", "classLogger" ],

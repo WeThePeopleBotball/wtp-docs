@@ -10,6 +10,7 @@ var hierarchy =
     [ "Easing", "classEasing.html", null ],
     [ "ImprovedMotor", "classImprovedMotor.html", null ],
     [ "ImprovedServo", "classImprovedServo.html", null ],
+    [ "InverseKinematiks", "classInverseKinematiks.html", null ],
     [ "LineManager", "classLineManager.html", null ],
     [ "LineSquareUp", "classLineSquareUp.html", null ],
     [ "Logger", "classLogger.html", null ],

@@ -16,6 +16,5 @@ var searchData=
   ['setduration_13',['setDuration',['../classEasing.html#a7eabb89bfb7f9e0bcf080aeb44ab3c58',1,'Easing']]],
   ['setmaxy_14',['setMaxY',['../classEasing.html#ad6769223779b9807d408111e74be2c25',1,'Easing']]],
   ['setminy_15',['setMinY',['../classEasing.html#afa0c43979a89463a4500fceeca73733e',1,'Easing']]],
-  ['setup_5froutes_16',['setup_routes',['../server_8hpp.html#a3f77ad5cfc7ae1d04c9dee24aa20cd04',1,'server.hpp']]],
-  ['stop_17',['stop',['../main_8cpp.html#a8c528baf37154d347366083f0f816846',1,'main.cpp']]]
+  ['setup_5froutes_16',['setup_routes',['../server_8hpp.html#a3f77ad5cfc7ae1d04c9dee24aa20cd04',1,'server.hpp']]]
 ];

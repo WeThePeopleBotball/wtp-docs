@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['wait_5ffor_5flight_0',['wait_for_light',['../wait__for__light_8hpp.html#ae26e428ab71eceb80d14b5e6ab1c536e',1,'wait_for_light.hpp']]],
-  ['wait_5ffor_5flight_2ehpp_1',['wait_for_light.hpp',['../wait__for__light_8hpp.html',1,'']]],
-  ['wallsquareup_2',['WallSquareUp',['../classWallSquareUp.html',1,'WallSquareUp'],['../classWallSquareUp.html#a85231103f2ec3e30885879bf0c414a3a',1,'WallSquareUp::WallSquareUp()']]],
-  ['warning_3',['WARNING',['../classLogger.html#ad766a24576ea8b27ad9d5649cef46d8fa059e9861e0400dfbe05c98a841f3f96b',1,'Logger']]],
-  ['warning_4',['warning',['../classLogger.html#a5164af2f632902fa3c477d5c0cb463f7',1,'Logger']]],
-  ['wrist_5',['Wrist',['../classWrist.html',1,'Wrist'],['../classWrist.html#a77fd74cbb19a75110be4dc36fcd68539',1,'Wrist::Wrist()']]]
+  ['vector_2ehpp_0',['vector.hpp',['../vector_8hpp.html',1,'']]],
+  ['vector2d_1',['Vector2D',['../classVector2D.html',1,'Vector2D'],['../classVector2D.html#a99cbcc8c511a0f07f57751e111126a34',1,'Vector2D::Vector2D()']]],
+  ['vector3d_2',['Vector3D',['../classVector3D.html',1,'Vector3D'],['../classVector3D.html#a8db7c6ec60cc84f5927eccb4d0c891d0',1,'Vector3D::Vector3D()']]]
 ];
