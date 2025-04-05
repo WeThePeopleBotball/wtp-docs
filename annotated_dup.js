@@ -5,6 +5,7 @@ var annotated_dup =
     [ "DefaultMotorController", "classDefaultMotorController.html", "classDefaultMotorController" ],
     [ "ImprovedMotor", "classImprovedMotor.html", "classImprovedMotor" ],
     [ "ImprovedServo", "classImprovedServo.html", "classImprovedServo" ],
+    [ "InverseKinematiks", "classInverseKinematiks.html", "classInverseKinematiks" ],
     [ "LineManager", "classLineManager.html", "classLineManager" ],
     [ "LineSquareUp", "classLineSquareUp.html", "classLineSquareUp" ],
     [ "MecanumMotorController", "classMecanumMotorController.html", "classMecanumMotorController" ],
