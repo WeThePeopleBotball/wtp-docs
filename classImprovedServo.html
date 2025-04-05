@@ -120,10 +120,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9aec317df64ff9bdab871815e7bf8e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae50923f3bd4787b33c6488eeeb77c38f" id="r_ae50923f3bd4787b33c6488eeeb77c38f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae50923f3bd4787b33c6488eeeb77c38f">~ImprovedServo</a> ()</td></tr>
 <tr class="separator:ae50923f3bd4787b33c6488eeeb77c38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad81b30f6d14a252c7b59849f8fbc6622" id="r_ad81b30f6d14a252c7b59849f8fbc6622"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad81b30f6d14a252c7b59849f8fbc6622">set_position</a> (int position)</td></tr>
-<tr class="separator:ad81b30f6d14a252c7b59849f8fbc6622"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d4dea947a0a28d88f7d2dabe1f314c" id="r_a21d4dea947a0a28d88f7d2dabe1f314c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21d4dea947a0a28d88f7d2dabe1f314c">set_degrees</a> (float degrees)</td></tr>
-<tr class="separator:a21d4dea947a0a28d88f7d2dabe1f314c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa1fb00e538471c63ca2a7b07cabb34" id="r_a8fa1fb00e538471c63ca2a7b07cabb34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fa1fb00e538471c63ca2a7b07cabb34">set_position</a> (int position, int speed_ms=15)</td></tr>
+<tr class="separator:a8fa1fb00e538471c63ca2a7b07cabb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6574c56e02798949530bd152366c4a73" id="r_a6574c56e02798949530bd152366c4a73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6574c56e02798949530bd152366c4a73">set_degrees</a> (float degrees, int speed_ms=15)</td></tr>
+<tr class="separator:a6574c56e02798949530bd152366c4a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb28d9b1776dae8af85687a99a09239b" id="r_adb28d9b1776dae8af85687a99a09239b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb28d9b1776dae8af85687a99a09239b">get_position</a> () const</td></tr>
 <tr class="separator:adb28d9b1776dae8af85687a99a09239b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a010b4420fff857f86e6ec7f34d537652" id="r_a010b4420fff857f86e6ec7f34d537652"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a010b4420fff857f86e6ec7f34d537652">get_degrees</a> () const</td></tr>
@@ -132,6 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a08254a5266c63e330bf6205d5c4a1a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af658411d187f91ce79e887f614db499e" id="r_af658411d187f91ce79e887f614db499e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af658411d187f91ce79e887f614db499e">set_easing</a> (std::function&lt; float(float)&gt; easing_function=[](float x) { return x;})</td></tr>
 <tr class="separator:af658411d187f91ce79e887f614db499e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a027f4ac3230cf1e224f2ab32a8953" id="r_ab6a027f4ac3230cf1e224f2ab32a8953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6a027f4ac3230cf1e224f2ab32a8953">wait_until_stopped</a> ()</td></tr>
+<tr class="separator:ab6a027f4ac3230cf1e224f2ab32a8953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Servo control with position, degree control, optional easing, and threaded movement. </p>
@@ -246,8 +248,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a21d4dea947a0a28d88f7d2dabe1f314c" name="a21d4dea947a0a28d88f7d2dabe1f314c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21d4dea947a0a28d88f7d2dabe1f314c">&#9670;&#160;</a></span>set_degrees()</h2>
+<a id="a6574c56e02798949530bd152366c4a73" name="a6574c56e02798949530bd152366c4a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6574c56e02798949530bd152366c4a73">&#9670;&#160;</a></span>set_degrees()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,8 +257,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ImprovedServo::set_degrees </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>degrees</em></span></td><td>)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>degrees</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>speed_ms</em></span><span class="paramdefsep"> = </span><span class="paramdefval">15</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -280,8 +286,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad81b30f6d14a252c7b59849f8fbc6622" name="ad81b30f6d14a252c7b59849f8fbc6622"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad81b30f6d14a252c7b59849f8fbc6622">&#9670;&#160;</a></span>set_position()</h2>
+<a id="a8fa1fb00e538471c63ca2a7b07cabb34" name="a8fa1fb00e538471c63ca2a7b07cabb34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fa1fb00e538471c63ca2a7b07cabb34">&#9670;&#160;</a></span>set_position()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,7 +295,28 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ImprovedServo::set_position </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>position</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>position</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>speed_ms</em></span><span class="paramdefsep"> = </span><span class="paramdefval">15</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6a027f4ac3230cf1e224f2ab32a8953" name="ab6a027f4ac3230cf1e224f2ab32a8953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a027f4ac3230cf1e224f2ab32a8953">&#9670;&#160;</a></span>wait_until_stopped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ImprovedServo::wait_until_stopped </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

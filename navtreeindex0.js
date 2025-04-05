@@ -65,9 +65,10 @@ var NAVTREEINDEX0 =
 "classImprovedServo.html":[0,0,4],
 "classImprovedServo.html#a010b4420fff857f86e6ec7f34d537652":[0,0,4,3],
 "classImprovedServo.html#a08254a5266c63e330bf6205d5c4a1a37":[0,0,4,2],
-"classImprovedServo.html#a21d4dea947a0a28d88f7d2dabe1f314c":[0,0,4,5],
+"classImprovedServo.html#a6574c56e02798949530bd152366c4a73":[0,0,4,5],
+"classImprovedServo.html#a8fa1fb00e538471c63ca2a7b07cabb34":[0,0,4,7],
 "classImprovedServo.html#a9aec317df64ff9bdab871815e7bf8e31":[0,0,4,0],
-"classImprovedServo.html#ad81b30f6d14a252c7b59849f8fbc6622":[0,0,4,7],
+"classImprovedServo.html#ab6a027f4ac3230cf1e224f2ab32a8953":[0,0,4,8],
 "classImprovedServo.html#adb28d9b1776dae8af85687a99a09239b":[0,0,4,4],
 "classImprovedServo.html#ae50923f3bd4787b33c6488eeeb77c38f":[0,0,4,1],
 "classImprovedServo.html#af658411d187f91ce79e887f614db499e":[0,0,4,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "easing_8hpp_source.html":[1,0,0,6,0],
 "files.html":[1,0],
 "functions.html":[0,3,0],
-"functions_enum.html":[0,3,3],
-"functions_func.html":[0,3,1]
+"functions_enum.html":[0,3,3]
 };
