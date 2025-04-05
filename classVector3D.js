@@ -1,6 +1,8 @@
 var classVector3D =
 [
     [ "Vector3D", "classVector3D.html#a8db7c6ec60cc84f5927eccb4d0c891d0", null ],
+    [ "get_angle", "classVector3D.html#a381a389fb8b8232ed5acb2437838c617", null ],
+    [ "get_length", "classVector3D.html#a1fd34e1c4260086019aae439b8149e1c", null ],
     [ "get_x", "classVector3D.html#ab2639910802efd53299ef5b58152db6a", null ],
     [ "get_y", "classVector3D.html#a7c529e37532b0e98a78d444e72e1342e", null ],
     [ "get_z", "classVector3D.html#a1cb969e7e5163244ccf14556d635dc74", null ],
@@ -14,7 +16,6 @@ var classVector3D =
     [ "operator/", "classVector3D.html#a2b5e077021802496d032a91a7d81096b", null ],
     [ "operator/=", "classVector3D.html#a47fc7b6598bc27e7f7f17bd9de60f862", null ],
     [ "operator==", "classVector3D.html#a0d686fbd9f7cbcd9dc342b28e33fdb3e", null ],
-    [ "print", "classVector3D.html#a00b2343c8b1acee3b21c0f42a86a212c", null ],
     [ "set", "classVector3D.html#af0a78c7d57565f6fbb3940faeb878bc5", null ],
     [ "set_x", "classVector3D.html#ae86e19767e5cd30b387d225f86fa3e28", null ],
     [ "set_y", "classVector3D.html#a4ef903f9ca5294f3c84a564ac081cdc4", null ],

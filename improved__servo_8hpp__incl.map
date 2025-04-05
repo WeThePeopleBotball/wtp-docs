@@ -1,9 +1,17 @@
 <map id="include/movement/improved_servo.hpp" name="include/movement/improved_servo.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="101,5,285,46"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="258,5,442,46"/>
 <area shape="rect" id="Node000002" href="$ticks_8hpp.html" title=" " alt="" coords="5,94,114,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,49,94,88,92,83,158,44"/>
-<area shape="rect" id="Node000003" href="$easing_8hpp.html" title=" " alt="" coords="137,94,248,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,46,196,78,190,78,190,46"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="273,94,411,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,44,307,84,305,89,229,49"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,49,119,92,118,87,277,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="138,94,216,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="308,49,218,90,216,85,306,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="240,94,298,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="332,48,294,85,290,81,328,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="322,94,378,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="353,46,353,78,348,78,348,46"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="402,94,528,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="380,44,436,83,433,87,377,49"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="552,94,612,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="409,44,538,88,537,93,407,49"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="637,94,775,120"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="440,44,637,87,636,93,439,49"/>
 </map>

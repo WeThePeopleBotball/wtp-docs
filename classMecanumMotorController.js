@@ -1,11 +1,14 @@
 var classMecanumMotorController =
 [
-    [ "MecanumMotorController", "classMecanumMotorController.html#adec7724aee905b1a2f13f25384a609e6", null ],
-    [ "~MecanumMotorController", "classMecanumMotorController.html#a3d2fa0cc3f82c4c3027cacdccd917939", null ],
+    [ "MecanumMotorController", "classMecanumMotorController.html#a591b0c066013680f03a6d5607b457c4e", null ],
+    [ "~MecanumMotorController", "classMecanumMotorController.html#a12afad154b20d3a69ef80290ee9570a7", null ],
     [ "backward", "classMecanumMotorController.html#a480a47012082a842bba88d6e65e63e03", null ],
     [ "backward", "classMecanumMotorController.html#a1407e3b4f354686a56aae9d197433726", null ],
-    [ "diagonal", "classMecanumMotorController.html#a20fb6f4697d795026651637fd0c010e2", null ],
-    [ "diagonal", "classMecanumMotorController.html#aa65ff77fa36b9f3db467d83a5be644d7", null ],
+    [ "calibrate", "classMecanumMotorController.html#ad0107a4296d94ee3a0f2059889738795", null ],
+    [ "diagonal", "classMecanumMotorController.html#ac6debcf65277ed206e5cd19539f475c6", null ],
+    [ "diagonal", "classMecanumMotorController.html#aa9031fb6dea42b509bf8aa14ce4414a6", null ],
+    [ "drive_vector", "classMecanumMotorController.html#ae9645510e210893af60a169ca46e0a2b", null ],
+    [ "drive_vector", "classMecanumMotorController.html#acb2375c4355d62952efcd7a0771609a7", null ],
     [ "forward", "classMecanumMotorController.html#a53baf0fe8ccb814e8677cbfe9641838a", null ],
     [ "forward", "classMecanumMotorController.html#a079bcff916c495fa48903cd554b70269", null ],
     [ "freeze", "classMecanumMotorController.html#aae418d3abfcb873e2a62c943d0a37ce1", null ],

@@ -106,20 +106,42 @@ $(function(){initNavTree('improved__motor_8cpp.html',''); initResizable(true); }
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="improved__motor_8hpp_source.html">movement/improved_motor.hpp</a>&quot;</code><br />
+<code>#include &quot;kipr/motor/motor.h&quot;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;kipr/time/time.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for improved_motor.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="improved__motor_8cpp__incl.png" border="0" usemap="#asrc_2movement_2improved__motor_8cpp" alt=""/></div>
 <map name="asrc_2movement_2improved__motor_8cpp" id="asrc_2movement_2improved__motor_8cpp">
-<area shape="rect" title=" " alt="" coords="112,5,274,46"/>
-<area shape="rect" href="improved__motor_8hpp.html" title=" " alt="" coords="91,94,294,120"/>
-<area shape="poly" title=" " alt="" coords="196,46,196,78,190,78,190,46"/>
-<area shape="rect" href="ticks_8hpp.html" title=" " alt="" coords="5,168,114,193"/>
-<area shape="poly" title=" " alt="" coords="171,123,97,162,94,158,169,118"/>
-<area shape="rect" href="easing_8hpp.html" title=" " alt="" coords="137,168,248,193"/>
-<area shape="poly" title=" " alt="" coords="196,120,196,152,190,152,190,120"/>
-<area shape="rect" title=" " alt="" coords="272,168,412,193"/>
-<area shape="poly" title=" " alt="" coords="219,118,304,158,302,163,217,123"/>
+<area shape="rect" title=" " alt="" coords="697,5,859,46"/>
+<area shape="rect" href="improved__motor_8hpp.html" title=" " alt="" coords="430,94,633,120"/>
+<area shape="poly" title=" " alt="" coords="717,49,584,91,583,86,716,44"/>
+<area shape="rect" title=" " alt="" coords="658,94,784,120"/>
+<area shape="poly" title=" " alt="" coords="766,48,741,83,736,79,762,45"/>
+<area shape="rect" title=" " alt="" coords="808,94,865,120"/>
+<area shape="poly" title=" " alt="" coords="795,45,821,80,817,83,790,48"/>
+<area shape="rect" title=" " alt="" coords="890,94,1000,120"/>
+<area shape="poly" title=" " alt="" coords="821,44,906,85,904,89,818,49"/>
+<area shape="rect" href="registry_8hpp.html" title=" " alt="" coords="129,168,259,193"/>
+<area shape="poly" title=" " alt="" coords="474,123,267,167,266,161,473,118"/>
+<area shape="rect" title=" " alt="" coords="267,241,345,267"/>
+<area shape="poly" title=" " alt="" coords="430,119,375,137,350,151,328,169,319,182,313,196,308,227,303,226,308,195,314,179,324,166,347,147,373,132,428,114"/>
+<area shape="rect" title=" " alt="" coords="338,168,479,193"/>
+<area shape="poly" title=" " alt="" coords="512,123,444,162,441,157,509,118"/>
+<area shape="rect" title=" " alt="" coords="503,168,560,193"/>
+<area shape="poly" title=" " alt="" coords="534,120,534,152,529,152,529,120"/>
+<area shape="rect" title=" " alt="" coords="584,168,641,193"/>
+<area shape="poly" title=" " alt="" coords="547,118,589,155,586,159,543,122"/>
+<area shape="rect" title=" " alt="" coords="665,168,790,193"/>
+<area shape="poly" title=" " alt="" coords="565,118,681,159,679,165,564,123"/>
+<area shape="rect" title=" " alt="" coords="814,168,875,193"/>
+<area shape="poly" title=" " alt="" coords="591,118,800,164,798,170,590,123"/>
+<area shape="rect" title=" " alt="" coords="5,241,103,267"/>
+<area shape="poly" title=" " alt="" coords="171,196,92,236,90,232,169,191"/>
+<area shape="poly" title=" " alt="" coords="214,192,276,230,273,235,212,196"/>
+<area shape="rect" title=" " alt="" coords="126,241,243,267"/>
+<area shape="poly" title=" " alt="" coords="195,194,191,226,186,226,190,193"/>
 </map>
 </div>
 </div></div><!-- contents -->

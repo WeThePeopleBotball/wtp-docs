@@ -108,20 +108,32 @@ $(function(){initNavTree('improved__servo_8hpp.html',''); initResizable(true); }
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="ticks_8hpp_source.html">types/ticks.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="easing_8hpp_source.html">utils/easing.hpp</a>&quot;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;condition_variable&gt;</code><br />
+<code>#include &lt;atomic&gt;</code><br />
 <code>#include &lt;kipr/servo/servo.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for improved_servo.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="improved__servo_8hpp__incl.png" border="0" usemap="#ainclude_2movement_2improved__servo_8hpp" alt=""/></div>
 <map name="ainclude_2movement_2improved__servo_8hpp" id="ainclude_2movement_2improved__servo_8hpp">
-<area shape="rect" title=" " alt="" coords="101,5,285,46"/>
+<area shape="rect" title=" " alt="" coords="258,5,442,46"/>
 <area shape="rect" href="ticks_8hpp.html" title=" " alt="" coords="5,94,114,120"/>
-<area shape="poly" title=" " alt="" coords="161,49,94,88,92,83,158,44"/>
-<area shape="rect" href="easing_8hpp.html" title=" " alt="" coords="137,94,248,120"/>
-<area shape="poly" title=" " alt="" coords="196,46,196,78,190,78,190,46"/>
-<area shape="rect" title=" " alt="" coords="273,94,411,120"/>
-<area shape="poly" title=" " alt="" coords="231,44,307,84,305,89,229,49"/>
+<area shape="poly" title=" " alt="" coords="278,49,119,92,118,87,277,44"/>
+<area shape="rect" title=" " alt="" coords="138,94,216,120"/>
+<area shape="poly" title=" " alt="" coords="308,49,218,90,216,85,306,44"/>
+<area shape="rect" title=" " alt="" coords="240,94,298,120"/>
+<area shape="poly" title=" " alt="" coords="332,48,294,85,290,81,328,44"/>
+<area shape="rect" title=" " alt="" coords="322,94,378,120"/>
+<area shape="poly" title=" " alt="" coords="353,46,353,78,348,78,348,46"/>
+<area shape="rect" title=" " alt="" coords="402,94,528,120"/>
+<area shape="poly" title=" " alt="" coords="380,44,436,83,433,87,377,49"/>
+<area shape="rect" title=" " alt="" coords="552,94,612,120"/>
+<area shape="poly" title=" " alt="" coords="409,44,538,88,537,93,407,49"/>
+<area shape="rect" title=" " alt="" coords="637,94,775,120"/>
+<area shape="poly" title=" " alt="" coords="440,44,637,87,636,93,439,49"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -129,11 +141,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="improved__servo_8hpp__dep__incl.png" border="0" usemap="#ainclude_2movement_2improved__servo_8hppdep" alt=""/></div>
 <map name="ainclude_2movement_2improved__servo_8hppdep" id="ainclude_2movement_2improved__servo_8hppdep">
-<area shape="rect" title=" " alt="" coords="5,5,190,46"/>
-<area shape="rect" href="arm__component_8hpp.html" title=" " alt="" coords="19,94,176,135"/>
-<area shape="poly" title=" " alt="" coords="100,62,100,94,95,94,95,62"/>
-<area shape="rect" href="arm__controller_8hpp.html" title=" " alt="" coords="19,183,176,223"/>
-<area shape="poly" title=" " alt="" coords="100,150,100,182,95,182,95,150"/>
+<area shape="rect" title=" " alt="" coords="112,5,297,46"/>
+<area shape="rect" href="arm__controller_8hpp.html" title=" " alt="" coords="36,94,192,135"/>
+<area shape="poly" title=" " alt="" coords="175,59,136,95,133,92,172,55"/>
+<area shape="rect" href="improved__servo_8cpp.html" title=" " alt="" coords="216,94,377,135"/>
+<area shape="poly" title=" " alt="" coords="238,55,278,92,274,96,235,59"/>
+<area shape="rect" href="arm__controller_8cpp.html" title=" " alt="" coords="5,183,223,208"/>
+<area shape="poly" title=" " alt="" coords="117,150,117,182,111,182,111,150"/>
 </map>
 </div>
 </div>
@@ -142,6 +156,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classImprovedServo.html">ImprovedServo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Servo control with position, degree control, optional easing, and threaded movement.  <a href="classImprovedServo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

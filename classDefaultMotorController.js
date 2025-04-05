@@ -1,11 +1,14 @@
 var classDefaultMotorController =
 [
-    [ "DefaultMotorController", "classDefaultMotorController.html#a5153adf4f78951d1d94ac0ad92ab2ab8", null ],
-    [ "~DefaultMotorController", "classDefaultMotorController.html#a362c4426ee0dc0a16c660a52902ddf97", null ],
+    [ "DefaultMotorController", "classDefaultMotorController.html#a888e48dcfc104eb0aefe91aa7cf432a0", null ],
+    [ "~DefaultMotorController", "classDefaultMotorController.html#aac62158904d8fcb03f35edcb4bf76a6f", null ],
     [ "backward", "classDefaultMotorController.html#a3c6e4eb0bb8008d9aaebf97cf1d59c76", null ],
     [ "backward", "classDefaultMotorController.html#a8c8f3eda1225c0caecc5e728094c1f80", null ],
-    [ "diagonal", "classDefaultMotorController.html#a1dbed800dab74baf34ed05f805b673be", null ],
-    [ "diagonal", "classDefaultMotorController.html#ae800018e903567ecb3c8271fef093486", null ],
+    [ "calibrate", "classDefaultMotorController.html#a90384518517207a71ea31289a25f016f", null ],
+    [ "diagonal", "classDefaultMotorController.html#a63daa1f6e9e327a6fb07228f57d9a4d2", null ],
+    [ "diagonal", "classDefaultMotorController.html#a3f013a90094fa119d661c9b1007fa840", null ],
+    [ "drive_vector", "classDefaultMotorController.html#a1dbb3b57e97b5a99fa3e0174d53e726b", null ],
+    [ "drive_vector", "classDefaultMotorController.html#adc112993a5b47757b119b613df02ecdf", null ],
     [ "forward", "classDefaultMotorController.html#a9584516fddd3e5aeea0f50723d975183", null ],
     [ "forward", "classDefaultMotorController.html#a21aaa35e89da27db7f6ece950da6effc", null ],
     [ "freeze", "classDefaultMotorController.html#a228e0478d9bd7110a51119d5d02a74f8", null ],

@@ -1,0 +1,5 @@
+<map id="PlaygroundLocation" name="PlaygroundLocation">
+<area shape="rect" id="Node000001" title="Represents an offset location (e.g. Ketchup, Fries) from a nearby node." alt="" coords="5,94,141,120"/>
+<area shape="rect" id="Node000002" href="$classVector2D.html" title=" " alt="" coords="35,5,111,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,47,76,94,70,94,70,47"/>
+</map>

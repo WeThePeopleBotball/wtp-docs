@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['easing_0',['Easing',['../classEasing.html',1,'']]],
-  ['elbow_1',['Elbow',['../classElbow.html',1,'']]]
+  ['improvedmotor_0',['ImprovedMotor',['../classImprovedMotor.html',1,'']]],
+  ['improvedservo_1',['ImprovedServo',['../classImprovedServo.html',1,'']]]
 ];

@@ -109,34 +109,35 @@ $(function(){initNavTree('classImprovedServo.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>Servo control with position, degree control, optional easing, and threaded movement.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="improved__servo_8hpp_source.html">improved_servo.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad5a5a1f8a4656f7eb29bfa6e5ecbfd28" id="r_ad5a5a1f8a4656f7eb29bfa6e5ecbfd28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5a5a1f8a4656f7eb29bfa6e5ecbfd28">ImprovedServo</a> (int port)</td></tr>
-<tr class="separator:ad5a5a1f8a4656f7eb29bfa6e5ecbfd28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad40e76ea24766bd8c3ab3e09083c07cf" id="r_ad40e76ea24766bd8c3ab3e09083c07cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad40e76ea24766bd8c3ab3e09083c07cf">set_position</a> (<a class="el" href="ticks_8hpp.html#a2b0c052e2a5cb90d9553d895889384ff">ticks_t</a> position)</td></tr>
-<tr class="separator:ad40e76ea24766bd8c3ab3e09083c07cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aec317df64ff9bdab871815e7bf8e31" id="r_a9aec317df64ff9bdab871815e7bf8e31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aec317df64ff9bdab871815e7bf8e31">ImprovedServo</a> (int port, std::function&lt; float(float)&gt; easing_function=[](float x) { return x;}, <a class="el" href="ticks_8hpp.html#a2b0c052e2a5cb90d9553d895889384ff">ticks_t</a> min_position=0, <a class="el" href="ticks_8hpp.html#a2b0c052e2a5cb90d9553d895889384ff">ticks_t</a> max_position=2047, float min_degrees=0.0f, float max_degrees=180.0f)</td></tr>
+<tr class="separator:a9aec317df64ff9bdab871815e7bf8e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50923f3bd4787b33c6488eeeb77c38f" id="r_ae50923f3bd4787b33c6488eeeb77c38f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae50923f3bd4787b33c6488eeeb77c38f">~ImprovedServo</a> ()</td></tr>
+<tr class="separator:ae50923f3bd4787b33c6488eeeb77c38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad81b30f6d14a252c7b59849f8fbc6622" id="r_ad81b30f6d14a252c7b59849f8fbc6622"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad81b30f6d14a252c7b59849f8fbc6622">set_position</a> (int position)</td></tr>
+<tr class="separator:ad81b30f6d14a252c7b59849f8fbc6622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21d4dea947a0a28d88f7d2dabe1f314c" id="r_a21d4dea947a0a28d88f7d2dabe1f314c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21d4dea947a0a28d88f7d2dabe1f314c">set_degrees</a> (float degrees)</td></tr>
 <tr class="separator:a21d4dea947a0a28d88f7d2dabe1f314c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af90246a1527bbe8a9c78e8a718ec838a" id="r_af90246a1527bbe8a9c78e8a718ec838a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ticks_8hpp.html#a2b0c052e2a5cb90d9553d895889384ff">ticks_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af90246a1527bbe8a9c78e8a718ec838a">get_position</a> () const</td></tr>
-<tr class="separator:af90246a1527bbe8a9c78e8a718ec838a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb28d9b1776dae8af85687a99a09239b" id="r_adb28d9b1776dae8af85687a99a09239b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb28d9b1776dae8af85687a99a09239b">get_position</a> () const</td></tr>
+<tr class="separator:adb28d9b1776dae8af85687a99a09239b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a010b4420fff857f86e6ec7f34d537652" id="r_a010b4420fff857f86e6ec7f34d537652"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a010b4420fff857f86e6ec7f34d537652">get_degrees</a> () const</td></tr>
 <tr class="separator:a010b4420fff857f86e6ec7f34d537652"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08254a5266c63e330bf6205d5c4a1a37" id="r_a08254a5266c63e330bf6205d5c4a1a37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08254a5266c63e330bf6205d5c4a1a37">enable</a> ()</td></tr>
 <tr class="separator:a08254a5266c63e330bf6205d5c4a1a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1a9a74e0c9d8c98557c568aec87ca05" id="r_aa1a9a74e0c9d8c98557c568aec87ca05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1a9a74e0c9d8c98557c568aec87ca05">disable</a> ()</td></tr>
-<tr class="separator:aa1a9a74e0c9d8c98557c568aec87ca05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e3592a0f95fb764997ee5aeb9311fcc" id="r_a0e3592a0f95fb764997ee5aeb9311fcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e3592a0f95fb764997ee5aeb9311fcc">set_enabled</a> (bool enabled)</td></tr>
-<tr class="separator:a0e3592a0f95fb764997ee5aeb9311fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad816ae9faab2b909fd4432176278c825" id="r_ad816ae9faab2b909fd4432176278c825"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad816ae9faab2b909fd4432176278c825">is_enabled</a> () const</td></tr>
-<tr class="separator:ad816ae9faab2b909fd4432176278c825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a411c4b40e54a82b8885dfe69cb9ba41f" id="r_a411c4b40e54a82b8885dfe69cb9ba41f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a411c4b40e54a82b8885dfe69cb9ba41f">set_easing</a> (const <a class="el" href="classEasing.html">Easing</a> &amp;easingFunction)</td></tr>
-<tr class="separator:a411c4b40e54a82b8885dfe69cb9ba41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af658411d187f91ce79e887f614db499e" id="r_af658411d187f91ce79e887f614db499e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af658411d187f91ce79e887f614db499e">set_easing</a> (std::function&lt; float(float)&gt; easing_function=[](float x) { return x;})</td></tr>
+<tr class="separator:af658411d187f91ce79e887f614db499e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad5a5a1f8a4656f7eb29bfa6e5ecbfd28" name="ad5a5a1f8a4656f7eb29bfa6e5ecbfd28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5a5a1f8a4656f7eb29bfa6e5ecbfd28">&#9670;&#160;</a></span>ImprovedServo()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Servo control with position, degree control, optional easing, and threaded movement. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9aec317df64ff9bdab871815e7bf8e31" name="a9aec317df64ff9bdab871815e7bf8e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aec317df64ff9bdab871815e7bf8e31">&#9670;&#160;</a></span>ImprovedServo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,23 +145,46 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">ImprovedServo::ImprovedServo </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::function&lt; float(float)&gt;</td>          <td class="paramname"><span class="paramname"><em>easing_function</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[](float&#160;x)&#160;{&#160;return&#160;x;&#160;}</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ticks_8hpp.html#a2b0c052e2a5cb90d9553d895889384ff">ticks_t</a></td>          <td class="paramname"><span class="paramname"><em>min_position</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ticks_8hpp.html#a2b0c052e2a5cb90d9553d895889384ff">ticks_t</a></td>          <td class="paramname"><span class="paramname"><em>max_position</em></span><span class="paramdefsep"> = </span><span class="paramdefval">2047</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>min_degrees</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0f</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>max_degrees</em></span><span class="paramdefsep"> = </span><span class="paramdefval">180.0f</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa1a9a74e0c9d8c98557c568aec87ca05" name="aa1a9a74e0c9d8c98557c568aec87ca05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1a9a74e0c9d8c98557c568aec87ca05">&#9670;&#160;</a></span>disable()</h2>
+<a id="ae50923f3bd4787b33c6488eeeb77c38f" name="ae50923f3bd4787b33c6488eeeb77c38f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae50923f3bd4787b33c6488eeeb77c38f">&#9670;&#160;</a></span>~ImprovedServo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ImprovedServo::disable </td>
+          <td class="memname">ImprovedServo::~ImprovedServo </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -170,6 +194,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a08254a5266c63e330bf6205d5c4a1a37" name="a08254a5266c63e330bf6205d5c4a1a37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08254a5266c63e330bf6205d5c4a1a37">&#9670;&#160;</a></span>enable()</h2>
 
@@ -204,31 +229,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af90246a1527bbe8a9c78e8a718ec838a" name="af90246a1527bbe8a9c78e8a718ec838a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af90246a1527bbe8a9c78e8a718ec838a">&#9670;&#160;</a></span>get_position()</h2>
+<a id="adb28d9b1776dae8af85687a99a09239b" name="adb28d9b1776dae8af85687a99a09239b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb28d9b1776dae8af85687a99a09239b">&#9670;&#160;</a></span>get_position()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ticks_8hpp.html#a2b0c052e2a5cb90d9553d895889384ff">ticks_t</a> ImprovedServo::get_position </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad816ae9faab2b909fd4432176278c825" name="ad816ae9faab2b909fd4432176278c825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad816ae9faab2b909fd4432176278c825">&#9670;&#160;</a></span>is_enabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ImprovedServo::is_enabled </td>
+          <td class="memname">int ImprovedServo::get_position </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -255,8 +263,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a411c4b40e54a82b8885dfe69cb9ba41f" name="a411c4b40e54a82b8885dfe69cb9ba41f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a411c4b40e54a82b8885dfe69cb9ba41f">&#9670;&#160;</a></span>set_easing()</h2>
+<a id="af658411d187f91ce79e887f614db499e" name="af658411d187f91ce79e887f614db499e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af658411d187f91ce79e887f614db499e">&#9670;&#160;</a></span>set_easing()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +272,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ImprovedServo::set_easing </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classEasing.html">Easing</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>easingFunction</em></span></td><td>)</td>
+          <td class="paramtype">std::function&lt; float(float)&gt;</td>          <td class="paramname"><span class="paramname"><em>easing_function</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[](float&#160;x)&#160;{&#160;return&#160;x;&#160;}</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -272,25 +280,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0e3592a0f95fb764997ee5aeb9311fcc" name="a0e3592a0f95fb764997ee5aeb9311fcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e3592a0f95fb764997ee5aeb9311fcc">&#9670;&#160;</a></span>set_enabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ImprovedServo::set_enabled </td>
-          <td>(</td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enabled</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad40e76ea24766bd8c3ab3e09083c07cf" name="ad40e76ea24766bd8c3ab3e09083c07cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad40e76ea24766bd8c3ab3e09083c07cf">&#9670;&#160;</a></span>set_position()</h2>
+<a id="ad81b30f6d14a252c7b59849f8fbc6622" name="ad81b30f6d14a252c7b59849f8fbc6622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad81b30f6d14a252c7b59849f8fbc6622">&#9670;&#160;</a></span>set_position()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,7 +289,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ImprovedServo::set_position </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="ticks_8hpp.html#a2b0c052e2a5cb90d9553d895889384ff">ticks_t</a></td>          <td class="paramname"><span class="paramname"><em>position</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>position</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -306,8 +297,9 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/movement/<a class="el" href="improved__servo_8hpp_source.html">improved_servo.hpp</a></li>
+<li>src/movement/<a class="el" href="improved__servo_8cpp.html">improved_servo.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

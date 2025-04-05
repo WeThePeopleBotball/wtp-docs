@@ -1,0 +1,38 @@
+<map id="src/navigation/line_manager.cpp" name="src/navigation/line_manager.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="401,5,528,46"/>
+<area shape="rect" id="Node000002" href="$line__manager_8hpp.html" title=" " alt="" coords="372,94,557,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="467,46,467,78,462,78,462,46"/>
+<area shape="rect" id="Node000003" href="$motor__controller_8hpp.html" title=" " alt="" coords="181,168,388,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="435,123,330,164,328,159,433,118"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,241,73,267"/>
+<area shape="poly" id="edge19_Node000002_Node000004" title=" " alt="" coords="372,120,273,139,221,152,171,170,113,201,67,234,63,229,111,196,169,165,219,147,272,133,371,115"/>
+<area shape="rect" id="Node000008" href="$registry_8hpp.html" title=" " alt="" coords="699,315,830,341"/>
+<area shape="poly" id="edge20_Node000002_Node000008" title=" " alt="" coords="558,114,622,132,654,147,682,166,711,196,733,232,749,268,760,299,755,301,744,270,729,235,707,199,679,170,651,151,620,137,557,120"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="614,389,691,414"/>
+<area shape="poly" id="edge18_Node000002_Node000010" title=" " alt="" coords="480,118,531,168,561,203,588,240,624,311,647,373,642,375,619,313,583,243,557,206,527,172,476,122"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="243,196,89,241,87,236,242,191"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="38,315,94,341"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="282,195,261,231,246,251,227,269,177,293,110,316,108,311,175,289,224,265,242,248,257,228,277,192"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="289,241,346,267"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="292,192,308,226,303,228,287,195"/>
+<area shape="rect" id="Node000007" href="$improved__motor_8hpp.html" title=" " alt="" coords="371,241,574,267"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="317,191,427,233,425,238,315,196"/>
+<area shape="rect" id="Node000016" href="$vector_8hpp.html" title=" " alt="" coords="97,241,213,267"/>
+<area shape="poly" id="edge17_Node000003_Node000016" title=" " alt="" coords="264,196,192,236,189,231,261,192"/>
+<area shape="poly" id="edge14_Node000007_Node000005" title=" " alt="" coords="379,270,254,289,109,317,108,312,254,284,378,265"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="522,265,700,308,699,313,521,270"/>
+<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="504,265,546,285,587,313,617,343,640,374,635,377,613,347,584,317,543,290,502,270"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="352,315,492,341"/>
+<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="466,269,441,304,437,301,462,266"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="516,315,573,341"/>
+<area shape="poly" id="edge13_Node000007_Node000013" title=" " alt="" coords="486,265,523,302,519,306,482,269"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="118,315,243,341"/>
+<area shape="poly" id="edge15_Node000007_Node000014" title=" " alt="" coords="423,270,246,313,244,308,422,265"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="268,315,328,341"/>
+<area shape="poly" id="edge16_Node000007_Node000015" title=" " alt="" coords="444,270,343,311,341,306,442,265"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="716,389,813,414"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="767,341,767,373,762,373,762,341"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="747,343,686,382,683,378,744,339"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="837,389,953,414"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="788,339,861,379,859,383,785,344"/>
+</map>

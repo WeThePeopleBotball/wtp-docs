@@ -1,17 +1,12 @@
 var searchData=
 [
-  ['accel_5fcalibrate_0',['accel_calibrate',['../classSensorRegistry.html#a10d7d20c67b771a66ce28b76b468d3e6',1,'SensorRegistry']]],
-  ['accel_5fx_1',['accel_x',['../classSensorRegistry.html#a48eef9e3193174fe0ad4b35b8b2eebaa',1,'SensorRegistry']]],
-  ['accel_5fy_2',['accel_y',['../classSensorRegistry.html#aca271a0b006d1ddb297a182ad2fb58f0',1,'SensorRegistry']]],
-  ['accel_5fz_3',['accel_z',['../classSensorRegistry.html#ab58bdc15cc759a92da00c7829df0fedb',1,'SensorRegistry']]],
-  ['add_5fanalog_4',['add_analog',['../classSensorRegistry.html#ad7826368890d1658f55328c113950f9f',1,'SensorRegistry']]],
-  ['add_5fcomponent_5',['add_component',['../classArmController.html#a81e3d6a8a8de94df47b3b6300ddefeb8',1,'ArmController']]],
-  ['add_5fcomponent_5fto_5farm_6',['add_component_to_arm',['../classArmController.html#a22018c75f155f0e1610eef1360494d71',1,'ArmController']]],
-  ['add_5fdigital_7',['add_digital',['../classSensorRegistry.html#a82d45757b850038ab1ac6bd7b19b269c',1,'SensorRegistry']]],
-  ['analyzer_2ehpp_8',['analyzer.hpp',['../analyzer_8hpp.html',1,'']]],
-  ['angle_9',['angle',['../main_8cpp.html#a6cc4be774dadeaf480e764af8f5fb8a2',1,'main.cpp']]],
-  ['arm_5fcomponent_2ehpp_10',['arm_component.hpp',['../arm__component_8hpp.html',1,'']]],
-  ['arm_5fcontroller_2ehpp_11',['arm_controller.hpp',['../arm__controller_8hpp.html',1,'']]],
-  ['armcomponent_12',['ArmComponent',['../classArmComponent.html',1,'ArmComponent'],['../classArmComponent.html#ad07ac29946808372407b917e4ecfade5',1,'ArmComponent::ArmComponent()']]],
-  ['armcontroller_13',['ArmController',['../classArmController.html',1,'ArmController'],['../classArmController.html#a51f3944a49a7840ff2c12527b4f612bf',1,'ArmController::ArmController()']]]
+  ['add_5fanalog_0',['add_analog',['../classSensorRegistry.html#a3725eec647d08812ff97d5a2f60cecb6',1,'SensorRegistry']]],
+  ['add_5fanalog_5fcalibration_1',['add_analog_calibration',['../classSensorRegistry.html#ad01cf42df6a959739767ed1e56ab44f1',1,'SensorRegistry']]],
+  ['add_5fdigital_2',['add_digital',['../classSensorRegistry.html#a82d45757b850038ab1ac6bd7b19b269c',1,'SensorRegistry']]],
+  ['add_5fdigital_5fcalibration_3',['add_digital_calibration',['../classSensorRegistry.html#a73fcdadf2bba8f9592c006c9114c44f8',1,'SensorRegistry']]],
+  ['add_5flocation_4',['add_location',['../classPlayground.html#ae34f4890a3127e07940f0f73233b6b13',1,'Playground']]],
+  ['add_5fnode_5',['add_node',['../classPlayground.html#a7cab46f4e663c41960ec93b4a0035fc8',1,'Playground']]],
+  ['arm_5fcontroller_2ecpp_6',['arm_controller.cpp',['../arm__controller_8cpp.html',1,'']]],
+  ['arm_5fcontroller_2ehpp_7',['arm_controller.hpp',['../arm__controller_8hpp.html',1,'']]],
+  ['armcontroller_8',['ArmController',['../classArmController.html',1,'ArmController'],['../classArmController.html#a3be94d51cd624d14e9fb686893937afa',1,'ArmController::ArmController()']]]
 ];

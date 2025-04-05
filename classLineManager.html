@@ -111,6 +111,9 @@ $(function(){initNavTree('classLineManager.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>Manages two light sensors for line following.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="line__manager_8hpp_source.html">line_manager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -118,29 +121,44 @@ Public Types</h2></td></tr>
 <tr class="memitem:a8e39389c78487208e813c6871f7a1c05" id="r_a8e39389c78487208e813c6871f7a1c05"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e39389c78487208e813c6871f7a1c05">Side</a> { <a class="el" href="#a8e39389c78487208e813c6871f7a1c05a811882fecd5c7618d7099ebbd39ea254">left</a>
 , <a class="el" href="#a8e39389c78487208e813c6871f7a1c05a7c4f29407893c334a6cb7a87bf045c0d">right</a>
  }</td></tr>
+<tr class="memdesc:a8e39389c78487208e813c6871f7a1c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the left or right sensor.  <a href="#a8e39389c78487208e813c6871f7a1c05">More...</a><br /></td></tr>
 <tr class="separator:a8e39389c78487208e813c6871f7a1c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d6efba50036d69da205fbb9caf037a4" id="r_a9d6efba50036d69da205fbb9caf037a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d6efba50036d69da205fbb9caf037a4">LineManager</a> (std::shared_ptr&lt; kipr::analog::Analog &gt; <a class="el" href="#a8e39389c78487208e813c6871f7a1c05a811882fecd5c7618d7099ebbd39ea254">left</a>, std::shared_ptr&lt; kipr::analog::Analog &gt; <a class="el" href="#a8e39389c78487208e813c6871f7a1c05a7c4f29407893c334a6cb7a87bf045c0d">right</a>)</td></tr>
-<tr class="separator:a9d6efba50036d69da205fbb9caf037a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8155f9efafda62eda1bbf83a28b49cc" id="r_ad8155f9efafda62eda1bbf83a28b49cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8155f9efafda62eda1bbf83a28b49cc">LineManager</a> (std::shared_ptr&lt; <a class="el" href="classSensorRegistry.html">SensorRegistry</a> &gt; sensor_registry, std::shared_ptr&lt; <a class="el" href="classMotorController.html">MotorController</a> &gt; motor_controller, float line_correction_divisor=6.0f)</td></tr>
+<tr class="memdesc:ad8155f9efafda62eda1bbf83a28b49cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classLineManager.html" title="Manages two light sensors for line following.">LineManager</a> for managing two sensors.  <br /></td></tr>
+<tr class="separator:ad8155f9efafda62eda1bbf83a28b49cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3d21e4ebb85fd6013163b41a6e1ae2" id="r_aab3d21e4ebb85fd6013163b41a6e1ae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab3d21e4ebb85fd6013163b41a6e1ae2">line_follower_backward</a> (<a class="el" href="#a8e39389c78487208e813c6871f7a1c05">Side</a> s=<a class="el" href="#a8e39389c78487208e813c6871f7a1c05a811882fecd5c7618d7099ebbd39ea254">Side::left</a>)</td></tr>
+<tr class="separator:aab3d21e4ebb85fd6013163b41a6e1ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a537cc298655716c068b49718676fbb3e" id="r_a537cc298655716c068b49718676fbb3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a537cc298655716c068b49718676fbb3e">is_on_line</a> (<a class="el" href="#a8e39389c78487208e813c6871f7a1c05">Side</a> s)</td></tr>
+<tr class="memdesc:a537cc298655716c068b49718676fbb3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a sensor is detecting a line.  <br /></td></tr>
 <tr class="separator:a537cc298655716c068b49718676fbb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d14de60944c71992a680694c7043619" id="r_a3d14de60944c71992a680694c7043619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d14de60944c71992a680694c7043619">calibrate</a> (<a class="el" href="#a8e39389c78487208e813c6871f7a1c05">Side</a> s)</td></tr>
+<tr class="memdesc:a3d14de60944c71992a680694c7043619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the line_follower and prepares it for driving on side <code>s</code>  <br /></td></tr>
+<tr class="separator:a3d14de60944c71992a680694c7043619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd0fd82443757daefc5a941c01f790d1" id="r_acd0fd82443757daefc5a941c01f790d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd0fd82443757daefc5a941c01f790d1">line_follower</a> (<a class="el" href="#a8e39389c78487208e813c6871f7a1c05">Side</a> s=<a class="el" href="#a8e39389c78487208e813c6871f7a1c05a811882fecd5c7618d7099ebbd39ea254">Side::left</a>)</td></tr>
+<tr class="memdesc:acd0fd82443757daefc5a941c01f790d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Follows a line using the specified sensor.  <br /></td></tr>
 <tr class="separator:acd0fd82443757daefc5a941c01f790d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5582127d91d7dc42a96ddb2a4e7d46ec" id="r_a5582127d91d7dc42a96ddb2a4e7d46ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5582127d91d7dc42a96ddb2a4e7d46ec">execute_until_line</a> (std::function&lt; void()&gt; fn)</td></tr>
+<tr class="memdesc:a5582127d91d7dc42a96ddb2a4e7d46ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a function until a sensor detects a line.  <br /></td></tr>
 <tr class="separator:a5582127d91d7dc42a96ddb2a4e7d46ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3051a4b4cb1d2918700f71a0431b021e" id="r_a3051a4b4cb1d2918700f71a0431b021e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3051a4b4cb1d2918700f71a0431b021e">execute_until_crossing</a> (std::function&lt; void()&gt; fn)</td></tr>
+<tr class="memdesc:a3051a4b4cb1d2918700f71a0431b021e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs line-following until both sensors detect a line.  <br /></td></tr>
 <tr class="separator:a3051a4b4cb1d2918700f71a0431b021e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac048fbe9e427cb6c80ea65cd3a728fef" id="r_ac048fbe9e427cb6c80ea65cd3a728fef"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classLineManager.html">LineManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac048fbe9e427cb6c80ea65cd3a728fef">get_instance</a> ()</td></tr>
-<tr class="separator:ac048fbe9e427cb6c80ea65cd3a728fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dabe2d4f8d617f8e4d84de00eec8831" id="r_a1dabe2d4f8d617f8e4d84de00eec8831"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dabe2d4f8d617f8e4d84de00eec8831">set_instance</a> (std::shared_ptr&lt; <a class="el" href="classLineManager.html">LineManager</a> &gt; instance)</td></tr>
-<tr class="separator:a1dabe2d4f8d617f8e4d84de00eec8831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e17639b27e3f4c2c47bf34b514ada6f" id="r_a8e17639b27e3f4c2c47bf34b514ada6f"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classLineManager.html">LineManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e17639b27e3f4c2c47bf34b514ada6f">get_instance</a> ()</td></tr>
+<tr class="memdesc:a8e17639b27e3f4c2c47bf34b514ada6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the singleton instance.  <br /></td></tr>
+<tr class="separator:a8e17639b27e3f4c2c47bf34b514ada6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a03f7d74d81b3fbdadb5080e6b06b90" id="r_a0a03f7d74d81b3fbdadb5080e6b06b90"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a03f7d74d81b3fbdadb5080e6b06b90">set_instance</a> (std::shared_ptr&lt; <a class="el" href="classLineManager.html">LineManager</a> &gt; instance)</td></tr>
+<tr class="memdesc:a0a03f7d74d81b3fbdadb5080e6b06b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the singleton instance.  <br /></td></tr>
+<tr class="separator:a0a03f7d74d81b3fbdadb5080e6b06b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manages two light sensors for line following. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a8e39389c78487208e813c6871f7a1c05" name="a8e39389c78487208e813c6871f7a1c05"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e39389c78487208e813c6871f7a1c05">&#9670;&#160;</a></span>Side</h2>
 
@@ -160,6 +178,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Represents the left or right sensor. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8e39389c78487208e813c6871f7a1c05a811882fecd5c7618d7099ebbd39ea254" name="a8e39389c78487208e813c6871f7a1c05a811882fecd5c7618d7099ebbd39ea254"></a>left&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a8e39389c78487208e813c6871f7a1c05a7c4f29407893c334a6cb7a87bf045c0d" name="a8e39389c78487208e813c6871f7a1c05a7c4f29407893c334a6cb7a87bf045c0d"></a>right&#160;</td><td class="fielddoc"></td></tr>
@@ -168,8 +188,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9d6efba50036d69da205fbb9caf037a4" name="a9d6efba50036d69da205fbb9caf037a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d6efba50036d69da205fbb9caf037a4">&#9670;&#160;</a></span>LineManager()</h2>
+<a id="ad8155f9efafda62eda1bbf83a28b49cc" name="ad8155f9efafda62eda1bbf83a28b49cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8155f9efafda62eda1bbf83a28b49cc">&#9670;&#160;</a></span>LineManager()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,19 +197,55 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">LineManager::LineManager </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; kipr::analog::Analog &gt;</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classSensorRegistry.html">SensorRegistry</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>sensor_registry</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; kipr::analog::Analog &gt;</td>          <td class="paramname"><span class="paramname"><em>right</em></span>&#160;)</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classMotorController.html">MotorController</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>motor_controller</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>line_correction_divisor</em></span><span class="paramdefsep"> = </span><span class="paramdefval">6.0f</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Creates a <a class="el" href="classLineManager.html" title="Manages two light sensors for line following.">LineManager</a> for managing two sensors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_sensor_id</td><td>ID of the left light sensor. </td></tr>
+    <tr><td class="paramname">right_sensor_id</td><td>ID of the right light sensor. </td></tr>
+    <tr><td class="paramname">sensor_registry</td><td>Shared pointer to a <code><a class="el" href="classSensorRegistry.html" title="A class for managing sensors and their calibration data.">SensorRegistry</a></code> instance. </td></tr>
+    <tr><td class="paramname">motor_controller</td><td>Shared pointer to a <code><a class="el" href="classMotorController.html" title="Abstract base class for motor controllers.">MotorController</a></code> instance </td></tr>
+    <tr><td class="paramname">line_correction_divisor</td><td>Correction constant for the linefollower </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3d14de60944c71992a680694c7043619" name="a3d14de60944c71992a680694c7043619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d14de60944c71992a680694c7043619">&#9670;&#160;</a></span>calibrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineManager::calibrate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a8e39389c78487208e813c6871f7a1c05">Side</a></td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets the line_follower and prepares it for driving on side <code>s</code> </p>
+
+</div>
+</div>
 <a id="a3051a4b4cb1d2918700f71a0431b021e" name="a3051a4b4cb1d2918700f71a0431b021e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3051a4b4cb1d2918700f71a0431b021e">&#9670;&#160;</a></span>execute_until_crossing()</h2>
 
@@ -204,6 +260,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Runs line-following until both sensors detect a line. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>Function to execute while following the line. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -222,10 +286,18 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Runs a function until a sensor detects a line. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>Function to execute while waiting for line detection. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ac048fbe9e427cb6c80ea65cd3a728fef" name="ac048fbe9e427cb6c80ea65cd3a728fef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac048fbe9e427cb6c80ea65cd3a728fef">&#9670;&#160;</a></span>get_instance()</h2>
+<a id="a8e17639b27e3f4c2c47bf34b514ada6f" name="a8e17639b27e3f4c2c47bf34b514ada6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e17639b27e3f4c2c47bf34b514ada6f">&#9670;&#160;</a></span>get_instance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,7 +306,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::shared_ptr&lt; <a class="el" href="classLineManager.html">LineManager</a> &gt; LineManager::get_instance </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classLineManager.html">LineManager</a> &gt; LineManager::get_instance </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -246,6 +318,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets the singleton instance. </p>
 
 </div>
 </div>
@@ -264,6 +338,15 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Checks if a sensor is detecting a line. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Side to check (<code>left</code> or <code>right</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the sensor is on the line, otherwise <code>false</code>. </dd></dl>
+
 </div>
 </div>
 <a id="acd0fd82443757daefc5a941c01f790d1" name="acd0fd82443757daefc5a941c01f790d1"></a>
@@ -281,10 +364,35 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Follows a line using the specified sensor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Side to use (<code>left</code> or <code>right</code>). Defaults to <code>left</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a1dabe2d4f8d617f8e4d84de00eec8831" name="a1dabe2d4f8d617f8e4d84de00eec8831"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dabe2d4f8d617f8e4d84de00eec8831">&#9670;&#160;</a></span>set_instance()</h2>
+<a id="aab3d21e4ebb85fd6013163b41a6e1ae2" name="aab3d21e4ebb85fd6013163b41a6e1ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3d21e4ebb85fd6013163b41a6e1ae2">&#9670;&#160;</a></span>line_follower_backward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineManager::line_follower_backward </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a8e39389c78487208e813c6871f7a1c05">Side</a></td>          <td class="paramname"><span class="paramname"><em>s</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#a8e39389c78487208e813c6871f7a1c05a811882fecd5c7618d7099ebbd39ea254">Side::left</a></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a03f7d74d81b3fbdadb5080e6b06b90" name="a0a03f7d74d81b3fbdadb5080e6b06b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a03f7d74d81b3fbdadb5080e6b06b90">&#9670;&#160;</a></span>set_instance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +401,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void LineManager::set_instance </td>
+          <td class="memname">void LineManager::set_instance </td>
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classLineManager.html">LineManager</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>instance</em></span></td><td>)</td>
           <td></td>
@@ -306,10 +414,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Sets the singleton instance. </p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/navigation/<a class="el" href="line__manager_8hpp_source.html">line_manager.hpp</a></li>
+<li>src/navigation/<a class="el" href="line__manager_8cpp.html">line_manager.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

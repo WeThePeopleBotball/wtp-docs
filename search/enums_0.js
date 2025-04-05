@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['level_0',['Level',['../classLogger.html#ad766a24576ea8b27ad9d5649cef46d8f',1,'Logger']]]
+  ['side_0',['Side',['../classMotorController.html#ae657b26cd8d1ca9d5f763cffd4647384',1,'MotorController::Side'],['../classLineManager.html#a8e39389c78487208e813c6871f7a1c05',1,'LineManager::Side']]]
 ];

@@ -1,12 +1,15 @@
 var searchData=
 [
-  ['receiver_0',['receiver',['../heartbeat_8hpp.html#a47b20ca9bd215d52c9afd9d3edcd7b8e',1,'heartbeat.hpp']]],
-  ['registry_2ehpp_1',['registry.hpp',['../registry_8hpp.html',1,'']]],
-  ['report_5foutage_5froute_2',['report_outage_route',['../server_8hpp.html#a93cc13829e23d230aed4c706c420d477',1,'server.hpp']]],
-  ['request_5fto_5fposition_5froute_3',['request_to_position_route',['../server_8hpp.html#af7cb380bab51395df8f471b1dff9f8f9',1,'server.hpp']]],
-  ['reset_4',['reset',['../classArmComponent.html#adfe65e25794631f748865d0244382a5c',1,'ArmComponent']]],
-  ['reset_5fcomponent_5',['reset_component',['../classArmController.html#a2377f1a034c4a227aae55abb9b6c67b1',1,'ArmController']]],
-  ['right_6',['right',['../classMotorController.html#a7126fdea75cb2298991fb7132a976568',1,'MotorController::right(float speed)=0'],['../classMotorController.html#aedbe91fea865b55e107d8bbbb2cf16c3',1,'MotorController::right(float speed, float distance)=0'],['../classMecanumMotorController.html#a5e1d23affa6007c001bb0d2a798b9d46',1,'MecanumMotorController::right(float speed) override'],['../classMecanumMotorController.html#a7fcc69390084890d023227f6ccfc4bc1',1,'MecanumMotorController::right(float speed, float distance) override'],['../classDefaultMotorController.html#a4df97f40d02defe369958d445303bd11',1,'DefaultMotorController::right(float speed) override'],['../classDefaultMotorController.html#aaad9cce88883fd8287531f915ffe03a4',1,'DefaultMotorController::right(float speed, float distance) override'],['../classLineManager.html#a8e39389c78487208e813c6871f7a1c05a7c4f29407893c334a6cb7a87bf045c0d',1,'LineManager::right']]],
-  ['right_5fside_7',['right_side',['../classMotorController.html#ae7ecaac1c4cb59e48625cb9f5728f309',1,'MotorController::right_side()'],['../classMecanumMotorController.html#a67793608e7984fe3d874e9b6f1bb53f7',1,'MecanumMotorController::right_side()'],['../classDefaultMotorController.html#a441f270ed898438e3072330e607d53f0',1,'DefaultMotorController::right_side()']]],
-  ['robot_2ehpp_8',['robot.hpp',['../robot_8hpp.html',1,'']]]
+  ['offset_5ffrom_5fnode_0',['offset_from_node',['../structPlaygroundLocation.html#a1cf9a9026269077f43811723bfaf50d8',1,'PlaygroundLocation']]],
+  ['omni_5fdirectional_5fmovement_5fsupported_1',['omni_directional_movement_supported',['../classMotorController.html#a4cb9a6851df94393ca598d279cc9f7ee',1,'MotorController::omni_directional_movement_supported()'],['../classMecanumMotorController.html#ad7b3bdf9ada7701a9e331ffb6df54c13',1,'MecanumMotorController::omni_directional_movement_supported()'],['../classDefaultMotorController.html#a615ad0f410891005f3b39a4c14a289e5',1,'DefaultMotorController::omni_directional_movement_supported()']]],
+  ['operator_21_3d_2',['operator!=',['../classVector2D.html#a6e3662c7e04298aa9827d183be6cd309',1,'Vector2D::operator!=()'],['../classVector3D.html#a1beb474202614ad45db24eab2c237831',1,'Vector3D::operator!=()']]],
+  ['operator_2a_3',['operator*',['../classVector2D.html#ade6501d6c7e51e0b0184ece75c101bc5',1,'Vector2D::operator*()'],['../classVector3D.html#a5a1ef0aee8e6c18619cda870c757f91e',1,'Vector3D::operator*()']]],
+  ['operator_2a_3d_4',['operator*=',['../classVector2D.html#a4b6e791820b5526dd371d98d31205c6e',1,'Vector2D::operator*=()'],['../classVector3D.html#ad078be08246a5abd12e60e5a5c4dd124',1,'Vector3D::operator*=()']]],
+  ['operator_2b_5',['operator+',['../classVector2D.html#ab753e2684f0d7b8dda34664fa35e60d2',1,'Vector2D::operator+()'],['../classVector3D.html#ae5153e5e26852627ccea88d399e13c6e',1,'Vector3D::operator+()']]],
+  ['operator_2b_3d_6',['operator+=',['../classVector2D.html#a71b7ca14fb96d8fe9e904076091ac81c',1,'Vector2D::operator+=()'],['../classVector3D.html#a546241ecc51e49e05e7672ffde26bbf8',1,'Vector3D::operator+=()']]],
+  ['operator_2d_7',['operator-',['../classVector2D.html#a064e055cd20ee42d561f4156108956d8',1,'Vector2D::operator-()'],['../classVector3D.html#a2d77fde2d4f484a639cb4dfd500c3540',1,'Vector3D::operator-()']]],
+  ['operator_2d_3d_8',['operator-=',['../classVector2D.html#a5bda568e5146da1b2e9a56cce980ce45',1,'Vector2D::operator-=()'],['../classVector3D.html#a799f712590c47cc435b929718586555c',1,'Vector3D::operator-=()']]],
+  ['operator_2f_9',['operator/',['../classVector2D.html#a12bd5609ad5336e9c3bb9bf30cbd3ec7',1,'Vector2D::operator/()'],['../classVector3D.html#a2b5e077021802496d032a91a7d81096b',1,'Vector3D::operator/()']]],
+  ['operator_2f_3d_10',['operator/=',['../classVector2D.html#a29be0c5bb27bb3863d9fc7280fcd9cf0',1,'Vector2D::operator/=()'],['../classVector3D.html#a47fc7b6598bc27e7f7f17bd9de60f862',1,'Vector3D::operator/=()']]],
+  ['operator_3d_3d_11',['operator==',['../classVector2D.html#a5c114a34c4247e98e99f04c08f6c8e81',1,'Vector2D::operator==()'],['../classVector3D.html#a0d686fbd9f7cbcd9dc342b28e33fdb3e',1,'Vector3D::operator==()']]]
 ];

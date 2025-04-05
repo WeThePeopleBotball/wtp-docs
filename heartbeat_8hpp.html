@@ -107,14 +107,26 @@ $(function(){initNavTree('heartbeat_8hpp.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">heartbeat.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="heartbeat_8hpp__dep__incl.png" border="0" usemap="#ainclude_2communication_2heartbeat_8hppdep" alt=""/></div>
+<map name="ainclude_2communication_2heartbeat_8hppdep" id="ainclude_2communication_2heartbeat_8hppdep">
+<area shape="rect" title=" " alt="" coords="35,5,189,46"/>
+<area shape="rect" href="heartbeat_8cpp.html" title=" " alt="" coords="5,94,219,120"/>
+<area shape="poly" title=" " alt="" coords="115,62,115,93,109,93,109,62"/>
+</map>
+</div>
+</div>
 <p><a href="heartbeat_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9ce0fad53624012c821bc8fbec6e86b5" id="r_a9ce0fad53624012c821bc8fbec6e86b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ce0fad53624012c821bc8fbec6e86b5">sender</a> ()</td></tr>
+<tr class="memdesc:a9ce0fad53624012c821bc8fbec6e86b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a UDP heartbeat message with the robot's position.  <br /></td></tr>
 <tr class="separator:a9ce0fad53624012c821bc8fbec6e86b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47b20ca9bd215d52c9afd9d3edcd7b8e" id="r_a47b20ca9bd215d52c9afd9d3edcd7b8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47b20ca9bd215d52c9afd9d3edcd7b8e">receiver</a> ()</td></tr>
+<tr class="memdesc:a47b20ca9bd215d52c9afd9d3edcd7b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a UDP heartbeat message from another robot.  <br /></td></tr>
 <tr class="separator:a47b20ca9bd215d52c9afd9d3edcd7b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -133,6 +145,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Receives a UDP heartbeat message from another robot. </p>
+<p>Listens for incoming JSON messages over UDP, updating the system with the received position data. </p>
+
 </div>
 </div>
 <a id="a9ce0fad53624012c821bc8fbec6e86b5" name="a9ce0fad53624012c821bc8fbec6e86b5"></a>
@@ -149,6 +164,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sends a UDP heartbeat message with the robot's position. </p>
+<p>Transmits a JSON message over UDP containing the robot's current position and an offset vector. </p>
 
 </div>
 </div>

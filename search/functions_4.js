@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['easing_0',['Easing',['../classEasing.html#a4011a675c82914764516be63e3c54077',1,'Easing']]],
-  ['elbow_1',['Elbow',['../classElbow.html#a6c209ee4767ea997895844de69af124c',1,'Elbow']]],
-  ['enable_2',['enable',['../classImprovedServo.html#a08254a5266c63e330bf6205d5c4a1a37',1,'ImprovedServo']]],
-  ['enable_5fconsole_5flogging_3',['enable_console_logging',['../classLogger.html#ad5cb1051a0129d69fbb9211417f3658d',1,'Logger']]],
-  ['error_4',['error',['../classLogger.html#ab6042fdfcbb14026098e0df9d6b32f27',1,'Logger']]],
-  ['evaluate_5',['evaluate',['../classEasing.html#a6b235db3286e46f7328fc81acafc68ac',1,'Easing']]],
-  ['execute_6',['execute',['../classWallSquareUp.html#a3d75572c7b3bce4befd77cf8449b322d',1,'WallSquareUp::execute()'],['../classLineSquareUp.html#abb1ab3833eaa67ec91ce13a5c94cfca8',1,'LineSquareUp::execute()']]],
-  ['execute_5funtil_5fcrossing_7',['execute_until_crossing',['../classLineManager.html#a3051a4b4cb1d2918700f71a0431b021e',1,'LineManager']]],
-  ['execute_5funtil_5fline_8',['execute_until_line',['../classLineManager.html#a5582127d91d7dc42a96ddb2a4e7d46ec',1,'LineManager']]]
+  ['easing_5fin_5fout_5fcubic_0',['easing_in_out_cubic',['../easing_8cpp.html#a941ea095260b180c3979946248b8fe95',1,'easing_in_out_cubic(float x):&#160;easing.cpp'],['../easing_8hpp.html#a941ea095260b180c3979946248b8fe95',1,'easing_in_out_cubic(float x):&#160;easing.cpp']]],
+  ['easing_5fin_5fout_5fexpo_1',['easing_in_out_expo',['../easing_8cpp.html#ae588b2777576ad287dc9cb7c5e91d135',1,'easing_in_out_expo(float x):&#160;easing.cpp'],['../easing_8hpp.html#ae588b2777576ad287dc9cb7c5e91d135',1,'easing_in_out_expo(float x):&#160;easing.cpp']]],
+  ['easing_5flinear_2',['easing_linear',['../easing_8cpp.html#a40add30bea0eff54e51e0a5b1793077b',1,'easing_linear(float x):&#160;easing.cpp'],['../easing_8hpp.html#a40add30bea0eff54e51e0a5b1793077b',1,'easing_linear(float x):&#160;easing.cpp']]],
+  ['easing_5fout_5fcirc_3',['easing_out_circ',['../easing_8cpp.html#a2bfcafb0907e18f4fc3fe9ccc9dd64da',1,'easing_out_circ(float x):&#160;easing.cpp'],['../easing_8hpp.html#a2bfcafb0907e18f4fc3fe9ccc9dd64da',1,'easing_out_circ(float x):&#160;easing.cpp']]],
+  ['enable_4',['enable',['../classImprovedServo.html#a08254a5266c63e330bf6205d5c4a1a37',1,'ImprovedServo']]],
+  ['execute_5',['execute',['../classWallSquareUp.html#a3707a246f2510fb5899e209a0a756122',1,'WallSquareUp::execute()'],['../classLineSquareUp.html#ae6d5688907f156764d710f59765345bd',1,'LineSquareUp::execute()']]],
+  ['execute_5funtil_5fcrossing_6',['execute_until_crossing',['../classLineManager.html#a3051a4b4cb1d2918700f71a0431b021e',1,'LineManager']]],
+  ['execute_5funtil_5fline_7',['execute_until_line',['../classLineManager.html#a5582127d91d7dc42a96ddb2a4e7d46ec',1,'LineManager']]]
 ];

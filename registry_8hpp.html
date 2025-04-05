@@ -108,17 +108,60 @@ $(function(){initNavTree('registry_8hpp.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;bits/stdc++.h&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;kipr/wombat.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for registry.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="registry_8hpp__incl.png" border="0" usemap="#ainclude_2sensor_2registry_8hpp" alt=""/></div>
 <map name="ainclude_2sensor_2registry_8hpp" id="ainclude_2sensor_2registry_8hpp">
-<area shape="rect" title=" " alt="" coords="32,5,207,31"/>
+<area shape="rect" title=" " alt="" coords="78,5,254,31"/>
 <area shape="rect" title=" " alt="" coords="5,79,103,105"/>
-<area shape="poly" title=" " alt="" coords="111,33,77,69,73,66,107,29"/>
-<area shape="rect" title=" " alt="" coords="126,79,243,105"/>
-<area shape="poly" title=" " alt="" coords="132,29,165,66,161,69,128,33"/>
+<area shape="poly" title=" " alt="" coords="148,34,87,73,84,68,146,29"/>
+<area shape="rect" title=" " alt="" coords="127,79,205,105"/>
+<area shape="poly" title=" " alt="" coords="169,31,169,63,163,63,163,31"/>
+<area shape="rect" title=" " alt="" coords="229,79,346,105"/>
+<area shape="poly" title=" " alt="" coords="188,29,255,68,252,73,185,34"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="registry_8hpp__dep__incl.png" border="0" usemap="#ainclude_2sensor_2registry_8hppdep" alt=""/></div>
+<map name="ainclude_2sensor_2registry_8hppdep" id="ainclude_2sensor_2registry_8hppdep">
+<area shape="rect" title=" " alt="" coords="740,5,915,31"/>
+<area shape="rect" href="improved__motor_8hpp.html" title=" " alt="" coords="552,79,737,120"/>
+<area shape="poly" title=" " alt="" coords="786,40,691,81,689,76,784,35"/>
+<area shape="rect" href="line__manager_8hpp.html" title=" " alt="" coords="791,264,917,304"/>
+<area shape="poly" title=" " alt="" coords="833,46,855,263,849,264,827,47"/>
+<area shape="rect" href="registry_8cpp.html" title=" " alt="" coords="864,86,1017,112"/>
+<area shape="poly" title=" " alt="" coords="858,38,925,84,922,88,855,42"/>
+<area shape="rect" href="motor__controller_8hpp.html" title=" " alt="" coords="561,168,728,208"/>
+<area shape="poly" title=" " alt="" coords="647,135,647,167,642,167,642,135"/>
+<area shape="rect" href="improved__motor_8cpp.html" title=" " alt="" coords="376,168,537,208"/>
+<area shape="poly" title=" " alt="" coords="589,129,500,170,498,165,587,124"/>
+<area shape="poly" title=" " alt="" coords="703,213,811,261,809,266,701,217"/>
+<area shape="rect" href="playground_8hpp.html" title=" " alt="" coords="722,449,847,489"/>
+<area shape="poly" title=" " alt="" coords="674,219,700,255,728,308,751,362,781,447,776,449,746,364,723,310,696,258,670,222"/>
+<area shape="rect" href="square__up_8hpp.html" title=" " alt="" coords="591,360,717,401"/>
+<area shape="poly" title=" " alt="" coords="667,221,681,256,684,284,681,313,666,360,660,359,675,311,679,284,675,257,662,223"/>
+<area shape="rect" href="default__motor__controller_8cpp.html" title=" " alt="" coords="5,256,151,312"/>
+<area shape="poly" title=" " alt="" coords="546,211,437,225,352,232,268,240,163,259,152,262,150,256,161,254,267,235,351,226,437,220,545,206"/>
+<area shape="rect" href="mecanum__motor__controller_8cpp.html" title=" " alt="" coords="175,256,320,312"/>
+<area shape="poly" title=" " alt="" coords="546,212,332,259,321,262,320,257,331,254,545,207"/>
+<area shape="rect" href="motor__controller_8cpp.html" title=" " alt="" coords="344,264,546,304"/>
+<area shape="poly" title=" " alt="" coords="590,218,488,266,485,261,588,213"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="570,271,666,297"/>
+<area shape="poly" title=" " alt="" coords="638,224,624,272,619,270,632,222"/>
+<area shape="poly" title=" " alt="" coords="896,313,915,332,931,354,938,378,931,402,915,422,894,437,849,457,847,452,891,432,911,418,926,399,932,378,926,356,911,335,892,317"/>
+<area shape="poly" title=" " alt="" coords="799,314,697,362,695,357,797,309"/>
+<area shape="rect" href="line__manager_8cpp.html" title=" " alt="" coords="791,360,917,401"/>
+<area shape="poly" title=" " alt="" coords="857,320,857,360,851,360,851,320"/>
+<area shape="rect" href="playground_8cpp.html" title=" " alt="" coords="688,537,881,563"/>
+<area shape="poly" title=" " alt="" coords="787,505,787,537,782,537,782,505"/>
+<area shape="poly" title=" " alt="" coords="698,407,757,446,754,450,695,412"/>
+<area shape="rect" href="square__up_8cpp.html" title=" " alt="" coords="552,449,697,489"/>
+<area shape="poly" title=" " alt="" coords="645,416,634,449,629,447,640,415"/>
 </map>
 </div>
 </div>
@@ -127,8 +170,10 @@ Include dependency graph for registry.hpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalibrationStore.html">CalibrationStore&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template class that stores and retrieves calibration values for sensors.  <a href="classCalibrationStore.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensorRegistry.html">SensorRegistry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for managing sensors and their calibration data.  <a href="classSensorRegistry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

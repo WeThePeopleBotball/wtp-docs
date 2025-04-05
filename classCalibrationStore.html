@@ -109,18 +109,35 @@ $(function(){initNavTree('classCalibrationStore.html',''); initResizable(true); 
 </div><!--header-->
 <div class="contents">
 
+<p>A template class that stores and retrieves calibration values for sensors.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="registry_8hpp_source.html">registry.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a335b84abccf5ae99c731082234f08a23" id="r_a335b84abccf5ae99c731082234f08a23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a335b84abccf5ae99c731082234f08a23">CalibrationStore</a> (unordered_map&lt; string, function&lt; T &gt; &gt; initiator_funcs)</td></tr>
-<tr class="separator:a335b84abccf5ae99c731082234f08a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd35f0f0dd7bf7efecbb32af82d3fb98" id="r_afd35f0f0dd7bf7efecbb32af82d3fb98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd35f0f0dd7bf7efecbb32af82d3fb98">CalibrationStore</a> (unordered_map&lt; string, function&lt; T()&gt; &gt; initiator_funcs)</td></tr>
+<tr class="memdesc:afd35f0f0dd7bf7efecbb32af82d3fb98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classCalibrationStore.html" title="A template class that stores and retrieves calibration values for sensors.">CalibrationStore</a> object with a set of initiator functions.  <br /></td></tr>
+<tr class="separator:afd35f0f0dd7bf7efecbb32af82d3fb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a986355eff713a9ac6643c4f81bc8d" id="r_a75a986355eff713a9ac6643c4f81bc8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75a986355eff713a9ac6643c4f81bc8d">CalibrationStore</a> ()=default</td></tr>
+<tr class="separator:a75a986355eff713a9ac6643c4f81bc8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a964d734852b03ec14173fbcbbe390444" id="r_a964d734852b03ec14173fbcbbe390444"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a964d734852b03ec14173fbcbbe390444">get_value</a> (string id)</td></tr>
+<tr class="memdesc:a964d734852b03ec14173fbcbbe390444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a calibration value from the store using its ID.  <br /></td></tr>
 <tr class="separator:a964d734852b03ec14173fbcbbe390444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a335b84abccf5ae99c731082234f08a23" name="a335b84abccf5ae99c731082234f08a23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a335b84abccf5ae99c731082234f08a23">&#9670;&#160;</a></span>CalibrationStore()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+class CalibrationStore&lt; T &gt;</div><p>A template class that stores and retrieves calibration values for sensors. </p>
+<p>This class is used to manage the calibration values for sensors. Each calibration value is associated with an <code>id</code>, and the class stores these values in a map. The calibration values are initiated by calling the corresponding initiator function.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of the calibration value. It can be any type that represents the calibration data for the sensors, such as <code>short</code>, <code>float</code>, or <code>bool</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="afd35f0f0dd7bf7efecbb32af82d3fb98" name="afd35f0f0dd7bf7efecbb32af82d3fb98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd35f0f0dd7bf7efecbb32af82d3fb98">&#9670;&#160;</a></span>CalibrationStore() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,10 +147,46 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classCalibrationStore.html">CalibrationStore</a>&lt; T &gt;<a class="el" href="classCalibrationStore.html">::CalibrationStore</a> </td>
           <td>(</td>
-          <td class="paramtype">unordered_map&lt; string, function&lt; T &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>initiator_funcs</em></span></td><td>)</td>
+          <td class="paramtype">unordered_map&lt; string, function&lt; T()&gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>initiator_funcs</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classCalibrationStore.html" title="A template class that stores and retrieves calibration values for sensors.">CalibrationStore</a> object with a set of initiator functions. </p>
+<p>Initializes the <code><a class="el" href="classCalibrationStore.html" title="A template class that stores and retrieves calibration values for sensors.">CalibrationStore</a></code> with a set of initiator functions that generate calibration values. The initiator functions are mapped to unique <code>id</code> strings. These functions are expected to return values of type <code>T</code> (e.g., short, float).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initiator_funcs</td><td>A map where each key is a calibration <code>id</code> (string), and the corresponding value is a function that returns a calibration value of type <code>T</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a75a986355eff713a9ac6643c4f81bc8d" name="a75a986355eff713a9ac6643c4f81bc8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75a986355eff713a9ac6643c4f81bc8d">&#9670;&#160;</a></span>CalibrationStore() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCalibrationStore.html">CalibrationStore</a>&lt; T &gt;<a class="el" href="classCalibrationStore.html">::CalibrationStore</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -156,10 +209,21 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Retrieves a calibration value from the store using its ID. </p>
+<p>This method retrieves a stored calibration value based on the specified <code>id</code>. If the <code>id</code> exists in the store, it returns the associated value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The unique identifier associated with the desired calibration value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The calibration value associated with the given <code>id</code>. </dd></dl>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/sensor/<a class="el" href="registry_8hpp_source.html">registry.hpp</a></li>
+<li>src/sensor/<a class="el" href="registry_8cpp.html">registry.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

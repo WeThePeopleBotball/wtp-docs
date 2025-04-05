@@ -110,25 +110,34 @@ $(function(){initNavTree('classWallSquareUp.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>Aligns the robot with a wall to recalibrate its position using bumper sensors.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="square__up_8hpp_source.html">square_up.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a85231103f2ec3e30885879bf0c414a3a" id="r_a85231103f2ec3e30885879bf0c414a3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85231103f2ec3e30885879bf0c414a3a">WallSquareUp</a> (std::shared_ptr&lt; <a class="el" href="classMotorController.html">MotorController</a> &gt; motor_controller, std::shared_ptr&lt; kipr::digital::Digital &gt; left_sensor, std::shared_ptr&lt; kipr::digital::Digital &gt; right_sensor)</td></tr>
-<tr class="separator:a85231103f2ec3e30885879bf0c414a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d75572c7b3bce4befd77cf8449b322d" id="r_a3d75572c7b3bce4befd77cf8449b322d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d75572c7b3bce4befd77cf8449b322d">execute</a> (float speed)</td></tr>
-<tr class="separator:a3d75572c7b3bce4befd77cf8449b322d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f7d9b68253eb626c5903ea1d0052f4e" id="r_a3f7d9b68253eb626c5903ea1d0052f4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f7d9b68253eb626c5903ea1d0052f4e">WallSquareUp</a> (std::shared_ptr&lt; <a class="el" href="classMotorController.html">MotorController</a> &gt; motor_controller, std::shared_ptr&lt; <a class="el" href="classSensorRegistry.html">SensorRegistry</a> &gt; sensor_registry)</td></tr>
+<tr class="memdesc:a3f7d9b68253eb626c5903ea1d0052f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classWallSquareUp.html" title="Aligns the robot with a wall to recalibrate its position using bumper sensors.">WallSquareUp</a> instance.  <br /></td></tr>
+<tr class="separator:a3f7d9b68253eb626c5903ea1d0052f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3707a246f2510fb5899e209a0a756122" id="r_a3707a246f2510fb5899e209a0a756122"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3707a246f2510fb5899e209a0a756122">execute</a> (float speed)</td></tr>
+<tr class="memdesc:a3707a246f2510fb5899e209a0a756122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes one iteration of the wall squaring process. Drives both sides forward until each bumper is pressed.  <br /></td></tr>
+<tr class="separator:a3707a246f2510fb5899e209a0a756122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a553feae0da7adeb9412b914434ca7c6d" id="r_a553feae0da7adeb9412b914434ca7c6d"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classWallSquareUp.html">WallSquareUp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a553feae0da7adeb9412b914434ca7c6d">get_instance</a> ()</td></tr>
-<tr class="separator:a553feae0da7adeb9412b914434ca7c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30e914269dfaf8ed40762d56c5b1c8e9" id="r_a30e914269dfaf8ed40762d56c5b1c8e9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30e914269dfaf8ed40762d56c5b1c8e9">set_instance</a> (std::shared_ptr&lt; <a class="el" href="classWallSquareUp.html">WallSquareUp</a> &gt; instance)</td></tr>
-<tr class="separator:a30e914269dfaf8ed40762d56c5b1c8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9407b1bbefa9b6e33e1c0cf4637c398d" id="r_a9407b1bbefa9b6e33e1c0cf4637c398d"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classWallSquareUp.html">WallSquareUp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9407b1bbefa9b6e33e1c0cf4637c398d">get_instance</a> ()</td></tr>
+<tr class="memdesc:a9407b1bbefa9b6e33e1c0cf4637c398d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the singleton instance.  <br /></td></tr>
+<tr class="separator:a9407b1bbefa9b6e33e1c0cf4637c398d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b58c8b4783de9f4cdce04a7a5ac99c1" id="r_a7b58c8b4783de9f4cdce04a7a5ac99c1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b58c8b4783de9f4cdce04a7a5ac99c1">set_instance</a> (std::shared_ptr&lt; <a class="el" href="classWallSquareUp.html">WallSquareUp</a> &gt; instance)</td></tr>
+<tr class="memdesc:a7b58c8b4783de9f4cdce04a7a5ac99c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the singleton instance.  <br /></td></tr>
+<tr class="separator:a7b58c8b4783de9f4cdce04a7a5ac99c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a85231103f2ec3e30885879bf0c414a3a" name="a85231103f2ec3e30885879bf0c414a3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85231103f2ec3e30885879bf0c414a3a">&#9670;&#160;</a></span>WallSquareUp()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Aligns the robot with a wall to recalibrate its position using bumper sensors. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3f7d9b68253eb626c5903ea1d0052f4e" name="a3f7d9b68253eb626c5903ea1d0052f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f7d9b68253eb626c5903ea1d0052f4e">&#9670;&#160;</a></span>WallSquareUp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,27 +150,31 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; kipr::digital::Digital &gt;</td>          <td class="paramname"><span class="paramname"><em>left_sensor</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::shared_ptr&lt; kipr::digital::Digital &gt;</td>          <td class="paramname"><span class="paramname"><em>right_sensor</em></span>&#160;)</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classSensorRegistry.html">SensorRegistry</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>sensor_registry</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructs a <a class="el" href="classWallSquareUp.html" title="Aligns the robot with a wall to recalibrate its position using bumper sensors.">WallSquareUp</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motor_controller</td><td>Shared pointer to the motor controller. </td></tr>
+    <tr><td class="paramname">sensor_registry</td><td>Shared pointer to the <code><a class="el" href="classSensorRegistry.html" title="A class for managing sensors and their calibration data.">SensorRegistry</a></code> for sensor data management. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3d75572c7b3bce4befd77cf8449b322d" name="a3d75572c7b3bce4befd77cf8449b322d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d75572c7b3bce4befd77cf8449b322d">&#9670;&#160;</a></span>execute()</h2>
+<a id="a3707a246f2510fb5899e209a0a756122" name="a3707a246f2510fb5899e209a0a756122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3707a246f2510fb5899e209a0a756122">&#9670;&#160;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void WallSquareUp::execute </td>
+          <td class="memname">bool WallSquareUp::execute </td>
           <td>(</td>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>speed</em></span></td><td>)</td>
           <td></td>
@@ -169,10 +182,19 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Executes one iteration of the wall squaring process. Drives both sides forward until each bumper is pressed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>Movement speed during squaring. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if aligned (both buttons pressed), false otherwise. </dd></dl>
+
 </div>
 </div>
-<a id="a553feae0da7adeb9412b914434ca7c6d" name="a553feae0da7adeb9412b914434ca7c6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a553feae0da7adeb9412b914434ca7c6d">&#9670;&#160;</a></span>get_instance()</h2>
+<a id="a9407b1bbefa9b6e33e1c0cf4637c398d" name="a9407b1bbefa9b6e33e1c0cf4637c398d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9407b1bbefa9b6e33e1c0cf4637c398d">&#9670;&#160;</a></span>get_instance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +203,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::shared_ptr&lt; <a class="el" href="classWallSquareUp.html">WallSquareUp</a> &gt; WallSquareUp::get_instance </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classWallSquareUp.html">WallSquareUp</a> &gt; WallSquareUp::get_instance </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -194,10 +216,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Retrieves the singleton instance. </p>
+
 </div>
 </div>
-<a id="a30e914269dfaf8ed40762d56c5b1c8e9" name="a30e914269dfaf8ed40762d56c5b1c8e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30e914269dfaf8ed40762d56c5b1c8e9">&#9670;&#160;</a></span>set_instance()</h2>
+<a id="a7b58c8b4783de9f4cdce04a7a5ac99c1" name="a7b58c8b4783de9f4cdce04a7a5ac99c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b58c8b4783de9f4cdce04a7a5ac99c1">&#9670;&#160;</a></span>set_instance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +230,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void WallSquareUp::set_instance </td>
+          <td class="memname">void WallSquareUp::set_instance </td>
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classWallSquareUp.html">WallSquareUp</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>instance</em></span></td><td>)</td>
           <td></td>
@@ -219,10 +243,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Sets the singleton instance. </p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/navigation/<a class="el" href="square__up_8hpp_source.html">square_up.hpp</a></li>
+<li>src/navigation/<a class="el" href="square__up_8cpp.html">square_up.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

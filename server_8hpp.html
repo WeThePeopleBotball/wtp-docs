@@ -107,15 +107,25 @@ $(function(){initNavTree('server_8hpp.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">server.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;crow/crow.hpp&quot;</code><br />
+<div class="textblock"><code>#include &quot;crow.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for server.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="server_8hpp__incl.png" border="0" usemap="#ainclude_2communication_2server_8hpp" alt=""/></div>
 <map name="ainclude_2communication_2server_8hpp" id="ainclude_2communication_2server_8hpp">
 <area shape="rect" title=" " alt="" coords="5,5,160,46"/>
-<area shape="rect" title=" " alt="" coords="30,94,135,120"/>
+<area shape="rect" title=" " alt="" coords="46,94,119,120"/>
 <area shape="poly" title=" " alt="" coords="85,46,85,78,80,78,80,46"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="server_8hpp__dep__incl.png" border="0" usemap="#ainclude_2communication_2server_8hppdep" alt=""/></div>
+<map name="ainclude_2communication_2server_8hppdep" id="ainclude_2communication_2server_8hppdep">
+<area shape="rect" title=" " alt="" coords="26,5,180,46"/>
+<area shape="rect" href="server_8cpp.html" title=" " alt="" coords="5,94,201,120"/>
+<area shape="poly" title=" " alt="" coords="106,62,106,93,100,93,100,62"/>
 </map>
 </div>
 </div>
@@ -123,116 +133,149 @@ Include dependency graph for server.hpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a77a1b2f94d549b36fd46e6f233648036" id="r_a77a1b2f94d549b36fd46e6f233648036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77a1b2f94d549b36fd46e6f233648036">get_position_route</a> (const crow::request &amp;req, crow::response &amp;res)</td></tr>
-<tr class="separator:a77a1b2f94d549b36fd46e6f233648036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7cb380bab51395df8f471b1dff9f8f9" id="r_af7cb380bab51395df8f471b1dff9f8f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7cb380bab51395df8f471b1dff9f8f9">request_to_position_route</a> (const crow::request &amp;req, crow::response &amp;res)</td></tr>
-<tr class="separator:af7cb380bab51395df8f471b1dff9f8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93cc13829e23d230aed4c706c420d477" id="r_a93cc13829e23d230aed4c706c420d477"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93cc13829e23d230aed4c706c420d477">report_outage_route</a> (const crow::request &amp;req, crow::response &amp;res)</td></tr>
-<tr class="separator:a93cc13829e23d230aed4c706c420d477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6498fa90a75fe74120d0978bb91b0c48" id="r_a6498fa90a75fe74120d0978bb91b0c48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6498fa90a75fe74120d0978bb91b0c48">set_custom_route</a> (const crow::request &amp;req, crow::response &amp;res)</td></tr>
-<tr class="separator:a6498fa90a75fe74120d0978bb91b0c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f77ad5cfc7ae1d04c9dee24aa20cd04" id="r_a3f77ad5cfc7ae1d04c9dee24aa20cd04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f77ad5cfc7ae1d04c9dee24aa20cd04">setup_routes</a> (crow::SimpleApp &amp;app)</td></tr>
-<tr class="separator:a3f77ad5cfc7ae1d04c9dee24aa20cd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f09e0d115fbdc278186455b0fed7521" id="r_a9f09e0d115fbdc278186455b0fed7521"><td class="memItemLeft" align="right" valign="top">crow::response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f09e0d115fbdc278186455b0fed7521">get_position</a> (const crow::request &amp;req)</td></tr>
+<tr class="memdesc:a9f09e0d115fbdc278186455b0fed7521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an HTTP request to retrieve the robot's position.  <br /></td></tr>
+<tr class="separator:a9f09e0d115fbdc278186455b0fed7521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a036183e28ef3359cfce2cd5218470399" id="r_a036183e28ef3359cfce2cd5218470399"><td class="memItemLeft" align="right" valign="top">crow::response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a036183e28ef3359cfce2cd5218470399">request_to_position</a> (const crow::request &amp;req)</td></tr>
+<tr class="memdesc:a036183e28ef3359cfce2cd5218470399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an HTTP request to move the robot to a target position.  <br /></td></tr>
+<tr class="separator:a036183e28ef3359cfce2cd5218470399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af880c77fbf2ae047d25a30f8e63ed304" id="r_af880c77fbf2ae047d25a30f8e63ed304"><td class="memItemLeft" align="right" valign="top">crow::response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af880c77fbf2ae047d25a30f8e63ed304">report_outage</a> (const crow::request &amp;req)</td></tr>
+<tr class="memdesc:af880c77fbf2ae047d25a30f8e63ed304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an HTTP request to report an outage or issue.  <br /></td></tr>
+<tr class="separator:af880c77fbf2ae047d25a30f8e63ed304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3efeabd68126adadff86ab10087afa28" id="r_a3efeabd68126adadff86ab10087afa28"><td class="memItemLeft" align="right" valign="top">crow::response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3efeabd68126adadff86ab10087afa28">set_custom</a> (const crow::request &amp;req)</td></tr>
+<tr class="memdesc:a3efeabd68126adadff86ab10087afa28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an HTTP request to set custom robot parameters.  <br /></td></tr>
+<tr class="separator:a3efeabd68126adadff86ab10087afa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da7ffae2f9ed1e01fecee977d4987c9" id="r_a1da7ffae2f9ed1e01fecee977d4987c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1da7ffae2f9ed1e01fecee977d4987c9">setup</a> (crow::SimpleApp &amp;app)</td></tr>
+<tr class="memdesc:a1da7ffae2f9ed1e01fecee977d4987c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the Crow web application with endpoint routes.  <br /></td></tr>
+<tr class="separator:a1da7ffae2f9ed1e01fecee977d4987c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a77a1b2f94d549b36fd46e6f233648036" name="a77a1b2f94d549b36fd46e6f233648036"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77a1b2f94d549b36fd46e6f233648036">&#9670;&#160;</a></span>get_position_route()</h2>
+<a id="a9f09e0d115fbdc278186455b0fed7521" name="a9f09e0d115fbdc278186455b0fed7521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f09e0d115fbdc278186455b0fed7521">&#9670;&#160;</a></span>get_position()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void get_position_route </td>
+          <td class="memname">crow::response get_position </td>
           <td>(</td>
-          <td class="paramtype">const crow::request &amp;</td>          <td class="paramname"><span class="paramname"><em>req</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const crow::request &amp;</td>          <td class="paramname"><span class="paramname"><em>req</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">crow::response &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Handles an HTTP request to retrieve the robot's position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>The incoming request. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>crow::response with the robot's current position in JSON format. </dd></dl>
+
 </div>
 </div>
-<a id="a93cc13829e23d230aed4c706c420d477" name="a93cc13829e23d230aed4c706c420d477"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93cc13829e23d230aed4c706c420d477">&#9670;&#160;</a></span>report_outage_route()</h2>
+<a id="af880c77fbf2ae047d25a30f8e63ed304" name="af880c77fbf2ae047d25a30f8e63ed304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af880c77fbf2ae047d25a30f8e63ed304">&#9670;&#160;</a></span>report_outage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void report_outage_route </td>
+          <td class="memname">crow::response report_outage </td>
           <td>(</td>
-          <td class="paramtype">const crow::request &amp;</td>          <td class="paramname"><span class="paramname"><em>req</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const crow::request &amp;</td>          <td class="paramname"><span class="paramname"><em>req</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">crow::response &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Handles an HTTP request to report an outage or issue. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>The request containing issue details in JSON format. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>crow::response acknowledging the report. </dd></dl>
+
 </div>
 </div>
-<a id="af7cb380bab51395df8f471b1dff9f8f9" name="af7cb380bab51395df8f471b1dff9f8f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7cb380bab51395df8f471b1dff9f8f9">&#9670;&#160;</a></span>request_to_position_route()</h2>
+<a id="a036183e28ef3359cfce2cd5218470399" name="a036183e28ef3359cfce2cd5218470399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a036183e28ef3359cfce2cd5218470399">&#9670;&#160;</a></span>request_to_position()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void request_to_position_route </td>
+          <td class="memname">crow::response request_to_position </td>
           <td>(</td>
-          <td class="paramtype">const crow::request &amp;</td>          <td class="paramname"><span class="paramname"><em>req</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const crow::request &amp;</td>          <td class="paramname"><span class="paramname"><em>req</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">crow::response &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Handles an HTTP request to move the robot to a target position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>The request containing the target position in JSON format. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>crow::response indicating success or failure. </dd></dl>
+
 </div>
 </div>
-<a id="a6498fa90a75fe74120d0978bb91b0c48" name="a6498fa90a75fe74120d0978bb91b0c48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6498fa90a75fe74120d0978bb91b0c48">&#9670;&#160;</a></span>set_custom_route()</h2>
+<a id="a3efeabd68126adadff86ab10087afa28" name="a3efeabd68126adadff86ab10087afa28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3efeabd68126adadff86ab10087afa28">&#9670;&#160;</a></span>set_custom()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void set_custom_route </td>
+          <td class="memname">crow::response set_custom </td>
           <td>(</td>
-          <td class="paramtype">const crow::request &amp;</td>          <td class="paramname"><span class="paramname"><em>req</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const crow::request &amp;</td>          <td class="paramname"><span class="paramname"><em>req</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">crow::response &amp;</td>          <td class="paramname"><span class="paramname"><em>res</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Handles an HTTP request to set custom robot parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>The request containing configuration data in JSON format. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>crow::response indicating success or failure. </dd></dl>
+
 </div>
 </div>
-<a id="a3f77ad5cfc7ae1d04c9dee24aa20cd04" name="a3f77ad5cfc7ae1d04c9dee24aa20cd04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f77ad5cfc7ae1d04c9dee24aa20cd04">&#9670;&#160;</a></span>setup_routes()</h2>
+<a id="a1da7ffae2f9ed1e01fecee977d4987c9" name="a1da7ffae2f9ed1e01fecee977d4987c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da7ffae2f9ed1e01fecee977d4987c9">&#9670;&#160;</a></span>setup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void setup_routes </td>
+          <td class="memname">void setup </td>
           <td>(</td>
           <td class="paramtype">crow::SimpleApp &amp;</td>          <td class="paramname"><span class="paramname"><em>app</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Configures the Crow web application with endpoint routes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app</td><td>The Crow application instance to configure. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
