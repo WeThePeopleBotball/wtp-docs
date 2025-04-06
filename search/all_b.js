@@ -11,7 +11,7 @@ var searchData=
   ['move_5fat_5fvelocity_5fpid_8',['move_at_velocity_pid',['../classImprovedMotor.html#a72e0c1d6897c2617b448e802209ed4ee',1,'ImprovedMotor']]],
   ['move_5fpid_5fdistance_9',['move_pid_distance',['../classImprovedMotor.html#a10b97f36723c4a2d217ea5ca482e266a',1,'ImprovedMotor']]],
   ['move_5fpid_5frelative_5fdistance_10',['move_pid_relative_distance',['../classImprovedMotor.html#adb4b26b734f2456da4aee981666f0c4b',1,'ImprovedMotor']]],
-  ['move_5fto_11',['move_to',['../classArmController.html#aefe1e4892431b297b4d70c7227b6e283',1,'ArmController']]],
+  ['move_5fto_11',['move_to',['../classArmController.html#a9c7a05e24892f35482874260451a1769',1,'ArmController']]],
   ['move_5fto_5fangles_12',['move_to_angles',['../classArmController.html#a938ca5b8960d7fd04ab2107d75de50c0',1,'ArmController']]],
   ['move_5fto_5fposition_13',['move_to_position',['../classImprovedMotor.html#a5a6382a434421393b205015ade5e7b61',1,'ImprovedMotor']]],
   ['move_5fto_5frelative_5fposition_14',['move_to_relative_position',['../classImprovedMotor.html#aac43e9de01b46b4336d0d4b851ecfc73',1,'ImprovedMotor']]],

@@ -116,9 +116,9 @@ $(function(){initNavTree('classArmController.html',''); initResizable(true); });
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3be94d51cd624d14e9fb686893937afa" id="r_a3be94d51cd624d14e9fb686893937afa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3be94d51cd624d14e9fb686893937afa">ArmController</a> (double L1, double L2, double Lb, double dx, double dy, std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; s1, std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; s2, std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; s3, std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; claw, int claw_closed_ticks, int claw_open_ticks)</td></tr>
 <tr class="separator:a3be94d51cd624d14e9fb686893937afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefe1e4892431b297b4d70c7227b6e283" id="r_aefe1e4892431b297b4d70c7227b6e283"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefe1e4892431b297b4d70c7227b6e283">move_to</a> (double x, double y)</td></tr>
-<tr class="memdesc:aefe1e4892431b297b4d70c7227b6e283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve inverse kinematics and move servos to that position.  <br /></td></tr>
-<tr class="separator:aefe1e4892431b297b4d70c7227b6e283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c7a05e24892f35482874260451a1769" id="r_a9c7a05e24892f35482874260451a1769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c7a05e24892f35482874260451a1769">move_to</a> (double x, double y, double phi_deg)</td></tr>
+<tr class="memdesc:a9c7a05e24892f35482874260451a1769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve inverse kinematics and move servos to that position.  <br /></td></tr>
+<tr class="separator:a9c7a05e24892f35482874260451a1769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfdc598892b9debb7f50462b07f2f07f" id="r_adfdc598892b9debb7f50462b07f2f07f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfdc598892b9debb7f50462b07f2f07f">get_tip_position</a> (double theta1, double theta2, double theta3) const</td></tr>
 <tr class="memdesc:adfdc598892b9debb7f50462b07f2f07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate tip position based on given angles.  <br /></td></tr>
 <tr class="separator:adfdc598892b9debb7f50462b07f2f07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,8 +278,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aefe1e4892431b297b4d70c7227b6e283" name="aefe1e4892431b297b4d70c7227b6e283"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefe1e4892431b297b4d70c7227b6e283">&#9670;&#160;</a></span>move_to()</h2>
+<a id="a9c7a05e24892f35482874260451a1769" name="a9c7a05e24892f35482874260451a1769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c7a05e24892f35482874260451a1769">&#9670;&#160;</a></span>move_to()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +292,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>phi_deg</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -343,7 +348,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set claw position (0 = closed, 1 = open) Set claw position based on percentage (0 = fully closed, 100 = fully open) </p>
+<p>Set claw position (0 = closed, 100 = open) Set claw position based on percentage (0 = fully closed, 100 = fully open) </p>
 
 </div>
 </div>

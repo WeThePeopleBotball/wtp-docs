@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['rad2deg_0',['RAD2DEG',['../arm__controller_8hpp.html#ae504e88d86995cfed8e64fc1a6b7a63e',1,'arm_controller.hpp']]],
-  ['robot_5fmutex_1',['robot_mutex',['../server_8cpp.html#af453fd1444c9710f0bc4e87e560109f7',1,'server.cpp']]]
+  ['offset_5ffrom_5fnode_0',['offset_from_node',['../structPlaygroundLocation.html#a1cf9a9026269077f43811723bfaf50d8',1,'PlaygroundLocation']]]
 ];

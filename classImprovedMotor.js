@@ -1,6 +1,6 @@
 var classImprovedMotor =
 [
-    [ "ImprovedMotor", "classImprovedMotor.html#a39d3eb4eebf2862b7e7cc732baadbe1f", null ],
+    [ "ImprovedMotor", "classImprovedMotor.html#a1be3f86eba50d49bd613861e50259d97", null ],
     [ "~ImprovedMotor", "classImprovedMotor.html#a2bc067dcfeb1054212ae4e8b7a7b9947", null ],
     [ "calibrate", "classImprovedMotor.html#ab55a9cade06bc1ee2aa2bb505a625741", null ],
     [ "freeze", "classImprovedMotor.html#a2d246d6a1a05c1a659a264c738cfaf02", null ],

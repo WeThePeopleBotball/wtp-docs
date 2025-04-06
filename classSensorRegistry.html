@@ -146,12 +146,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aefea56dc4f3abb5ae9d090a7d5c3a0d8" id="r_aefea56dc4f3abb5ae9d090a7d5c3a0d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefea56dc4f3abb5ae9d090a7d5c3a0d8">get_digital_calibration</a> (string id, string calibration_id)</td></tr>
 <tr class="memdesc:aefea56dc4f3abb5ae9d090a7d5c3a0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the calibration value for a digital sensor by its <code>id</code> and calibration <code>id</code>.  <br /></td></tr>
 <tr class="separator:aefea56dc4f3abb5ae9d090a7d5c3a0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01553e4503a67a1893e5bc3e4fcbf19d" id="r_a01553e4503a67a1893e5bc3e4fcbf19d"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01553e4503a67a1893e5bc3e4fcbf19d">get_analog_value</a> (string id)</td></tr>
-<tr class="memdesc:a01553e4503a67a1893e5bc3e4fcbf19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current value of an analog sensor.  <br /></td></tr>
-<tr class="separator:a01553e4503a67a1893e5bc3e4fcbf19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b886a25663d460af10c3b4c41ba7038" id="r_a9b886a25663d460af10c3b4c41ba7038"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b886a25663d460af10c3b4c41ba7038">get_digital_value</a> (string id)</td></tr>
-<tr class="memdesc:a9b886a25663d460af10c3b4c41ba7038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current value of a digital sensor.  <br /></td></tr>
-<tr class="separator:a9b886a25663d460af10c3b4c41ba7038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6759e3c5dc0fe032f3c59e534186508" id="r_ab6759e3c5dc0fe032f3c59e534186508"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6759e3c5dc0fe032f3c59e534186508">get_analog_value</a> (string id)</td></tr>
+<tr class="memdesc:ab6759e3c5dc0fe032f3c59e534186508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current value of an analog sensor.  <br /></td></tr>
+<tr class="separator:ab6759e3c5dc0fe032f3c59e534186508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b2b3410bac882597f251be84a3ab02" id="r_a74b2b3410bac882597f251be84a3ab02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74b2b3410bac882597f251be84a3ab02">get_digital_value</a> (string id)</td></tr>
+<tr class="memdesc:a74b2b3410bac882597f251be84a3ab02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current value of a digital sensor.  <br /></td></tr>
+<tr class="separator:a74b2b3410bac882597f251be84a3ab02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6d24f9c7aa03264dd9ae942a67a354f" id="r_ac6d24f9c7aa03264dd9ae942a67a354f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6d24f9c7aa03264dd9ae942a67a354f">gyro_calibrate</a> ()</td></tr>
 <tr class="memdesc:ac6d24f9c7aa03264dd9ae942a67a354f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calibrates the gyroscope.  <br /></td></tr>
 <tr class="separator:ac6d24f9c7aa03264dd9ae942a67a354f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -408,14 +408,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a01553e4503a67a1893e5bc3e4fcbf19d" name="a01553e4503a67a1893e5bc3e4fcbf19d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01553e4503a67a1893e5bc3e4fcbf19d">&#9670;&#160;</a></span>get_analog_value()</h2>
+<a id="ab6759e3c5dc0fe032f3c59e534186508" name="ab6759e3c5dc0fe032f3c59e534186508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6759e3c5dc0fe032f3c59e534186508">&#9670;&#160;</a></span>get_analog_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">short SensorRegistry::get_analog_value </td>
+          <td class="memname">unsigned short SensorRegistry::get_analog_value </td>
           <td>(</td>
           <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
           <td></td>
@@ -494,14 +494,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b886a25663d460af10c3b4c41ba7038" name="a9b886a25663d460af10c3b4c41ba7038"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b886a25663d460af10c3b4c41ba7038">&#9670;&#160;</a></span>get_digital_value()</h2>
+<a id="a74b2b3410bac882597f251be84a3ab02" name="a74b2b3410bac882597f251be84a3ab02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74b2b3410bac882597f251be84a3ab02">&#9670;&#160;</a></span>get_digital_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">short SensorRegistry::get_digital_value </td>
+          <td class="memname">bool SensorRegistry::get_digital_value </td>
           <td>(</td>
           <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
           <td></td>
