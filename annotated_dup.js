@@ -2,7 +2,9 @@ var annotated_dup =
 [
     [ "ArmController", "classArmController.html", "classArmController" ],
     [ "CalibrationStore", "classCalibrationStore.html", "classCalibrationStore" ],
+    [ "Candidate", "structCandidate.html", "structCandidate" ],
     [ "DefaultMotorController", "classDefaultMotorController.html", "classDefaultMotorController" ],
+    [ "IKCostFunctor", "structIKCostFunctor.html", "structIKCostFunctor" ],
     [ "ImprovedMotor", "classImprovedMotor.html", "classImprovedMotor" ],
     [ "ImprovedServo", "classImprovedServo.html", "classImprovedServo" ],
     [ "LineManager", "classLineManager.html", "classLineManager" ],
