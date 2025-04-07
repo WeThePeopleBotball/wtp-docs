@@ -114,15 +114,19 @@ $(function(){initNavTree('classArmController.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a80b94b848d63788e936fd2426c0024fa" id="r_a80b94b848d63788e936fd2426c0024fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80b94b848d63788e936fd2426c0024fa">ArmController</a> (std::vector&lt; double &gt; links, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; &gt; servos, double dx, double dy, std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; claw, int claw_closed_ticks, int claw_open_ticks)</td></tr>
-<tr class="separator:a80b94b848d63788e936fd2426c0024fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be94d51cd624d14e9fb686893937afa" id="r_a3be94d51cd624d14e9fb686893937afa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3be94d51cd624d14e9fb686893937afa">ArmController</a> (double L1, double L2, double Lb, double dx, double dy, std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; s1, std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; s2, std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; s3, std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; claw, int claw_closed_ticks, int claw_open_ticks)</td></tr>
+<tr class="separator:a3be94d51cd624d14e9fb686893937afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c7a05e24892f35482874260451a1769" id="r_a9c7a05e24892f35482874260451a1769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c7a05e24892f35482874260451a1769">move_to</a> (double x, double y, double phi_deg)</td></tr>
+<tr class="memdesc:a9c7a05e24892f35482874260451a1769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve inverse kinematics and move servos to that position.  <br /></td></tr>
 <tr class="separator:a9c7a05e24892f35482874260451a1769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a419c1b139bc3ea4b766f1acaa081d5" id="r_a5a419c1b139bc3ea4b766f1acaa081d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a419c1b139bc3ea4b766f1acaa081d5">move_to_angles</a> (std::vector&lt; double &gt; angles)</td></tr>
-<tr class="separator:a5a419c1b139bc3ea4b766f1acaa081d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab82166c56c74d0ff175e5840f7bbefec" id="r_ab82166c56c74d0ff175e5840f7bbefec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab82166c56c74d0ff175e5840f7bbefec">get_tip_position</a> (std::vector&lt; double &gt; angles) const</td></tr>
-<tr class="separator:ab82166c56c74d0ff175e5840f7bbefec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfdc598892b9debb7f50462b07f2f07f" id="r_adfdc598892b9debb7f50462b07f2f07f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfdc598892b9debb7f50462b07f2f07f">get_tip_position</a> (double theta1, double theta2, double theta3) const</td></tr>
+<tr class="memdesc:adfdc598892b9debb7f50462b07f2f07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate tip position based on given angles.  <br /></td></tr>
+<tr class="separator:adfdc598892b9debb7f50462b07f2f07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938ca5b8960d7fd04ab2107d75de50c0" id="r_a938ca5b8960d7fd04ab2107d75de50c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a938ca5b8960d7fd04ab2107d75de50c0">move_to_angles</a> (double theta1_deg, double theta2_deg, double theta3_deg)</td></tr>
+<tr class="memdesc:a938ca5b8960d7fd04ab2107d75de50c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move servos to manually given angles (in degrees)  <br /></td></tr>
+<tr class="separator:a938ca5b8960d7fd04ab2107d75de50c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28086ec34d10af03f95ca488997e604c" id="r_a28086ec34d10af03f95ca488997e604c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28086ec34d10af03f95ca488997e604c">get_current_tip_position</a> () const</td></tr>
+<tr class="memdesc:a28086ec34d10af03f95ca488997e604c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current tip position based on current servo angles.  <br /></td></tr>
 <tr class="separator:a28086ec34d10af03f95ca488997e604c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b5113e5acb18adbbe5fe71346f66b1" id="r_a92b5113e5acb18adbbe5fe71346f66b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92b5113e5acb18adbbe5fe71346f66b1">set_claw_position</a> (float pos)</td></tr>
 <tr class="separator:a92b5113e5acb18adbbe5fe71346f66b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,8 +139,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a0dc314068f851c25511cbca8e18c4827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a80b94b848d63788e936fd2426c0024fa" name="a80b94b848d63788e936fd2426c0024fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80b94b848d63788e936fd2426c0024fa">&#9670;&#160;</a></span>ArmController()</h2>
+<a id="a3be94d51cd624d14e9fb686893937afa" name="a3be94d51cd624d14e9fb686893937afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be94d51cd624d14e9fb686893937afa">&#9670;&#160;</a></span>ArmController()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,12 +148,17 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">ArmController::ArmController </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; double &gt;</td>          <td class="paramname"><span class="paramname"><em>links</em></span>, </td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>L1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>servos</em></span>, </td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>L2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>Lb</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -160,6 +169,21 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>dy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>s1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>s2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>s3</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -197,6 +221,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the current tip position based on current servo angles. </p>
+
 </div>
 </div>
 <a id="a26cfcb15f83fc075d03f761f4e5d63d8" name="a26cfcb15f83fc075d03f761f4e5d63d8"></a>
@@ -224,8 +250,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab82166c56c74d0ff175e5840f7bbefec" name="ab82166c56c74d0ff175e5840f7bbefec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab82166c56c74d0ff175e5840f7bbefec">&#9670;&#160;</a></span>get_tip_position()</h2>
+<a id="adfdc598892b9debb7f50462b07f2f07f" name="adfdc598892b9debb7f50462b07f2f07f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfdc598892b9debb7f50462b07f2f07f">&#9670;&#160;</a></span>get_tip_position()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,11 +259,22 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classVector2D.html">Vector2D</a> ArmController::get_tip_position </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; double &gt;</td>          <td class="paramname"><span class="paramname"><em>angles</em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>theta1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>theta2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>theta3</em></span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Calculate tip position based on given angles. </p>
 
 </div>
 </div>
@@ -265,10 +302,12 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Solve inverse kinematics and move servos to that position. </p>
+
 </div>
 </div>
-<a id="a5a419c1b139bc3ea4b766f1acaa081d5" name="a5a419c1b139bc3ea4b766f1acaa081d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a419c1b139bc3ea4b766f1acaa081d5">&#9670;&#160;</a></span>move_to_angles()</h2>
+<a id="a938ca5b8960d7fd04ab2107d75de50c0" name="a938ca5b8960d7fd04ab2107d75de50c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a938ca5b8960d7fd04ab2107d75de50c0">&#9670;&#160;</a></span>move_to_angles()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,11 +315,22 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ArmController::move_to_angles </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; double &gt;</td>          <td class="paramname"><span class="paramname"><em>angles</em></span></td><td>)</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>theta1_deg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>theta2_deg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>theta3_deg</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Move servos to manually given angles (in degrees) </p>
 
 </div>
 </div>
@@ -298,6 +348,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set claw position (0 = closed, 100 = open) Set claw position based on percentage (0 = fully closed, 100 = fully open) </p>
 
 </div>
 </div>

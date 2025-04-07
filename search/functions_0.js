@@ -6,5 +6,5 @@ var searchData=
   ['add_5fdigital_5fcalibration_3',['add_digital_calibration',['../classSensorRegistry.html#a73fcdadf2bba8f9592c006c9114c44f8',1,'SensorRegistry']]],
   ['add_5flocation_4',['add_location',['../classPlayground.html#ae34f4890a3127e07940f0f73233b6b13',1,'Playground']]],
   ['add_5fnode_5',['add_node',['../classPlayground.html#a7cab46f4e663c41960ec93b4a0035fc8',1,'Playground']]],
-  ['armcontroller_6',['ArmController',['../classArmController.html#a80b94b848d63788e936fd2426c0024fa',1,'ArmController']]]
+  ['armcontroller_6',['ArmController',['../classArmController.html#a3be94d51cd624d14e9fb686893937afa',1,'ArmController']]]
 ];
