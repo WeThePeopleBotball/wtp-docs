@@ -6,7 +6,7 @@ var searchData=
   ['improved_5fmotor_2ehpp_3',['improved_motor.hpp',['../improved__motor_8hpp.html',1,'']]],
   ['improved_5fservo_2ecpp_4',['improved_servo.cpp',['../improved__servo_8cpp.html',1,'']]],
   ['improved_5fservo_2ehpp_5',['improved_servo.hpp',['../improved__servo_8hpp.html',1,'']]],
-  ['improvedmotor_6',['ImprovedMotor',['../classImprovedMotor.html',1,'ImprovedMotor'],['../classImprovedMotor.html#a1be3f86eba50d49bd613861e50259d97',1,'ImprovedMotor::ImprovedMotor()']]],
+  ['improvedmotor_6',['ImprovedMotor',['../classImprovedMotor.html',1,'ImprovedMotor'],['../classImprovedMotor.html#a39d3eb4eebf2862b7e7cc732baadbe1f',1,'ImprovedMotor::ImprovedMotor()']]],
   ['improvedservo_7',['ImprovedServo',['../classImprovedServo.html',1,'ImprovedServo'],['../classImprovedServo.html#a9aec317df64ff9bdab871815e7bf8e31',1,'ImprovedServo::ImprovedServo()']]],
   ['is_5fmotor_5fdone_8',['is_motor_done',['../classImprovedMotor.html#aa29f44eeeb8c8f21c13e24516c67b980',1,'ImprovedMotor']]],
   ['is_5fon_5fline_9',['is_on_line',['../classLineManager.html#a537cc298655716c068b49718676fbb3e',1,'LineManager']]],
