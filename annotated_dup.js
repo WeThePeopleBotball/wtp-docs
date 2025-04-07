@@ -7,6 +7,7 @@ var annotated_dup =
     [ "IKCostFunctor", "structIKCostFunctor.html", "structIKCostFunctor" ],
     [ "ImprovedMotor", "classImprovedMotor.html", "classImprovedMotor" ],
     [ "ImprovedServo", "classImprovedServo.html", "classImprovedServo" ],
+    [ "IterativeLineSquareUp", "classIterativeLineSquareUp.html", "classIterativeLineSquareUp" ],
     [ "LineManager", "classLineManager.html", "classLineManager" ],
     [ "LineSquareUp", "classLineSquareUp.html", "classLineSquareUp" ],
     [ "MecanumMotorController", "classMecanumMotorController.html", "classMecanumMotorController" ],

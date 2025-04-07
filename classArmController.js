@@ -1,6 +1,6 @@
 var classArmController =
 [
-    [ "ArmController", "classArmController.html#a80b94b848d63788e936fd2426c0024fa", null ],
+    [ "ArmController", "classArmController.html#a08057bc59937572369ff63b78ed84dde", null ],
     [ "get_current_tip_position", "classArmController.html#a28086ec34d10af03f95ca488997e604c", null ],
     [ "get_instance", "classArmController.html#a26cfcb15f83fc075d03f761f4e5d63d8", null ],
     [ "get_tip_position", "classArmController.html#ab82166c56c74d0ff175e5840f7bbefec", null ],

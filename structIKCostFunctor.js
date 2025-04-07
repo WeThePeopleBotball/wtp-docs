@@ -1,5 +1,5 @@
 var structIKCostFunctor =
 [
-    [ "IKCostFunctor", "structIKCostFunctor.html#acf238f38ac04782465a7a711db66548e", null ],
+    [ "IKCostFunctor", "structIKCostFunctor.html#ab5144dbf4f3613bae9c0dbd2d248a615", null ],
     [ "operator()", "structIKCostFunctor.html#afb21aef8380179dee06a9ccbdb134c10", null ]
 ];

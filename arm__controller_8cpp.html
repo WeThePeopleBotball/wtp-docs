@@ -170,8 +170,8 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a829e6d84641faf62e601c0d8578b8cbf" id="r_a829e6d84641faf62e601c0d8578b8cbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a829e6d84641faf62e601c0d8578b8cbf">forward_kinematics</a> (std::vector&lt; double &gt; angles, std::vector&lt; double &gt; links, double dx, double dy)</td></tr>
 <tr class="separator:a829e6d84641faf62e601c0d8578b8cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3920e19217c293f12e1c2cd68e8e53b" id="r_ad3920e19217c293f12e1c2cd68e8e53b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3920e19217c293f12e1c2cd68e8e53b">selectBestInitialGuess</a> (<a class="el" href="structCandidate.html">Candidate</a> &amp;best_guess, const double &amp;xt, const double &amp;yt, const double &amp;phi, const std::vector&lt; double &gt; &amp;links, const double &amp;dx, const double &amp;dy, const std::vector&lt; double &gt; &amp;min_degs, const std::vector&lt; double &gt; &amp;max_degs, const int steps=10, const double pos_weight=1.0, const double phi_weight=5.0, int _depth=0, std::vector&lt; double &gt; angles={})</td></tr>
-<tr class="separator:ad3920e19217c293f12e1c2cd68e8e53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9d802ca4448f089aff120c42b0dfb48" id="r_ad9d802ca4448f089aff120c42b0dfb48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9d802ca4448f089aff120c42b0dfb48">selectBestInitialGuess</a> (<a class="el" href="structCandidate.html">Candidate</a> &amp;best_guess, const double &amp;xt, const double &amp;yt, const double &amp;phi, const std::vector&lt; double &gt; &amp;links, const double &amp;dx, const double &amp;dy, const double &amp;min_h, const std::vector&lt; double &gt; &amp;min_degs, const std::vector&lt; double &gt; &amp;max_degs, const int steps=10, const double pos_weight=1.0, const double phi_weight=5.0, int _depth=0, std::vector&lt; double &gt; angles={})</td></tr>
+<tr class="separator:ad9d802ca4448f089aff120c42b0dfb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -212,8 +212,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad3920e19217c293f12e1c2cd68e8e53b" name="ad3920e19217c293f12e1c2cd68e8e53b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3920e19217c293f12e1c2cd68e8e53b">&#9670;&#160;</a></span>selectBestInitialGuess()</h2>
+<a id="ad9d802ca4448f089aff120c42b0dfb48" name="ad9d802ca4448f089aff120c42b0dfb48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9d802ca4448f089aff120c42b0dfb48">&#9670;&#160;</a></span>selectBestInitialGuess()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,6 +252,11 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>dy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;</td>          <td class="paramname"><span class="paramname"><em>min_h</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

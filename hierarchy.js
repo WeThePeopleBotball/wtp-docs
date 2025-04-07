@@ -6,6 +6,7 @@ var hierarchy =
     [ "IKCostFunctor", "structIKCostFunctor.html", null ],
     [ "ImprovedMotor", "classImprovedMotor.html", null ],
     [ "ImprovedServo", "classImprovedServo.html", null ],
+    [ "IterativeLineSquareUp", "classIterativeLineSquareUp.html", null ],
     [ "LineManager", "classLineManager.html", null ],
     [ "LineSquareUp", "classLineSquareUp.html", null ],
     [ "MotorController", "classMotorController.html", [

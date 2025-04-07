@@ -114,8 +114,8 @@ $(function(){initNavTree('classArmController.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a80b94b848d63788e936fd2426c0024fa" id="r_a80b94b848d63788e936fd2426c0024fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80b94b848d63788e936fd2426c0024fa">ArmController</a> (std::vector&lt; double &gt; links, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; &gt; servos, double dx, double dy, std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; claw, int claw_closed_ticks, int claw_open_ticks)</td></tr>
-<tr class="separator:a80b94b848d63788e936fd2426c0024fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08057bc59937572369ff63b78ed84dde" id="r_a08057bc59937572369ff63b78ed84dde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08057bc59937572369ff63b78ed84dde">ArmController</a> (std::vector&lt; double &gt; links, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; &gt; servos, double dx, double dy, double lowest_y, std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; claw, int claw_closed_ticks, int claw_open_ticks)</td></tr>
+<tr class="separator:a08057bc59937572369ff63b78ed84dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c7a05e24892f35482874260451a1769" id="r_a9c7a05e24892f35482874260451a1769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c7a05e24892f35482874260451a1769">move_to</a> (double x, double y, double phi_deg)</td></tr>
 <tr class="separator:a9c7a05e24892f35482874260451a1769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a419c1b139bc3ea4b766f1acaa081d5" id="r_a5a419c1b139bc3ea4b766f1acaa081d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a419c1b139bc3ea4b766f1acaa081d5">move_to_angles</a> (std::vector&lt; double &gt; angles)</td></tr>
@@ -135,8 +135,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a0dc314068f851c25511cbca8e18c4827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a80b94b848d63788e936fd2426c0024fa" name="a80b94b848d63788e936fd2426c0024fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80b94b848d63788e936fd2426c0024fa">&#9670;&#160;</a></span>ArmController()</h2>
+<a id="a08057bc59937572369ff63b78ed84dde" name="a08057bc59937572369ff63b78ed84dde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08057bc59937572369ff63b78ed84dde">&#9670;&#160;</a></span>ArmController()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,6 +160,11 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>dy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>lowest_y</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

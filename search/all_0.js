@@ -15,5 +15,5 @@ var searchData=
   ['arm_5fgripper_5flength_12',['ARM_GRIPPER_LENGTH',['../units_8hpp.html#a4e5a02dd666da3aa65f291ccf29f2615',1,'units.hpp']]],
   ['arm_5foffset_5fy_13',['ARM_OFFSET_Y',['../units_8hpp.html#adc7a04a7aaed560d4321fc10b16cd203',1,'units.hpp']]],
   ['arm_5fwrist_5flength_14',['ARM_WRIST_LENGTH',['../units_8hpp.html#aa5fbc32062b6f5ecfff527c260a764a5',1,'units.hpp']]],
-  ['armcontroller_15',['ArmController',['../classArmController.html',1,'ArmController'],['../classArmController.html#a80b94b848d63788e936fd2426c0024fa',1,'ArmController::ArmController()']]]
+  ['armcontroller_15',['ArmController',['../classArmController.html',1,'ArmController'],['../classArmController.html#a08057bc59937572369ff63b78ed84dde',1,'ArmController::ArmController()']]]
 ];

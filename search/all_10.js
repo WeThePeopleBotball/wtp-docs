@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['selectbestinitialguess_0',['selectBestInitialGuess',['../arm__controller_8cpp.html#ad3920e19217c293f12e1c2cd68e8e53b',1,'arm_controller.cpp']]],
+  ['selectbestinitialguess_0',['selectBestInitialGuess',['../arm__controller_8cpp.html#ad9d802ca4448f089aff120c42b0dfb48',1,'arm_controller.cpp']]],
   ['sender_1',['sender',['../heartbeat_8cpp.html#a9ce0fad53624012c821bc8fbec6e86b5',1,'sender():&#160;heartbeat.cpp'],['../heartbeat_8hpp.html#a9ce0fad53624012c821bc8fbec6e86b5',1,'sender():&#160;heartbeat.cpp']]],
   ['sensor_5fregistry_2',['sensor_registry',['../classMotorController.html#ac48fbee78728c4967420194aed9556af',1,'MotorController']]],
   ['sensorregistry_3',['SensorRegistry',['../classSensorRegistry.html',1,'']]],
@@ -11,7 +11,7 @@ var searchData=
   ['set_5fcustom_8',['set_custom',['../server_8cpp.html#a3efeabd68126adadff86ab10087afa28',1,'set_custom(const crow::request &amp;req):&#160;server.cpp'],['../server_8hpp.html#a3efeabd68126adadff86ab10087afa28',1,'set_custom(const crow::request &amp;req):&#160;server.cpp']]],
   ['set_5fdegrees_9',['set_degrees',['../classImprovedServo.html#a6574c56e02798949530bd152366c4a73',1,'ImprovedServo']]],
   ['set_5feasing_10',['set_easing',['../classImprovedMotor.html#abe3d1f46a93eb38cbad26dc74c3ab19b',1,'ImprovedMotor::set_easing()'],['../classImprovedServo.html#af658411d187f91ce79e887f614db499e',1,'ImprovedServo::set_easing()']]],
-  ['set_5finstance_11',['set_instance',['../classArmController.html#a0dc314068f851c25511cbca8e18c4827',1,'ArmController::set_instance()'],['../classMotorController.html#a6c084cb5e17bb413e9775e6e26025208',1,'MotorController::set_instance()'],['../classLineManager.html#a0a03f7d74d81b3fbdadb5080e6b06b90',1,'LineManager::set_instance()'],['../classWallSquareUp.html#a7b58c8b4783de9f4cdce04a7a5ac99c1',1,'WallSquareUp::set_instance()'],['../classLineSquareUp.html#a3ae06586124cd3383b60840ac37948d2',1,'LineSquareUp::set_instance()']]],
+  ['set_5finstance_11',['set_instance',['../classArmController.html#a0dc314068f851c25511cbca8e18c4827',1,'ArmController::set_instance()'],['../classMotorController.html#a6c084cb5e17bb413e9775e6e26025208',1,'MotorController::set_instance()'],['../classLineManager.html#a0a03f7d74d81b3fbdadb5080e6b06b90',1,'LineManager::set_instance()'],['../classWallSquareUp.html#a7b58c8b4783de9f4cdce04a7a5ac99c1',1,'WallSquareUp::set_instance()'],['../classLineSquareUp.html#a3ae06586124cd3383b60840ac37948d2',1,'LineSquareUp::set_instance()'],['../classIterativeLineSquareUp.html#a7c32f6e42548546caae0439fdb0af60c',1,'IterativeLineSquareUp::set_instance()']]],
   ['set_5fpid_12',['set_pid',['../classImprovedMotor.html#a24fbf1803b55884089404914ea1e3abb',1,'ImprovedMotor']]],
   ['set_5fposition_13',['set_position',['../classImprovedServo.html#a8fa1fb00e538471c63ca2a7b07cabb34',1,'ImprovedServo']]],
   ['set_5fstart_5fnode_14',['set_start_node',['../classPlayground.html#aa53cde6f36afba1be6f14b5155237c29',1,'Playground']]],
