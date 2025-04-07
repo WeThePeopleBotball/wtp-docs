@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rad2deg_0',['RAD2DEG',['../arm__controller_8hpp.html#ae504e88d86995cfed8e64fc1a6b7a63e',1,'arm_controller.hpp']]],
-  ['robot_5fmutex_1',['robot_mutex',['../server_8cpp.html#af453fd1444c9710f0bc4e87e560109f7',1,'server.cpp']]]
+  ['phi_5ferror_0',['phi_error',['../structCandidate.html#aa443679c5c0c5ced9a0b5a5414a77f50',1,'Candidate']]],
+  ['position_5ferror_1',['position_error',['../structCandidate.html#a29ec4c449afe49847af70d4bc572a1c6',1,'Candidate']]]
 ];

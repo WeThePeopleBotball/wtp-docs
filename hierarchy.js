@@ -2,6 +2,8 @@ var hierarchy =
 [
     [ "ArmController", "classArmController.html", null ],
     [ "CalibrationStore< T >", "classCalibrationStore.html", null ],
+    [ "Candidate", "structCandidate.html", null ],
+    [ "IKCostFunctor", "structIKCostFunctor.html", null ],
     [ "ImprovedMotor", "classImprovedMotor.html", null ],
     [ "ImprovedServo", "classImprovedServo.html", null ],
     [ "LineManager", "classLineManager.html", null ],

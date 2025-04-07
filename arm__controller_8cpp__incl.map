@@ -1,19 +1,25 @@
 <map id="src/component/arm_controller.cpp" name="src/component/arm_controller.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="267,5,484,31"/>
-<area shape="rect" id="Node000002" href="$arm__controller_8hpp.html" title=" " alt="" coords="119,79,314,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="350,34,259,75,256,70,347,29"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="338,79,413,105"/>
-<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="378,31,378,63,373,63,373,31"/>
-<area shape="rect" id="Node000015" title=" " alt="" coords="437,79,508,105"/>
-<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="394,29,446,68,443,72,390,34"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="307,5,524,31"/>
+<area shape="rect" id="Node000002" href="$arm__controller_8hpp.html" title=" " alt="" coords="159,79,354,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="390,34,299,75,296,70,387,29"/>
 <area shape="rect" id="Node000003" href="$vector_8hpp.html" title=" " alt="" coords="5,153,122,178"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="192,108,104,148,102,143,190,103"/>
+<area shape="poly" id="edge17_Node000001_Node000003" title=" " alt="" coords="307,29,221,46,177,61,137,81,104,109,80,141,76,138,100,106,134,77,175,56,219,41,306,23"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="146,153,203,178"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="212,106,191,141,187,138,208,104"/>
+<area shape="poly" id="edge15_Node000001_Node000004" title=" " alt="" coords="307,33,211,51,173,64,150,81,144,94,144,109,158,139,153,141,139,110,139,93,145,77,170,60,209,46,306,27"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="378,79,453,105"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="418,31,418,63,413,63,413,31"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="476,79,576,105"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="436,29,496,68,493,73,433,34"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="600,79,652,105"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="452,29,586,74,584,79,450,34"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="676,79,734,105"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="470,29,662,76,660,81,469,34"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="225,108,112,149,110,144,223,103"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="245,107,201,144,198,140,241,103"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="227,153,294,178"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="226,103,248,138,243,141,222,106"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="260,105,262,137,257,137,255,105"/>
 <area shape="rect" id="Node000006" href="$improved__servo_8hpp.html" title=" " alt="" coords="318,153,521,178"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="252,103,371,144,370,150,250,108"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="285,103,379,144,377,148,283,108"/>
 <area shape="rect" id="Node000007" href="$ticks_8hpp.html" title=" " alt="" coords="15,226,123,252"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="360,182,139,226,138,221,359,176"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="147,226,207,252"/>

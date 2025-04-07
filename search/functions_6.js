@@ -14,7 +14,7 @@ var searchData=
   ['get_5fmax_5fdegrees_11',['get_max_degrees',['../classImprovedServo.html#a4fa44389f7c716e8ead57bdfa2fa7b01',1,'ImprovedServo']]],
   ['get_5fmin_5fdegrees_12',['get_min_degrees',['../classImprovedServo.html#afec310acebede5bb7bf798b319e5cfb4',1,'ImprovedServo']]],
   ['get_5fposition_13',['get_position',['../classImprovedServo.html#adb28d9b1776dae8af85687a99a09239b',1,'ImprovedServo::get_position()'],['../server_8cpp.html#aef0c91a827acf328d8e4614a84a6720d',1,'get_position(const crow::request &amp;):&#160;server.cpp'],['../server_8hpp.html#a9f09e0d115fbdc278186455b0fed7521',1,'get_position(const crow::request &amp;req):&#160;server.cpp']]],
-  ['get_5ftip_5fposition_14',['get_tip_position',['../classArmController.html#adfdc598892b9debb7f50462b07f2f07f',1,'ArmController']]],
+  ['get_5ftip_5fposition_14',['get_tip_position',['../classArmController.html#ab82166c56c74d0ff175e5840f7bbefec',1,'ArmController']]],
   ['get_5ftrue_5fmax_5fdegrees_15',['get_true_max_degrees',['../classImprovedServo.html#a795d384e956d83d21d3144a6c54e5600',1,'ImprovedServo']]],
   ['get_5ftrue_5fmin_5fdegrees_16',['get_true_min_degrees',['../classImprovedServo.html#a1e2024f4de7b49998b9a1e5e6b9fdcee',1,'ImprovedServo']]],
   ['get_5fvalue_17',['get_value',['../classCalibrationStore.html#a964d734852b03ec14173fbcbbe390444',1,'CalibrationStore']]],
