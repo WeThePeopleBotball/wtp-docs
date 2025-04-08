@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Venti-Lib: src/sensor -&gt; include Relation</title>
+<title>Venti-Lib: src/sensor/until_light.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -76,7 +76,7 @@ $(function() { codefold.init(0); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('dir_919653a6098570dc99a63e645d1b29db.html',''); initResizable(true); });
+$(function(){initNavTree('until__light_8cpp.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -101,13 +101,67 @@ $(function(){initNavTree('dir_919653a6098570dc99a63e645d1b29db.html',''); initRe
 </div>
 </div>
 
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">until_light.cpp File Reference</div></div>
+</div><!--header-->
 <div class="contents">
-<h3>sensor &rarr; include Relation</h3><table class="dirtab"><tr class="dirtab"><th class="dirtab">File in src/sensor</th><th class="dirtab">Includes file in include</th></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="registry_8cpp.html">registry.cpp</a></td><td class="dirtab"><a class="el" href="dir_7b271abf9afd8594ceaf3484d66fcdf7.html">sensor</a>&#160;/&#160;<a class="el" href="registry_8hpp.html">registry.hpp</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="until__light_8cpp.html">until_light.cpp</a></td><td class="dirtab"><a class="el" href="dir_821002d4f10779a80d4fb17bc32f21f1.html">utils</a>&#160;/&#160;<a class="el" href="units_8hpp.html">units.hpp</a></td></tr></table></div><!-- contents -->
+<div class="textblock"><code>#include &quot;kipr/analog/analog.hpp&quot;</code><br />
+<code>#include &quot;kipr/button/button.h&quot;</code><br />
+<code>#include &quot;kipr/time/time.h&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;<a class="el" href="units_8hpp_source.html">utils/units.hpp</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for until_light.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="until__light_8cpp__incl.png" border="0" usemap="#asrc_2sensor_2until__light_8cpp" alt=""/></div>
+<map name="asrc_2sensor_2until__light_8cpp" id="asrc_2sensor_2until__light_8cpp">
+<area shape="rect" title=" " alt="" coords="308,5,474,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,156,105"/>
+<area shape="poly" title=" " alt="" coords="339,34,149,78,147,72,338,29"/>
+<area shape="rect" title=" " alt="" coords="180,79,312,105"/>
+<area shape="poly" title=" " alt="" coords="368,34,285,74,283,69,365,29"/>
+<area shape="rect" title=" " alt="" coords="336,79,446,105"/>
+<area shape="poly" title=" " alt="" coords="394,31,394,63,388,63,388,31"/>
+<area shape="rect" title=" " alt="" coords="470,79,542,105"/>
+<area shape="poly" title=" " alt="" coords="412,29,475,68,472,73,409,34"/>
+<area shape="rect" href="units_8hpp.html" title=" " alt="" coords="566,79,667,105"/>
+<area shape="poly" title=" " alt="" coords="430,29,564,71,563,76,429,34"/>
+<area shape="rect" title=" " alt="" coords="588,153,645,178"/>
+<area shape="poly" title=" " alt="" coords="619,105,619,137,614,137,614,105"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a689430b66cb6096f5e9def01af5fc699" id="r_a689430b66cb6096f5e9def01af5fc699"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a689430b66cb6096f5e9def01af5fc699">until_light</a> (int port)</td></tr>
+<tr class="separator:a689430b66cb6096f5e9def01af5fc699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a689430b66cb6096f5e9def01af5fc699" name="a689430b66cb6096f5e9def01af5fc699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a689430b66cb6096f5e9def01af5fc699">&#9670;&#160;</a></span>until_light()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void until_light </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_919653a6098570dc99a63e645d1b29db.html">sensor</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_919653a6098570dc99a63e645d1b29db.html">sensor</a></li><li class="navelem"><a class="el" href="until__light_8cpp.html">until_light.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
