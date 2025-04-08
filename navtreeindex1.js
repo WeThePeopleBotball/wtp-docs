@@ -61,6 +61,8 @@ var NAVTREEINDEX1 =
 "line__manager_8cpp.html":[1,0,1,3,0],
 "line__manager_8hpp.html":[1,0,0,3,0],
 "line__manager_8hpp_source.html":[1,0,0,3,0],
+"main2_8cpp.html":[1,0,1,7],
+"main2_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[1,0,1,7,0],
 "main_8cpp.html":[1,0,1,6],
 "main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[1,0,1,6,0],
 "mecanum__motor__controller_8cpp.html":[1,0,1,1,0,1],
