@@ -103,44 +103,104 @@ $(function(){initNavTree('until__light_8cpp.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">until_light.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;kipr/analog/analog.hpp&quot;</code><br />
 <code>#include &quot;kipr/button/button.h&quot;</code><br />
 <code>#include &quot;kipr/time/time.h&quot;</code><br />
+<code>#include &quot;kipr/wait_for/wait_for.h&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;<a class="el" href="units_8hpp_source.html">utils/units.hpp</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for until_light.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="until__light_8cpp__incl.png" border="0" usemap="#asrc_2sensor_2until__light_8cpp" alt=""/></div>
 <map name="asrc_2sensor_2until__light_8cpp" id="asrc_2sensor_2until__light_8cpp">
-<area shape="rect" title=" " alt="" coords="308,5,474,31"/>
-<area shape="rect" title=" " alt="" coords="5,79,156,105"/>
-<area shape="poly" title=" " alt="" coords="339,34,149,78,147,72,338,29"/>
-<area shape="rect" title=" " alt="" coords="180,79,312,105"/>
-<area shape="poly" title=" " alt="" coords="368,34,285,74,283,69,365,29"/>
-<area shape="rect" title=" " alt="" coords="336,79,446,105"/>
-<area shape="poly" title=" " alt="" coords="394,31,394,63,388,63,388,31"/>
-<area shape="rect" title=" " alt="" coords="470,79,542,105"/>
-<area shape="poly" title=" " alt="" coords="412,29,475,68,472,73,409,34"/>
-<area shape="rect" href="units_8hpp.html" title=" " alt="" coords="566,79,667,105"/>
-<area shape="poly" title=" " alt="" coords="430,29,564,71,563,76,429,34"/>
-<area shape="rect" title=" " alt="" coords="588,153,645,178"/>
-<area shape="poly" title=" " alt="" coords="619,105,619,137,614,137,614,105"/>
+<area shape="rect" title=" " alt="" coords="508,5,674,31"/>
+<area shape="rect" title=" " alt="" coords="5,86,156,112"/>
+<area shape="poly" title=" " alt="" coords="508,32,350,53,168,82,148,85,147,80,167,76,349,48,508,27"/>
+<area shape="rect" title=" " alt="" coords="180,86,312,112"/>
+<area shape="poly" title=" " alt="" coords="536,34,325,82,311,85,309,80,324,76,535,29"/>
+<area shape="rect" title=" " alt="" coords="336,86,446,112"/>
+<area shape="poly" title=" " alt="" coords="561,34,437,83,435,78,559,29"/>
+<area shape="rect" title=" " alt="" coords="471,79,591,120"/>
+<area shape="poly" title=" " alt="" coords="584,33,557,68,553,65,580,30"/>
+<area shape="rect" title=" " alt="" coords="615,86,690,112"/>
+<area shape="poly" title=" " alt="" coords="603,30,636,72,632,76,598,33"/>
+<area shape="rect" title=" " alt="" coords="714,86,786,112"/>
+<area shape="poly" title=" " alt="" coords="617,29,713,77,711,82,614,34"/>
+<area shape="rect" href="units_8hpp.html" title=" " alt="" coords="810,86,911,112"/>
+<area shape="poly" title=" " alt="" coords="635,29,799,76,807,79,806,84,797,82,633,34"/>
+<area shape="rect" title=" " alt="" coords="936,86,993,112"/>
+<area shape="poly" title=" " alt="" coords="675,26,794,45,860,59,924,76,928,78,926,83,922,82,858,64,793,50,674,31"/>
+<area shape="rect" title=" " alt="" coords="832,168,889,193"/>
+<area shape="poly" title=" " alt="" coords="863,113,863,152,858,152,858,113"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a689430b66cb6096f5e9def01af5fc699" id="r_a689430b66cb6096f5e9def01af5fc699"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a689430b66cb6096f5e9def01af5fc699">until_light</a> (int port)</td></tr>
-<tr class="separator:a689430b66cb6096f5e9def01af5fc699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559f2b73144c2e411da11bc7dac6a52f" id="r_a559f2b73144c2e411da11bc7dac6a52f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a559f2b73144c2e411da11bc7dac6a52f">record_sensor_values</a> (std::vector&lt; unsigned short &gt; &amp;values, kipr::analog::Analog10 &amp;sensor)</td></tr>
+<tr class="separator:a559f2b73144c2e411da11bc7dac6a52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114f18d31e8d5575ba31c5cfda1fb7f1" id="r_a114f18d31e8d5575ba31c5cfda1fb7f1"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a114f18d31e8d5575ba31c5cfda1fb7f1">calculate_median</a> (std::vector&lt; unsigned short &gt; &amp;values)</td></tr>
+<tr class="separator:a114f18d31e8d5575ba31c5cfda1fb7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78015d3f7c55d6059cfe1e1194686650" id="r_a78015d3f7c55d6059cfe1e1194686650"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78015d3f7c55d6059cfe1e1194686650">until_light</a> (int port, int max_waiting)</td></tr>
+<tr class="memdesc:a78015d3f7c55d6059cfe1e1194686650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until a bright light turns on to start the robot.  <br /></td></tr>
+<tr class="separator:a78015d3f7c55d6059cfe1e1194686650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a26dafc5b5bb5a335ba1180c912b3f892" id="r_a26dafc5b5bb5a335ba1180c912b3f892"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26dafc5b5bb5a335ba1180c912b3f892">MAX_CALIBRATION_VALUES</a> = 1000</td></tr>
+<tr class="separator:a26dafc5b5bb5a335ba1180c912b3f892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b62bc8fe1cd95a53c1032a88576557" id="r_ab2b62bc8fe1cd95a53c1032a88576557"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2b62bc8fe1cd95a53c1032a88576557">IS_FAILSAFE_ACTIVE</a> = true</td></tr>
+<tr class="separator:ab2b62bc8fe1cd95a53c1032a88576557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a689430b66cb6096f5e9def01af5fc699" name="a689430b66cb6096f5e9def01af5fc699"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a689430b66cb6096f5e9def01af5fc699">&#9670;&#160;</a></span>until_light()</h2>
+<a id="a114f18d31e8d5575ba31c5cfda1fb7f1" name="a114f18d31e8d5575ba31c5cfda1fb7f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a114f18d31e8d5575ba31c5cfda1fb7f1">&#9670;&#160;</a></span>calculate_median()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short calculate_median </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; unsigned short &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>values</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a559f2b73144c2e411da11bc7dac6a52f" name="a559f2b73144c2e411da11bc7dac6a52f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a559f2b73144c2e411da11bc7dac6a52f">&#9670;&#160;</a></span>record_sensor_values()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void record_sensor_values </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; unsigned short &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>values</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">kipr::analog::Analog10 &amp;</td>          <td class="paramname"><span class="paramname"><em>sensor</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78015d3f7c55d6059cfe1e1194686650" name="a78015d3f7c55d6059cfe1e1194686650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78015d3f7c55d6059cfe1e1194686650">&#9670;&#160;</a></span>until_light()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,8 +208,73 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void until_light </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>max_waiting</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Waits until a bright light turns on to start the robot. </p>
+<p>This function performs an interactive two-step calibration with the user:</p><ol type="1">
+<li>Calibrate the <b>light ON</b> value by placing the light on the sensor and pressing the side button.</li>
+<li>Calibrate the <b>light OFF</b> value by covering the sensor and pressing the side button again.</li>
+</ol>
+<p>It then waits until the sensor detects a significant increase in brightness (interpreted as the light turning on) to proceed.</p>
+<p>If the calibration difference is too small (i.e. not enough contrast), the process restarts.</p>
+<p>While waiting:</p><ul>
+<li>Pressing the side button <b>restarts calibration</b>.</li>
+<li>If <code>max_waiting &gt; 0</code>, the function will <b>timeout after <code>max_waiting</code> milliseconds</b>.</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>Analog sensor port to use (e.g., <code>0</code> for <code>analog(0)</code>). </td></tr>
+    <tr><td class="paramname">max_waiting</td><td>Optional failsafe timeout in <b>milliseconds</b> (default = 0 = no timeout).</td></tr>
+  </table>
+  </dd>
+</dl>
+<h3><a class="anchor" id="autotoc_md3"></a>
+Example:</h3>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="until__light_8hpp.html">until_light.hpp</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>() {</div>
+<div class="line">    <span class="comment">// Wait up to 10 seconds (10000 ms) for the light</span></div>
+<div class="line">    <a class="code hl_function" href="#a78015d3f7c55d6059cfe1e1194686650">until_light</a>(0, 10000);</div>
+<div class="line">    <span class="comment">// Robot starts here after light is detected</span></div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="amain_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition</b> main.cpp:1</div></div>
+<div class="ttc" id="auntil__light_8cpp_html_a78015d3f7c55d6059cfe1e1194686650"><div class="ttname"><a href="#a78015d3f7c55d6059cfe1e1194686650">until_light</a></div><div class="ttdeci">void until_light(int port, int max_waiting)</div><div class="ttdoc">Waits until a bright light turns on to start the robot.</div><div class="ttdef"><b>Definition</b> until_light.cpp:42</div></div>
+<div class="ttc" id="auntil__light_8hpp_html"><div class="ttname"><a href="until__light_8hpp.html">until_light.hpp</a></div><div class="ttdoc">Contains a utility function to calibrate and wait for a light start signal.</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ab2b62bc8fe1cd95a53c1032a88576557" name="ab2b62bc8fe1cd95a53c1032a88576557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2b62bc8fe1cd95a53c1032a88576557">&#9670;&#160;</a></span>IS_FAILSAFE_ACTIVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IS_FAILSAFE_ACTIVE = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26dafc5b5bb5a335ba1180c912b3f892" name="a26dafc5b5bb5a335ba1180c912b3f892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26dafc5b5bb5a335ba1180c912b3f892">&#9670;&#160;</a></span>MAX_CALIBRATION_VALUES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t MAX_CALIBRATION_VALUES = 1000</td>
         </tr>
       </table>
 </div><div class="memdoc">

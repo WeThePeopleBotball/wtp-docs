@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Venti-Lib: Member List</title>
+<title>Venti-Lib: /github/workspace/include/communication/heartbeat.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -76,7 +76,7 @@ $(function() { codefold.init(0); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('classIterativeLineSquareUp.html',''); initResizable(true); });
+$(function(){initNavTree('_2github_2workspace_2include_2communication_2heartbeat_8hpp-example.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -102,17 +102,22 @@ $(function(){initNavTree('classIterativeLineSquareUp.html',''); initResizable(tr
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">IterativeLineSquareUp Member List</div></div>
+  <div class="headertitle"><div class="title">/github/workspace/include/communication/heartbeat.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="classIterativeLineSquareUp.html">IterativeLineSquareUp</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classIterativeLineSquareUp.html#a9da071f0c8b7a8a201d8cd10b3d74fbe">execute</a>(float speed)</td><td class="entry"><a class="el" href="classIterativeLineSquareUp.html">IterativeLineSquareUp</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classIterativeLineSquareUp.html#a06fc482e8cfef1195d8f2ad6d6b0a910">get_instance</a>()</td><td class="entry"><a class="el" href="classIterativeLineSquareUp.html">IterativeLineSquareUp</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classIterativeLineSquareUp.html#aaac2651a7fbcafc0868c505ecf2dba24">IterativeLineSquareUp</a>(std::shared_ptr&lt; MotorController &gt; motor_controller, std::shared_ptr&lt; LineManager &gt; line_manager)</td><td class="entry"><a class="el" href="classIterativeLineSquareUp.html">IterativeLineSquareUp</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classIterativeLineSquareUp.html#a7c32f6e42548546caae0439fdb0af60c">set_instance</a>(std::shared_ptr&lt; IterativeLineSquareUp &gt; instance)</td><td class="entry"><a class="el" href="classIterativeLineSquareUp.html">IterativeLineSquareUp</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-</table></div><!-- contents -->
+<p>// Example usage #include "heartbeat.hpp" #include &lt;thread&gt; #include &lt;chrono&gt;</p>
+<p>int <a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a> { // Start the receiver in a background thread std::thread recv_thread(receiver);</p>
+<p>// Send heartbeat messages in a loop while (true) { <a class="el" href="heartbeat_8hpp.html#a9ce0fad53624012c821bc8fbec6e86b5" title="Sends a UDP heartbeat message with the robot&#39;s current navigation state.">sender()</a>; std::this_thread::sleep_for(std::chrono::milliseconds(100)); }</p>
+<p>recv_thread.join(); // Join receiver thread if needed return 0; }</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> <a id="a0" name="a0"></a><a class="code hl_function" href="heartbeat_8cpp.html#a9ce0fad53624012c821bc8fbec6e86b5">sender</a>();</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> <a id="a1" name="a1"></a><a class="code hl_function" href="heartbeat_8cpp.html#a47b20ca9bd215d52c9afd9d3edcd7b8e">receiver</a>();</div>
+<div class="line"> </div>
+<div class="ttc" id="aheartbeat_8cpp_html_a47b20ca9bd215d52c9afd9d3edcd7b8e"><div class="ttname"><a href="heartbeat_8cpp.html#a47b20ca9bd215d52c9afd9d3edcd7b8e">receiver</a></div><div class="ttdeci">void receiver()</div><div class="ttdoc">Receives a UDP heartbeat message from another robot.</div><div class="ttdef"><b>Definition</b> heartbeat.cpp:54</div></div>
+<div class="ttc" id="aheartbeat_8cpp_html_a9ce0fad53624012c821bc8fbec6e86b5"><div class="ttname"><a href="heartbeat_8cpp.html#a9ce0fad53624012c821bc8fbec6e86b5">sender</a></div><div class="ttdeci">void sender()</div><div class="ttdoc">Sends a UDP heartbeat message with the robot's current navigation state.</div><div class="ttdef"><b>Definition</b> heartbeat.cpp:15</div></div>
+</div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

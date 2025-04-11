@@ -110,31 +110,61 @@ $(function(){initNavTree('classArmController.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>Controls an N-link planar robotic arm using numerical inverse kinematics.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="arm__controller_8hpp_source.html">arm_controller.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a08057bc59937572369ff63b78ed84dde" id="r_a08057bc59937572369ff63b78ed84dde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08057bc59937572369ff63b78ed84dde">ArmController</a> (std::vector&lt; double &gt; links, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; &gt; servos, double dx, double dy, double lowest_y, std::shared_ptr&lt; <a class="el" href="classImprovedServo.html">ImprovedServo</a> &gt; claw, int claw_closed_ticks, int claw_open_ticks)</td></tr>
+<tr class="memdesc:a08057bc59937572369ff63b78ed84dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an N-link <a class="el" href="classArmController.html" title="Controls an N-link planar robotic arm using numerical inverse kinematics.">ArmController</a> instance.  <br /></td></tr>
 <tr class="separator:a08057bc59937572369ff63b78ed84dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c7a05e24892f35482874260451a1769" id="r_a9c7a05e24892f35482874260451a1769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c7a05e24892f35482874260451a1769">move_to</a> (double x, double y, double phi_deg)</td></tr>
+<tr class="memdesc:a9c7a05e24892f35482874260451a1769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the arm to a target position using numerical inverse kinematics.  <br /></td></tr>
 <tr class="separator:a9c7a05e24892f35482874260451a1769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a419c1b139bc3ea4b766f1acaa081d5" id="r_a5a419c1b139bc3ea4b766f1acaa081d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a419c1b139bc3ea4b766f1acaa081d5">move_to_angles</a> (std::vector&lt; double &gt; angles)</td></tr>
+<tr class="memdesc:a5a419c1b139bc3ea4b766f1acaa081d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the arm directly to given joint angles.  <br /></td></tr>
 <tr class="separator:a5a419c1b139bc3ea4b766f1acaa081d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab82166c56c74d0ff175e5840f7bbefec" id="r_ab82166c56c74d0ff175e5840f7bbefec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab82166c56c74d0ff175e5840f7bbefec">get_tip_position</a> (std::vector&lt; double &gt; angles) const</td></tr>
+<tr class="memdesc:ab82166c56c74d0ff175e5840f7bbefec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the tip position using forward kinematics.  <br /></td></tr>
 <tr class="separator:ab82166c56c74d0ff175e5840f7bbefec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28086ec34d10af03f95ca488997e604c" id="r_a28086ec34d10af03f95ca488997e604c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28086ec34d10af03f95ca488997e604c">get_current_tip_position</a> () const</td></tr>
+<tr class="memdesc:a28086ec34d10af03f95ca488997e604c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the tip position using the current servo angles.  <br /></td></tr>
 <tr class="separator:a28086ec34d10af03f95ca488997e604c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b5113e5acb18adbbe5fe71346f66b1" id="r_a92b5113e5acb18adbbe5fe71346f66b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92b5113e5acb18adbbe5fe71346f66b1">set_claw_position</a> (float pos)</td></tr>
+<tr class="memdesc:a92b5113e5acb18adbbe5fe71346f66b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the claw to a position between fully closed and fully open.  <br /></td></tr>
 <tr class="separator:a92b5113e5acb18adbbe5fe71346f66b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a26cfcb15f83fc075d03f761f4e5d63d8" id="r_a26cfcb15f83fc075d03f761f4e5d63d8"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classArmController.html">ArmController</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26cfcb15f83fc075d03f761f4e5d63d8">get_instance</a> ()</td></tr>
+<tr class="memdesc:a26cfcb15f83fc075d03f761f4e5d63d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the globally registered <a class="el" href="classArmController.html" title="Controls an N-link planar robotic arm using numerical inverse kinematics.">ArmController</a> instance.  <br /></td></tr>
 <tr class="separator:a26cfcb15f83fc075d03f761f4e5d63d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dc314068f851c25511cbca8e18c4827" id="r_a0dc314068f851c25511cbca8e18c4827"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dc314068f851c25511cbca8e18c4827">set_instance</a> (std::shared_ptr&lt; <a class="el" href="classArmController.html">ArmController</a> &gt; instance)</td></tr>
+<tr class="memdesc:a0dc314068f851c25511cbca8e18c4827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the singleton instance of the <a class="el" href="classArmController.html" title="Controls an N-link planar robotic arm using numerical inverse kinematics.">ArmController</a>.  <br /></td></tr>
 <tr class="separator:a0dc314068f851c25511cbca8e18c4827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Controls an N-link planar robotic arm using numerical inverse kinematics. </p>
+<p>The <a class="el" href="classArmController.html" title="Controls an N-link planar robotic arm using numerical inverse kinematics.">ArmController</a> class allows movement of a robot arm with any number of links (segments) in a 2D space. It computes inverse kinematics numerically using the Ceres Solver to approximate the best possible joint angles for a given (x, y, φ) target.</p>
+<p>If the exact target position is unreachable (due to joint limits or physical constraints), the arm will drive to the closest reachable position based on lowest squared error.</p>
+<p>Servo movement is clamped by hardware limits defined in each <code><a class="el" href="classImprovedServo.html" title="Servo control with position and degree interfaces, easing functions, and threaded smooth movement.">ImprovedServo</a></code>.</p>
+<p>Forward kinematics is available to determine the current or theoretical tip position.</p>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="keyword">auto</span> s1 = std::make_shared&lt;ImprovedServo&gt;(...);</div>
+<div class="line"><span class="keyword">auto</span> s2 = std::make_shared&lt;ImprovedServo&gt;(...);</div>
+<div class="line"><span class="keyword">auto</span> claw = std::make_shared&lt;ImprovedServo&gt;(...);</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">auto</span> arm = std::make_shared&lt;ArmController&gt;(</div>
+<div class="line">    std::vector&lt;double&gt;{10.0, 8.0}, </div>
+<div class="line">    std::vector&lt;std::shared_ptr&lt;ImprovedServo&gt;&gt;{s1, s2},</div>
+<div class="line">    0.0, 0.0, -5.0,</div>
+<div class="line">    claw, 1000, 2000</div>
+<div class="line">);</div>
+<div class="line"> </div>
+<div class="line">arm-&gt;move_to(12.5, 4.2, 45); <span class="comment">// Move to target or nearest reachable position</span></div>
+<div class="line">arm-&gt;set_claw_position(1.0); <span class="comment">// Open claw</span></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a08057bc59937572369ff63b78ed84dde" name="a08057bc59937572369ff63b78ed84dde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08057bc59937572369ff63b78ed84dde">&#9670;&#160;</a></span>ArmController()</h2>
 
@@ -184,6 +214,21 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructs an N-link <a class="el" href="classArmController.html" title="Controls an N-link planar robotic arm using numerical inverse kinematics.">ArmController</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">links</td><td>Lengths of each arm segment. </td></tr>
+    <tr><td class="paramname">servos</td><td>Servo objects controlling each joint (size must match link count). </td></tr>
+    <tr><td class="paramname">dx</td><td>X-offset from the robot’s reference frame to the arm base. </td></tr>
+    <tr><td class="paramname">dy</td><td>Y-offset from the robot’s reference frame to the arm base. </td></tr>
+    <tr><td class="paramname">lowest_y</td><td>Minimum allowed Y-position (safety constraint). </td></tr>
+    <tr><td class="paramname">claw</td><td>Servo controlling the claw (can be nullptr). </td></tr>
+    <tr><td class="paramname">claw_closed_ticks</td><td>Servo tick value for closed claw position. </td></tr>
+    <tr><td class="paramname">claw_open_ticks</td><td>Servo tick value for open claw position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -201,6 +246,10 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Computes the tip position using the current servo angles. </p>
+<p>Reads servo angles and computes the tip (end-effector) position.</p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classVector2D.html">Vector2D</a> Current tip position (x, y). </dd></dl>
 
 </div>
 </div>
@@ -227,6 +276,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns the globally registered <a class="el" href="classArmController.html" title="Controls an N-link planar robotic arm using numerical inverse kinematics.">ArmController</a> instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>Shared pointer to the <a class="el" href="classArmController.html" title="Controls an N-link planar robotic arm using numerical inverse kinematics.">ArmController</a> singleton. </dd></dl>
+
 </div>
 </div>
 <a id="ab82166c56c74d0ff175e5840f7bbefec" name="ab82166c56c74d0ff175e5840f7bbefec"></a>
@@ -243,6 +295,16 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Computes the tip position using forward kinematics. </p>
+<p>Determines the Cartesian tip position (x, y) by summing vectors based on given joint angles.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angles</td><td>Joint angles (in degrees). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classVector2D.html">Vector2D</a> Tip position (x, y). </dd></dl>
 
 </div>
 </div>
@@ -270,6 +332,17 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Moves the arm to a target position using numerical inverse kinematics. </p>
+<p>Uses Ceres Solver to compute an approximation of the required joint angles to reach (x, y, φ). If the target is unreachable due to joint limits or geometry, the nearest position with the lowest error is used. All servo angles are clamped to their allowed ranges.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Target X coordinate in the global frame. </td></tr>
+    <tr><td class="paramname">y</td><td>Target Y coordinate in the global frame. </td></tr>
+    <tr><td class="paramname">phi_deg</td><td>Desired end-effector orientation in degrees (optional, depending on number of links). </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a5a419c1b139bc3ea4b766f1acaa081d5" name="a5a419c1b139bc3ea4b766f1acaa081d5"></a>
@@ -287,6 +360,15 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Moves the arm directly to given joint angles. </p>
+<p>Directly sets each joint angle in degrees. No IK is performed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angles</td><td>Vector of joint angles (size must match number of servos). </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a92b5113e5acb18adbbe5fe71346f66b1" name="a92b5113e5acb18adbbe5fe71346f66b1"></a>
@@ -303,6 +385,15 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the claw to a position between fully closed and fully open. </p>
+<p>Maps the input from 0.0 to 1.0 into a PWM tick range between closed and open.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Value between 0.0 (closed) and 1.0 (open). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -328,6 +419,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Sets the singleton instance of the <a class="el" href="classArmController.html" title="Controls an N-link planar robotic arm using numerical inverse kinematics.">ArmController</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>The <a class="el" href="classArmController.html" title="Controls an N-link planar robotic arm using numerical inverse kinematics.">ArmController</a> to register globally. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

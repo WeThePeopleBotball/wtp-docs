@@ -1,7 +1,5 @@
 <map id="include/component/arm_controller.hpp" name="include/component/arm_controller.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="125,5,282,46"/>
+<area shape="rect" id="Node000001" title="Defines the ArmController class for controlling an N&#45;link planar robotic arm with a claw." alt="" coords="36,5,192,46"/>
 <area shape="rect" id="Node000002" href="$arm__controller_8cpp.html" title=" " alt="" coords="5,94,223,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,58,130,95,126,91,168,54"/>
-<area shape="rect" id="Node000003" href="$main_8cpp.html" title=" " alt="" coords="246,94,342,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,54,282,91,278,95,235,58"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,62,117,93,111,93,111,62"/>
 </map>

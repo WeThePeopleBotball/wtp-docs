@@ -1,20 +1,17 @@
 <map id="include/navigation/line_manager.hpp" name="include/navigation/line_manager.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="273,5,399,46"/>
+<area shape="rect" id="Node000001" title="Defines the LineManager class for two&#45;sensor line following and crossing detection." alt="" coords="248,5,374,46"/>
 <area shape="rect" id="Node000002" href="$playground_8hpp.html" title=" " alt="" coords="39,183,164,223"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="296,57,242,96,127,184,124,180,239,92,293,53"/>
-<area shape="rect" id="Node000004" href="$square__up_8hpp.html" title=" " alt="" coords="274,94,399,135"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="339,62,339,94,334,94,334,62"/>
-<area shape="rect" id="Node000005" href="$main_8cpp.html" title=" " alt="" coords="188,190,284,216"/>
-<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="297,58,279,75,264,95,252,120,245,147,239,191,234,190,240,146,247,118,259,93,275,72,293,54"/>
-<area shape="rect" id="Node000006" href="$main2_8cpp.html" title=" " alt="" coords="477,190,579,216"/>
-<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="371,54,413,92,517,188,513,192,409,96,367,58"/>
-<area shape="rect" id="Node000008" href="$line__manager_8cpp.html" title=" " alt="" coords="473,94,599,135"/>
-<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="397,50,492,91,490,96,394,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,56,219,74,189,96,146,141,116,184,111,181,142,137,185,92,217,69,249,51"/>
+<area shape="rect" id="Node000004" href="$square__up_8hpp.html" title="Contains square&#45;up mechanisms for aligning the robot to walls or lines." alt="" coords="199,94,324,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="294,61,275,95,270,92,290,58"/>
+<area shape="rect" id="Node000005" href="$main2_8cpp.html" title=" " alt="" coords="358,190,461,216"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="332,58,405,188,400,191,327,61"/>
+<area shape="rect" id="Node000007" href="$line__manager_8cpp.html" title=" " alt="" coords="398,94,525,135"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="359,51,429,91,426,96,356,56"/>
 <area shape="rect" id="Node000003" href="$playground_8cpp.html" title=" " alt="" coords="5,271,198,297"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,239,104,271,99,271,99,239"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="270,143,156,185,154,180,268,138"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="304,147,252,192,248,188,301,143"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="395,139,502,187,500,192,392,144"/>
-<area shape="rect" id="Node000007" href="$square__up_8cpp.html" title=" " alt="" coords="308,183,453,223"/>
-<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="355,148,373,181,368,183,351,150"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="213,145,139,185,136,180,211,140"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="310,141,390,187,387,192,307,145"/>
+<area shape="rect" id="Node000006" href="$square__up_8cpp.html" title=" " alt="" coords="189,183,334,223"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="264,150,264,182,259,182,259,150"/>
 </map>

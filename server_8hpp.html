@@ -134,19 +134,19 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9f09e0d115fbdc278186455b0fed7521" id="r_a9f09e0d115fbdc278186455b0fed7521"><td class="memItemLeft" align="right" valign="top">crow::response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f09e0d115fbdc278186455b0fed7521">get_position</a> (const crow::request &amp;req)</td></tr>
-<tr class="memdesc:a9f09e0d115fbdc278186455b0fed7521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an HTTP request to retrieve the robot's position.  <br /></td></tr>
+<tr class="memdesc:a9f09e0d115fbdc278186455b0fed7521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an HTTP GET request to retrieve the robot's current position.  <br /></td></tr>
 <tr class="separator:a9f09e0d115fbdc278186455b0fed7521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a036183e28ef3359cfce2cd5218470399" id="r_a036183e28ef3359cfce2cd5218470399"><td class="memItemLeft" align="right" valign="top">crow::response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a036183e28ef3359cfce2cd5218470399">request_to_position</a> (const crow::request &amp;req)</td></tr>
-<tr class="memdesc:a036183e28ef3359cfce2cd5218470399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an HTTP request to move the robot to a target position.  <br /></td></tr>
+<tr class="memdesc:a036183e28ef3359cfce2cd5218470399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an HTTP POST request to move the robot to a specified target position.  <br /></td></tr>
 <tr class="separator:a036183e28ef3359cfce2cd5218470399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af880c77fbf2ae047d25a30f8e63ed304" id="r_af880c77fbf2ae047d25a30f8e63ed304"><td class="memItemLeft" align="right" valign="top">crow::response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af880c77fbf2ae047d25a30f8e63ed304">report_outage</a> (const crow::request &amp;req)</td></tr>
-<tr class="memdesc:af880c77fbf2ae047d25a30f8e63ed304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an HTTP request to report an outage or issue.  <br /></td></tr>
+<tr class="memdesc:af880c77fbf2ae047d25a30f8e63ed304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an HTTP POST request to report an outage or technical issue.  <br /></td></tr>
 <tr class="separator:af880c77fbf2ae047d25a30f8e63ed304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3efeabd68126adadff86ab10087afa28" id="r_a3efeabd68126adadff86ab10087afa28"><td class="memItemLeft" align="right" valign="top">crow::response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3efeabd68126adadff86ab10087afa28">set_custom</a> (const crow::request &amp;req)</td></tr>
-<tr class="memdesc:a3efeabd68126adadff86ab10087afa28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an HTTP request to set custom robot parameters.  <br /></td></tr>
+<tr class="memdesc:a3efeabd68126adadff86ab10087afa28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an HTTP POST request to set custom configuration parameters for the robot.  <br /></td></tr>
 <tr class="separator:a3efeabd68126adadff86ab10087afa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1da7ffae2f9ed1e01fecee977d4987c9" id="r_a1da7ffae2f9ed1e01fecee977d4987c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1da7ffae2f9ed1e01fecee977d4987c9">setup</a> (crow::SimpleApp &amp;app)</td></tr>
-<tr class="memdesc:a1da7ffae2f9ed1e01fecee977d4987c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the Crow web application with endpoint routes.  <br /></td></tr>
+<tr class="memdesc:a1da7ffae2f9ed1e01fecee977d4987c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the Crow web application with all robot-related HTTP routes.  <br /></td></tr>
 <tr class="separator:a1da7ffae2f9ed1e01fecee977d4987c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -165,14 +165,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Handles an HTTP request to retrieve the robot's position. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Handles an HTTP GET request to retrieve the robot's current position. </p>
+<p>Returns a JSON object containing the current navigation state of the robot, including the current node, planned path, and offset vector.</p>
+<p>Example JSON response: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;current_node&quot;</span>: 5,</div>
+<div class="line">    <span class="stringliteral">&quot;path&quot;</span>: [5, 6, 7],</div>
+<div class="line">    <span class="stringliteral">&quot;offset_vector&quot;</span>: { <span class="stringliteral">&quot;x&quot;</span>: 0.1, <span class="stringliteral">&quot;y&quot;</span>: -0.03 }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">req</td><td>The incoming request. </td></tr>
+    <tr><td class="paramname">req</td><td>The incoming HTTP request (unused in this case). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>crow::response with the robot's current position in JSON format. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>crow::response JSON response containing the current robot position. </dd></dl>
 
 </div>
 </div>
@@ -191,14 +197,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Handles an HTTP request to report an outage or issue. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Handles an HTTP POST request to report an outage or technical issue. </p>
+<p>This endpoint is used by robots or administrators to report issues that require attention.</p>
+<p>Example request body: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;issue&quot;</span>: <span class="stringliteral">&quot;stuck at node 7&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;from&quot;</span>: 1,</div>
+<div class="line">    <span class="stringliteral">&quot;to&quot;</span>: 2</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">req</td><td>The request containing issue details in JSON format. </td></tr>
+    <tr><td class="paramname">req</td><td>The HTTP request containing issue details in JSON format. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>crow::response acknowledging the report. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>crow::response JSON response acknowledging the report. </dd></dl>
 
 </div>
 </div>
@@ -217,14 +229,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Handles an HTTP request to move the robot to a target position. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Handles an HTTP POST request to move the robot to a specified target position. </p>
+<p>The request body must contain a JSON object with target node or coordinate data.</p>
+<p>Example request body: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;target_node&quot;</span>: 10,</div>
+<div class="line">    <span class="stringliteral">&quot;offset_vector&quot;</span>: { <span class="stringliteral">&quot;x&quot;</span>: 0.1, <span class="stringliteral">&quot;y&quot;</span>: -0.03 }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">req</td><td>The request containing the target position in JSON format. </td></tr>
+    <tr><td class="paramname">req</td><td>The HTTP request containing the target position in JSON format. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>crow::response indicating success or failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>crow::response JSON response indicating success or failure. </dd></dl>
 
 </div>
 </div>
@@ -243,14 +260,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Handles an HTTP request to set custom robot parameters. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Handles an HTTP POST request to set custom configuration parameters for the robot. </p>
+<p>Accepts a JSON object with configuration key-value pairs such as max speed or behavior flags.</p>
+<p>Example request body: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;pom_colors&quot;</span>: [<span class="stringliteral">&quot;RED&quot;</span>, <span class="stringliteral">&quot;YELLOW&quot;</span>, <span class="stringliteral">&quot;RED&quot;</span>, <span class="stringliteral">&quot;ORANGE&quot;</span>]</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">req</td><td>The request containing configuration data in JSON format. </td></tr>
+    <tr><td class="paramname">req</td><td>The HTTP request with custom configuration values. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>crow::response indicating success or failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>crow::response JSON response indicating whether the configuration update was successful. </dd></dl>
 
 </div>
 </div>
@@ -269,10 +290,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Configures the Crow web application with endpoint routes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Configures the Crow web application with all robot-related HTTP routes. </p>
+<p>Registers the routes for position retrieval, movement, outage reporting, and configuration. This should be called during the web server's initialization.</p>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;http_handlers.hpp&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;crow_all.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>() {</div>
+<div class="line">    crow::SimpleApp app;</div>
+<div class="line">    <a class="code hl_function" href="server_8cpp.html#a1da7ffae2f9ed1e01fecee977d4987c9">setup</a>(app);</div>
+<div class="line">    app.port(18080).multithreaded().run();</div>
+<div class="line">}</div>
+<div class="ttc" id="amain_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition</b> main.cpp:1</div></div>
+<div class="ttc" id="aserver_8cpp_html_a1da7ffae2f9ed1e01fecee977d4987c9"><div class="ttname"><a href="server_8cpp.html#a1da7ffae2f9ed1e01fecee977d4987c9">setup</a></div><div class="ttdeci">void setup(crow::SimpleApp &amp;app)</div><div class="ttdoc">Configures the Crow web application with all robot-related HTTP routes.</div><div class="ttdef"><b>Definition</b> server.cpp:63</div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">app</td><td>The Crow application instance to configure. </td></tr>
+    <tr><td class="paramname">app</td><td>The Crow SimpleApp instance to which routes will be added. </td></tr>
   </table>
   </dd>
 </dl>

@@ -107,6 +107,9 @@ $(function(){initNavTree('square__up_8hpp.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">square_up.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains square-up mechanisms for aligning the robot to walls or lines.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="motor__controller_8hpp_source.html">component/motor_controller.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="line__manager_8hpp_source.html">navigation/line_manager.hpp</a>&quot;</code><br />
 <code>#include &lt;memory&gt;</code><br />
@@ -115,19 +118,19 @@ Include dependency graph for square_up.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="square__up_8hpp__incl.png" border="0" usemap="#ainclude_2navigation_2square__up_8hpp" alt=""/></div>
 <map name="ainclude_2navigation_2square__up_8hpp" id="ainclude_2navigation_2square__up_8hpp">
-<area shape="rect" title=" " alt="" coords="365,5,490,46"/>
-<area shape="rect" href="motor__controller_8hpp.html" title=" " alt="" coords="464,168,671,193"/>
+<area shape="rect" title="Contains square&#45;up mechanisms for aligning the robot to walls or lines." alt="" coords="365,5,490,46"/>
+<area shape="rect" href="motor__controller_8hpp.html" title="Defines the abstract motor controller interface and concrete implementations for omni and differentia..." alt="" coords="464,168,671,193"/>
 <area shape="poly" title=" " alt="" coords="447,44,548,154,544,158,443,48"/>
 <area shape="rect" title=" " alt="" coords="339,241,406,267"/>
 <area shape="poly" title=" " alt="" coords="425,47,382,227,377,225,420,46"/>
-<area shape="rect" href="line__manager_8hpp.html" title=" " alt="" coords="204,94,390,120"/>
+<area shape="rect" href="line__manager_8hpp.html" title="Defines the LineManager class for two&#45;sensor line following and crossing detection." alt="" coords="204,94,390,120"/>
 <area shape="poly" title=" " alt="" coords="396,49,331,88,328,83,393,44"/>
 <area shape="poly" title=" " alt="" coords="535,196,421,238,419,233,534,191"/>
 <area shape="rect" title=" " alt="" coords="866,315,922,341"/>
 <area shape="poly" title=" " alt="" coords="584,192,634,227,699,265,852,311,850,316,697,269,631,232,581,196"/>
 <area shape="rect" title=" " alt="" coords="710,241,767,267"/>
 <area shape="poly" title=" " alt="" coords="597,191,696,233,694,237,595,196"/>
-<area shape="rect" href="improved__motor_8hpp.html" title=" " alt="" coords="431,241,634,267"/>
+<area shape="rect" href="improved__motor_8hpp.html" title="Defines the ImprovedMotor class for advanced motor control with PID and easing support." alt="" coords="431,241,634,267"/>
 <area shape="poly" title=" " alt="" coords="564,195,548,228,543,226,559,192"/>
 <area shape="rect" href="vector_8hpp.html" title=" " alt="" coords="791,241,907,267"/>
 <area shape="poly" title=" " alt="" coords="616,191,787,234,786,240,615,196"/>
@@ -160,15 +163,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="square__up_8hpp__dep__incl.png" border="0" usemap="#ainclude_2navigation_2square__up_8hppdep" alt=""/></div>
 <map name="ainclude_2navigation_2square__up_8hppdep" id="ainclude_2navigation_2square__up_8hppdep">
-<area shape="rect" title=" " alt="" coords="235,5,360,46"/>
+<area shape="rect" title="Contains square&#45;up mechanisms for aligning the robot to walls or lines." alt="" coords="176,5,302,46"/>
 <area shape="rect" href="playground_8hpp.html" title=" " alt="" coords="39,94,164,135"/>
-<area shape="poly" title=" " alt="" coords="240,55,147,96,145,91,238,50"/>
-<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="188,102,284,127"/>
-<area shape="poly" title=" " alt="" coords="277,60,247,103,242,100,273,57"/>
-<area shape="rect" href="main2_8cpp.html" title=" " alt="" coords="308,102,410,127"/>
-<area shape="poly" title=" " alt="" coords="322,57,353,100,348,103,318,60"/>
-<area shape="rect" href="square__up_8cpp.html" title=" " alt="" coords="434,94,580,135"/>
-<area shape="poly" title=" " alt="" coords="360,50,460,91,458,96,358,55"/>
+<area shape="poly" title=" " alt="" coords="196,57,134,96,131,91,193,52"/>
+<area shape="rect" href="main2_8cpp.html" title=" " alt="" coords="188,102,290,127"/>
+<area shape="poly" title=" " alt="" coords="242,62,242,101,236,101,236,62"/>
+<area shape="rect" href="square__up_8cpp.html" title=" " alt="" coords="314,94,460,135"/>
+<area shape="poly" title=" " alt="" coords="287,52,355,91,352,96,284,56"/>
 <area shape="rect" href="playground_8cpp.html" title=" " alt="" coords="5,183,198,208"/>
 <area shape="poly" title=" " alt="" coords="104,150,104,182,99,182,99,150"/>
 </map>
@@ -179,15 +180,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallSquareUp.html">WallSquareUp</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the robot with a wall to recalibrate its position using bumper sensors.  <a href="classWallSquareUp.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the robot with a wall using bumper sensors to recalibrate its orientation.  <a href="classWallSquareUp.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLineSquareUp.html">LineSquareUp</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the robot with a line for recalibration by backing up until both line sensors detect the line.  <a href="classLineSquareUp.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIterativeLineSquareUp.html">IterativeLineSquareUp</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the robot with a black line by backing up until both line sensors detect alignment.  <a href="classLineSquareUp.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains square-up mechanisms for aligning the robot to walls or lines. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

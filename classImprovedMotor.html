@@ -109,7 +109,7 @@ $(function(){initNavTree('classImprovedMotor.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Motor control with optional PID and easing functions.  
+<p>Provides advanced motor control using threaded PID loops and optional easing functions.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="improved__motor_8hpp_source.html">improved_motor.hpp</a>&gt;</code></p>
@@ -117,30 +117,43 @@ $(function(){initNavTree('classImprovedMotor.html',''); initResizable(true); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a39d3eb4eebf2862b7e7cc732baadbe1f" id="r_a39d3eb4eebf2862b7e7cc732baadbe1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39d3eb4eebf2862b7e7cc732baadbe1f">ImprovedMotor</a> (int port, std::shared_ptr&lt; <a class="el" href="classSensorRegistry.html">SensorRegistry</a> &gt; sensor_registry, float p=0, float i=0, float d=0, std::function&lt; float(float)&gt; easing_function=[](float x) { return x;})</td></tr>
+<tr class="memdesc:a39d3eb4eebf2862b7e7cc732baadbe1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classImprovedMotor.html" title="Provides advanced motor control using threaded PID loops and optional easing functions.">ImprovedMotor</a> object.  <br /></td></tr>
 <tr class="separator:a39d3eb4eebf2862b7e7cc732baadbe1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bc067dcfeb1054212ae4e8b7a7b9947" id="r_a2bc067dcfeb1054212ae4e8b7a7b9947"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bc067dcfeb1054212ae4e8b7a7b9947">~ImprovedMotor</a> ()</td></tr>
+<tr class="memdesc:a2bc067dcfeb1054212ae4e8b7a7b9947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor stops any active motion and joins the worker thread.  <br /></td></tr>
 <tr class="separator:a2bc067dcfeb1054212ae4e8b7a7b9947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab55a9cade06bc1ee2aa2bb505a625741" id="r_ab55a9cade06bc1ee2aa2bb505a625741"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab55a9cade06bc1ee2aa2bb505a625741">calibrate</a> ()</td></tr>
+<tr class="memdesc:ab55a9cade06bc1ee2aa2bb505a625741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalibrates the internal PID state.  <br /></td></tr>
 <tr class="separator:ab55a9cade06bc1ee2aa2bb505a625741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98fd8d5721aeb8c59c1cdc8cbe89d085" id="r_a98fd8d5721aeb8c59c1cdc8cbe89d085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98fd8d5721aeb8c59c1cdc8cbe89d085">reset_pid_timer</a> ()</td></tr>
+<tr class="memdesc:a98fd8d5721aeb8c59c1cdc8cbe89d085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the internal PID timing to prevent overshoot from time jumps.  <br /></td></tr>
 <tr class="separator:a98fd8d5721aeb8c59c1cdc8cbe89d085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4543e847c62b260a23e98afffefcbcc1" id="r_a4543e847c62b260a23e98afffefcbcc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4543e847c62b260a23e98afffefcbcc1">move_at_velocity</a> (float speed)</td></tr>
+<tr class="memdesc:a4543e847c62b260a23e98afffefcbcc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the motor at a constant velocity (non-PID).  <br /></td></tr>
 <tr class="separator:a4543e847c62b260a23e98afffefcbcc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72e0c1d6897c2617b448e802209ed4ee" id="r_a72e0c1d6897c2617b448e802209ed4ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72e0c1d6897c2617b448e802209ed4ee">move_at_velocity_pid</a> (float speed)</td></tr>
+<tr class="memdesc:a72e0c1d6897c2617b448e802209ed4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the motor at a constant velocity using PID.  <br /></td></tr>
 <tr class="separator:a72e0c1d6897c2617b448e802209ed4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10b97f36723c4a2d217ea5ca482e266a" id="r_a10b97f36723c4a2d217ea5ca482e266a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10b97f36723c4a2d217ea5ca482e266a">move_pid_distance</a> (float speed, int ticks)</td></tr>
+<tr class="memdesc:a10b97f36723c4a2d217ea5ca482e266a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves to an absolute encoder position using PID.  <br /></td></tr>
 <tr class="separator:a10b97f36723c4a2d217ea5ca482e266a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb4b26b734f2456da4aee981666f0c4b" id="r_adb4b26b734f2456da4aee981666f0c4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb4b26b734f2456da4aee981666f0c4b">move_pid_relative_distance</a> (float speed, int ticks)</td></tr>
+<tr class="memdesc:adb4b26b734f2456da4aee981666f0c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves by a relative number of encoder ticks using PID.  <br /></td></tr>
 <tr class="separator:adb4b26b734f2456da4aee981666f0c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a6382a434421393b205015ade5e7b61" id="r_a5a6382a434421393b205015ade5e7b61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a6382a434421393b205015ade5e7b61">move_to_position</a> (float speed, int <a class="el" href="#ae25b391b8629a141d4fbd211749839ac">position</a>)</td></tr>
+<tr class="memdesc:a5a6382a434421393b205015ade5e7b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves to an absolute position using velocity-based movement.  <br /></td></tr>
 <tr class="separator:a5a6382a434421393b205015ade5e7b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac43e9de01b46b4336d0d4b851ecfc73" id="r_aac43e9de01b46b4336d0d4b851ecfc73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac43e9de01b46b4336d0d4b851ecfc73">move_to_relative_position</a> (float speed, int <a class="el" href="#ae25b391b8629a141d4fbd211749839ac">position</a>)</td></tr>
+<tr class="memdesc:aac43e9de01b46b4336d0d4b851ecfc73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves to a position relative to the current one using velocity-based movement.  <br /></td></tr>
 <tr class="separator:aac43e9de01b46b4336d0d4b851ecfc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d246d6a1a05c1a659a264c738cfaf02" id="r_a2d246d6a1a05c1a659a264c738cfaf02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d246d6a1a05c1a659a264c738cfaf02">freeze</a> ()</td></tr>
+<tr class="memdesc:a2d246d6a1a05c1a659a264c738cfaf02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops all motor movement and freezes the motor in place.  <br /></td></tr>
 <tr class="separator:a2d246d6a1a05c1a659a264c738cfaf02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47b4ae6ecdcc5d355e22e5ad0f907213" id="r_a47b4ae6ecdcc5d355e22e5ad0f907213"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47b4ae6ecdcc5d355e22e5ad0f907213">stop</a> ()</td></tr>
+<tr class="memdesc:a47b4ae6ecdcc5d355e22e5ad0f907213"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops PID or velocity motion without applying holding torque.  <br /></td></tr>
 <tr class="separator:a47b4ae6ecdcc5d355e22e5ad0f907213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24fbf1803b55884089404914ea1e3abb" id="r_a24fbf1803b55884089404914ea1e3abb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24fbf1803b55884089404914ea1e3abb">set_pid</a> (float p, float i, float d)</td></tr>
+<tr class="memdesc:a24fbf1803b55884089404914ea1e3abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets new PID gain values.  <br /></td></tr>
 <tr class="separator:a24fbf1803b55884089404914ea1e3abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66f5c4c9cbb98d9fbc9b0924e9b66009" id="r_a66f5c4c9cbb98d9fbc9b0924e9b66009"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66f5c4c9cbb98d9fbc9b0924e9b66009">getP</a> () const</td></tr>
 <tr class="separator:a66f5c4c9cbb98d9fbc9b0924e9b66009"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,15 +162,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4581c8186709f4ef0cf781d732c3b11c" id="r_a4581c8186709f4ef0cf781d732c3b11c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4581c8186709f4ef0cf781d732c3b11c">getD</a> () const</td></tr>
 <tr class="separator:a4581c8186709f4ef0cf781d732c3b11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25b391b8629a141d4fbd211749839ac" id="r_ae25b391b8629a141d4fbd211749839ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae25b391b8629a141d4fbd211749839ac">position</a> () const</td></tr>
+<tr class="memdesc:ae25b391b8629a141d4fbd211749839ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current encoder position from the sensor registry.  <br /></td></tr>
 <tr class="separator:ae25b391b8629a141d4fbd211749839ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa29f44eeeb8c8f21c13e24516c67b980" id="r_aa29f44eeeb8c8f21c13e24516c67b980"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa29f44eeeb8c8f21c13e24516c67b980">is_motor_done</a> ()</td></tr>
+<tr class="memdesc:aa29f44eeeb8c8f21c13e24516c67b980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the motor has finished its current motion.  <br /></td></tr>
 <tr class="separator:aa29f44eeeb8c8f21c13e24516c67b980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe3d1f46a93eb38cbad26dc74c3ab19b" id="r_abe3d1f46a93eb38cbad26dc74c3ab19b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe3d1f46a93eb38cbad26dc74c3ab19b">set_easing</a> (std::function&lt; float(float)&gt; easing_function=[](float x) { return x;})</td></tr>
+<tr class="memdesc:abe3d1f46a93eb38cbad26dc74c3ab19b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a custom easing function to shape speed over time.  <br /></td></tr>
 <tr class="separator:abe3d1f46a93eb38cbad26dc74c3ab19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Motor control with optional PID and easing functions. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"><p>Provides advanced motor control using threaded PID loops and optional easing functions. </p>
+<p>The <a class="el" href="classImprovedMotor.html" title="Provides advanced motor control using threaded PID loops and optional easing functions.">ImprovedMotor</a> class wraps a physical motor with support for:</p><ul>
+<li>PID-controlled velocity and position movement</li>
+<li>Threaded background motion execution</li>
+<li>Easing functions for smoother acceleration</li>
+<li>Integration with a <code><a class="el" href="classSensorRegistry.html" title="Central registry for managing analog and digital sensors, including access to their calibration data.">SensorRegistry</a></code> for position tracking</li>
+</ul>
+<p>All motion is non-blocking and controlled via a background thread. PID can be configured dynamically.</p>
+<p>Example: waiting for motion to complete using <a class="el" href="#aa29f44eeeb8c8f21c13e24516c67b980" title="Checks whether the motor has finished its current motion.">is_motor_done()</a> </p><div class="fragment"><div class="line"><a class="code hl_class" href="classImprovedMotor.html">ImprovedMotor</a> motor(...);</div>
+<div class="line">motor.move_pid_distance(0.5, 1000);</div>
+<div class="line"><span class="keywordflow">while</span> (!motor.is_motor_done()) {</div>
+<div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(10));</div>
+<div class="line">}</div>
+<div class="line">motor.freeze(); <span class="comment">// Optionally stop after arrival</span></div>
+<div class="ttc" id="aclassImprovedMotor_html"><div class="ttname"><a href="classImprovedMotor.html">ImprovedMotor</a></div><div class="ttdoc">Provides advanced motor control using threaded PID loops and optional easing functions.</div><div class="ttdef"><b>Definition</b> improved_motor.hpp:38</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a39d3eb4eebf2862b7e7cc732baadbe1f" name="a39d3eb4eebf2862b7e7cc732baadbe1f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a39d3eb4eebf2862b7e7cc732baadbe1f">&#9670;&#160;</a></span>ImprovedMotor()</h2>
 
@@ -197,6 +227,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructs a new <a class="el" href="classImprovedMotor.html" title="Provides advanced motor control using threaded PID loops and optional easing functions.">ImprovedMotor</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>Motor port identifier (as defined in hardware). </td></tr>
+    <tr><td class="paramname">sensor_registry</td><td>Shared sensor registry for encoder feedback. </td></tr>
+    <tr><td class="paramname">p</td><td>Proportional gain (default: 0). </td></tr>
+    <tr><td class="paramname">i</td><td>Integral gain (default: 0). </td></tr>
+    <tr><td class="paramname">d</td><td>Derivative gain (default: 0). </td></tr>
+    <tr><td class="paramname">easing_function</td><td>Optional easing function to smooth speed input. Default is linear. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a2bc067dcfeb1054212ae4e8b7a7b9947" name="a2bc067dcfeb1054212ae4e8b7a7b9947"></a>
@@ -213,6 +256,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destructor stops any active motion and joins the worker thread. </p>
 
 </div>
 </div>
@@ -232,6 +277,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Recalibrates the internal PID state. </p>
+<p>This method resets:</p><ul>
+<li>The <b>integral term</b> of the PID controller</li>
+<li>The <b>timing delta</b> used for PID calculations</li>
+</ul>
+<p>It is useful when restarting movement after long pauses or external disturbances. </p>
+
 </div>
 </div>
 <a id="a2d246d6a1a05c1a659a264c738cfaf02" name="a2d246d6a1a05c1a659a264c738cfaf02"></a>
@@ -249,6 +301,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Stops all motor movement and freezes the motor in place. </p>
+
 </div>
 </div>
 <a id="a4581c8186709f4ef0cf781d732c3b11c" name="a4581c8186709f4ef0cf781d732c3b11c"></a>
@@ -265,6 +319,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Current D gain. </dd></dl>
 
 </div>
 </div>
@@ -282,6 +337,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Current I gain. </dd></dl>
 
 </div>
 </div>
@@ -299,6 +355,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Current P gain. </dd></dl>
 
 </div>
 </div>
@@ -317,6 +374,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Checks whether the motor has finished its current motion. </p>
+<p>Used to monitor progress of a PID or position-based movement. Useful for synchronizing with motion completion.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if the motor has reached its target, false otherwise.</dd></dl>
+<div class="fragment"><div class="line">motor.move_pid_distance(0.4, 1200);</div>
+<div class="line"><span class="keywordflow">while</span> (!motor.is_motor_done()) {</div>
+<div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(10));</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a4543e847c62b260a23e98afffefcbcc1" name="a4543e847c62b260a23e98afffefcbcc1"></a>
@@ -334,6 +399,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Moves the motor at a constant velocity (non-PID). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>Target speed [-1.0, 1.0]. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a72e0c1d6897c2617b448e802209ed4ee" name="a72e0c1d6897c2617b448e802209ed4ee"></a>
@@ -350,6 +423,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Moves the motor at a constant velocity using PID. </p>
+<p>Runs continuously until <code><a class="el" href="#a47b4ae6ecdcc5d355e22e5ad0f907213" title="Stops PID or velocity motion without applying holding torque.">stop()</a></code> is called.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>Target speed [-1.0, 1.0]. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -372,6 +454,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Moves to an absolute encoder position using PID. </p>
+<p>Starts motion toward a specific encoder tick value using PID.</p>
+<dl class="section note"><dt>Note</dt><dd>This function is <b>non-blocking</b> — it returns immediately. To wait for the motion to finish, use <code><a class="el" href="#aa29f44eeeb8c8f21c13e24516c67b980" title="Checks whether the motor has finished its current motion.">is_motor_done()</a></code> in a loop.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>Base PID speed. </td></tr>
+    <tr><td class="paramname">ticks</td><td>Absolute encoder target position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="adb4b26b734f2456da4aee981666f0c4b" name="adb4b26b734f2456da4aee981666f0c4b"></a>
@@ -392,6 +485,17 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Moves by a relative number of encoder ticks using PID. </p>
+<p>Starts relative motion from the current encoder position.</p>
+<dl class="section note"><dt>Note</dt><dd>This function is <b>non-blocking</b> — it does not wait for completion. Use <code><a class="el" href="#aa29f44eeeb8c8f21c13e24516c67b980" title="Checks whether the motor has finished its current motion.">is_motor_done()</a></code> if you need to block until finished.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>Base PID speed. </td></tr>
+    <tr><td class="paramname">ticks</td><td>Relative distance in encoder ticks. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -414,6 +518,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Moves to an absolute position using velocity-based movement. </p>
+<p>Uses a non-PID approach to drive to a given position.</p>
+<dl class="section note"><dt>Note</dt><dd>This function is <b>non-blocking</b>. You must call <code><a class="el" href="#aa29f44eeeb8c8f21c13e24516c67b980" title="Checks whether the motor has finished its current motion.">is_motor_done()</a></code> to check when the motion has finished.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>Velocity to move at. </td></tr>
+    <tr><td class="paramname">position</td><td>Absolute encoder position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aac43e9de01b46b4336d0d4b851ecfc73" name="aac43e9de01b46b4336d0d4b851ecfc73"></a>
@@ -435,6 +550,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Moves to a position relative to the current one using velocity-based movement. </p>
+<p>Starts a non-blocking relative movement.</p>
+<dl class="section note"><dt>Note</dt><dd>To wait until movement completes, use <code><a class="el" href="#aa29f44eeeb8c8f21c13e24516c67b980" title="Checks whether the motor has finished its current motion.">is_motor_done()</a></code> in your main loop.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>Velocity to move at. </td></tr>
+    <tr><td class="paramname">position</td><td>Offset from current encoder position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ae25b391b8629a141d4fbd211749839ac" name="ae25b391b8629a141d4fbd211749839ac"></a>
@@ -451,6 +577,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the current encoder position from the sensor registry. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current encoder tick count. </dd></dl>
 
 </div>
 </div>
@@ -469,6 +598,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Resets the internal PID timing to prevent overshoot from time jumps. </p>
+
 </div>
 </div>
 <a id="abe3d1f46a93eb38cbad26dc74c3ab19b" name="abe3d1f46a93eb38cbad26dc74c3ab19b"></a>
@@ -485,6 +616,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets a custom easing function to shape speed over time. </p>
+<p>Useful for smoothing starts/stops or mimicking non-linear acceleration curves.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">easing_function</td><td>A function mapping [0.0, 1.0] to [0.0, 1.0]. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -512,6 +652,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets new PID gain values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Proportional gain. </td></tr>
+    <tr><td class="paramname">i</td><td>Integral gain. </td></tr>
+    <tr><td class="paramname">d</td><td>Derivative gain. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a47b4ae6ecdcc5d355e22e5ad0f907213" name="a47b4ae6ecdcc5d355e22e5ad0f907213"></a>
@@ -528,6 +678,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Stops PID or velocity motion without applying holding torque. </p>
 
 </div>
 </div>

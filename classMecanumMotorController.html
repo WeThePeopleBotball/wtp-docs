@@ -109,14 +109,17 @@ $(function(){initNavTree('classMecanumMotorController.html',''); initResizable(t
 </div><!--header-->
 <div class="contents">
 
+<p>Implements full omni-directional control for robots with 4 Mecanum wheels.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="motor__controller_8hpp_source.html">motor_controller.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MecanumMotorController:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMecanumMotorController__inherit__graph.png" border="0" usemap="#aMecanumMotorController_inherit__map" alt="Inheritance graph"/></div>
 <map name="aMecanumMotorController_inherit__map" id="aMecanumMotorController_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,79,172,105"/>
-<area shape="rect" href="classMotorController.html" title="Abstract base class for motor controllers." alt="" coords="34,5,143,31"/>
+<area shape="rect" title="Implements full omni&#45;directional control for robots with 4 Mecanum wheels." alt="" coords="5,79,172,105"/>
+<area shape="rect" href="classMotorController.html" title="Abstract base class for robot movement using different drive systems." alt="" coords="34,5,143,31"/>
 <area shape="poly" title=" " alt="" coords="91,46,91,79,86,79,86,46"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -125,8 +128,8 @@ Collaboration diagram for MecanumMotorController:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMecanumMotorController__coll__graph.png" border="0" usemap="#aMecanumMotorController_coll__map" alt="Collaboration graph"/></div>
 <map name="aMecanumMotorController_coll__map" id="aMecanumMotorController_coll__map">
-<area shape="rect" title=" " alt="" coords="5,79,172,105"/>
-<area shape="rect" href="classMotorController.html" title="Abstract base class for motor controllers." alt="" coords="34,5,143,31"/>
+<area shape="rect" title="Implements full omni&#45;directional control for robots with 4 Mecanum wheels." alt="" coords="5,79,172,105"/>
+<area shape="rect" href="classMotorController.html" title="Abstract base class for robot movement using different drive systems." alt="" coords="34,5,143,31"/>
 <area shape="poly" title=" " alt="" coords="91,46,91,79,86,79,86,46"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -134,46 +137,67 @@ Collaboration diagram for MecanumMotorController:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a591b0c066013680f03a6d5607b457c4e" id="r_a591b0c066013680f03a6d5607b457c4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a591b0c066013680f03a6d5607b457c4e">MecanumMotorController</a> (std::shared_ptr&lt; <a class="el" href="classImprovedMotor.html">ImprovedMotor</a> &gt; back_left, std::shared_ptr&lt; <a class="el" href="classImprovedMotor.html">ImprovedMotor</a> &gt; front_left, std::shared_ptr&lt; <a class="el" href="classImprovedMotor.html">ImprovedMotor</a> &gt; back_right, std::shared_ptr&lt; <a class="el" href="classImprovedMotor.html">ImprovedMotor</a> &gt; front_right, std::shared_ptr&lt; <a class="el" href="classSensorRegistry.html">SensorRegistry</a> &gt; <a class="el" href="classMotorController.html#ac48fbee78728c4967420194aed9556af">sensor_registry</a>)</td></tr>
+<tr class="memdesc:a591b0c066013680f03a6d5607b457c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classMecanumMotorController.html" title="Implements full omni-directional control for robots with 4 Mecanum wheels.">MecanumMotorController</a> using 4 motors and a sensor registry.  <br /></td></tr>
 <tr class="separator:a591b0c066013680f03a6d5607b457c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53baf0fe8ccb814e8677cbfe9641838a" id="r_a53baf0fe8ccb814e8677cbfe9641838a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53baf0fe8ccb814e8677cbfe9641838a">forward</a> (float speed) override</td></tr>
+<tr class="memdesc:a53baf0fe8ccb814e8677cbfe9641838a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves forward at given speed.  <br /></td></tr>
 <tr class="separator:a53baf0fe8ccb814e8677cbfe9641838a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a480a47012082a842bba88d6e65e63e03" id="r_a480a47012082a842bba88d6e65e63e03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a480a47012082a842bba88d6e65e63e03">backward</a> (float speed) override</td></tr>
+<tr class="memdesc:a480a47012082a842bba88d6e65e63e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves backward at given speed.  <br /></td></tr>
 <tr class="separator:a480a47012082a842bba88d6e65e63e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65201fb5b69ef9e7650b58db07bd9b1e" id="r_a65201fb5b69ef9e7650b58db07bd9b1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65201fb5b69ef9e7650b58db07bd9b1e">left</a> (float speed) override</td></tr>
+<tr class="memdesc:a65201fb5b69ef9e7650b58db07bd9b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strafes left (lateral movement).  <br /></td></tr>
 <tr class="separator:a65201fb5b69ef9e7650b58db07bd9b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e1d23affa6007c001bb0d2a798b9d46" id="r_a5e1d23affa6007c001bb0d2a798b9d46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e1d23affa6007c001bb0d2a798b9d46">right</a> (float speed) override</td></tr>
+<tr class="memdesc:a5e1d23affa6007c001bb0d2a798b9d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strafes right (lateral movement).  <br /></td></tr>
 <tr class="separator:a5e1d23affa6007c001bb0d2a798b9d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6debcf65277ed206e5cd19539f475c6" id="r_ac6debcf65277ed206e5cd19539f475c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6debcf65277ed206e5cd19539f475c6">diagonal</a> (float speed, <a class="el" href="classMotorController.html#ae657b26cd8d1ca9d5f763cffd4647384">Side</a> s) override</td></tr>
+<tr class="memdesc:ac6debcf65277ed206e5cd19539f475c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves diagonally relative to robot front.  <br /></td></tr>
 <tr class="separator:ac6debcf65277ed206e5cd19539f475c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e6eb18896b701409a9e5567d2162d17" id="r_a6e6eb18896b701409a9e5567d2162d17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e6eb18896b701409a9e5567d2162d17">left_side</a> (float speed) override</td></tr>
+<tr class="memdesc:a6e6eb18896b701409a9e5567d2162d17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drives only the left-side motors.  <br /></td></tr>
 <tr class="separator:a6e6eb18896b701409a9e5567d2162d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67793608e7984fe3d874e9b6f1bb53f7" id="r_a67793608e7984fe3d874e9b6f1bb53f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67793608e7984fe3d874e9b6f1bb53f7">right_side</a> (float speed) override</td></tr>
+<tr class="memdesc:a67793608e7984fe3d874e9b6f1bb53f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drives only the right-side motors.  <br /></td></tr>
 <tr class="separator:a67793608e7984fe3d874e9b6f1bb53f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079bcff916c495fa48903cd554b70269" id="r_a079bcff916c495fa48903cd554b70269"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a079bcff916c495fa48903cd554b70269">forward</a> (float speed, float distance) override</td></tr>
+<tr class="memdesc:a079bcff916c495fa48903cd554b70269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves forward for a specified distance.  <br /></td></tr>
 <tr class="separator:a079bcff916c495fa48903cd554b70269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1407e3b4f354686a56aae9d197433726" id="r_a1407e3b4f354686a56aae9d197433726"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1407e3b4f354686a56aae9d197433726">backward</a> (float speed, float distance) override</td></tr>
+<tr class="memdesc:a1407e3b4f354686a56aae9d197433726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves backward for a specified distance.  <br /></td></tr>
 <tr class="separator:a1407e3b4f354686a56aae9d197433726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7206173b82237bbea81ec160150f00e5" id="r_a7206173b82237bbea81ec160150f00e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7206173b82237bbea81ec160150f00e5">left</a> (float speed, float distance) override</td></tr>
+<tr class="memdesc:a7206173b82237bbea81ec160150f00e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strafes left for a specified distance.  <br /></td></tr>
 <tr class="separator:a7206173b82237bbea81ec160150f00e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fcc69390084890d023227f6ccfc4bc1" id="r_a7fcc69390084890d023227f6ccfc4bc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fcc69390084890d023227f6ccfc4bc1">right</a> (float speed, float distance) override</td></tr>
+<tr class="memdesc:a7fcc69390084890d023227f6ccfc4bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strafes right for a specified distance.  <br /></td></tr>
 <tr class="separator:a7fcc69390084890d023227f6ccfc4bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9031fb6dea42b509bf8aa14ce4414a6" id="r_aa9031fb6dea42b509bf8aa14ce4414a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9031fb6dea42b509bf8aa14ce4414a6">diagonal</a> (float speed, <a class="el" href="classMotorController.html#ae657b26cd8d1ca9d5f763cffd4647384">Side</a> s, float distance) override</td></tr>
+<tr class="memdesc:aa9031fb6dea42b509bf8aa14ce4414a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves diagonally for a specific distance.  <br /></td></tr>
 <tr class="separator:aa9031fb6dea42b509bf8aa14ce4414a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d038cf31a71c9727e726b440efe7eca" id="r_a8d038cf31a71c9727e726b440efe7eca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d038cf31a71c9727e726b440efe7eca">turn_to</a> (float deg) override</td></tr>
+<tr class="memdesc:a8d038cf31a71c9727e726b440efe7eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns to an absolute heading (degrees).  <br /></td></tr>
 <tr class="separator:a8d038cf31a71c9727e726b440efe7eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a068271e74eee216c2a913af623df9f86" id="r_a068271e74eee216c2a913af623df9f86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a068271e74eee216c2a913af623df9f86">turn_left</a> (float deg) override</td></tr>
+<tr class="memdesc:a068271e74eee216c2a913af623df9f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns left by a relative amount (degrees).  <br /></td></tr>
 <tr class="separator:a068271e74eee216c2a913af623df9f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5125e8a7d2a79fa80c24ffcf3f2e8dc" id="r_ab5125e8a7d2a79fa80c24ffcf3f2e8dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5125e8a7d2a79fa80c24ffcf3f2e8dc">turn_right</a> (float deg) override</td></tr>
+<tr class="memdesc:ab5125e8a7d2a79fa80c24ffcf3f2e8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns right by a relative amount (degrees).  <br /></td></tr>
 <tr class="separator:ab5125e8a7d2a79fa80c24ffcf3f2e8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae418d3abfcb873e2a62c943d0a37ce1" id="r_aae418d3abfcb873e2a62c943d0a37ce1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae418d3abfcb873e2a62c943d0a37ce1">freeze</a> () override</td></tr>
+<tr class="memdesc:aae418d3abfcb873e2a62c943d0a37ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immediately stops all motors.  <br /></td></tr>
 <tr class="separator:aae418d3abfcb873e2a62c943d0a37ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7b3bdf9ada7701a9e331ffb6df54c13" id="r_ad7b3bdf9ada7701a9e331ffb6df54c13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7b3bdf9ada7701a9e331ffb6df54c13">omni_directional_movement_supported</a> () const override</td></tr>
+<tr class="memdesc:ad7b3bdf9ada7701a9e331ffb6df54c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the controller supports omni-directional movement.  <br /></td></tr>
 <tr class="separator:ad7b3bdf9ada7701a9e331ffb6df54c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9645510e210893af60a169ca46e0a2b" id="r_ae9645510e210893af60a169ca46e0a2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9645510e210893af60a169ca46e0a2b">drive_vector</a> (const <a class="el" href="classVector2D.html">Vector2D</a> &amp;vec) override</td></tr>
+<tr class="memdesc:ae9645510e210893af60a169ca46e0a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drives the robot using a 2D movement vector.  <br /></td></tr>
 <tr class="separator:ae9645510e210893af60a169ca46e0a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb2375c4355d62952efcd7a0771609a7" id="r_acb2375c4355d62952efcd7a0771609a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb2375c4355d62952efcd7a0771609a7">drive_vector</a> (const <a class="el" href="classVector3D.html">Vector3D</a> &amp;vec) override</td></tr>
+<tr class="memdesc:acb2375c4355d62952efcd7a0771609a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drives the robot using a 3D movement vector.  <br /></td></tr>
 <tr class="separator:acb2375c4355d62952efcd7a0771609a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0107a4296d94ee3a0f2059889738795" id="r_ad0107a4296d94ee3a0f2059889738795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0107a4296d94ee3a0f2059889738795">calibrate</a> () override</td></tr>
+<tr class="memdesc:ad0107a4296d94ee3a0f2059889738795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalibrates motor positions or sensors.  <br /></td></tr>
 <tr class="separator:ad0107a4296d94ee3a0f2059889738795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12afad154b20d3a69ef80290ee9570a7" id="r_a12afad154b20d3a69ef80290ee9570a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12afad154b20d3a69ef80290ee9570a7">~MecanumMotorController</a> () override=default</td></tr>
 <tr class="separator:a12afad154b20d3a69ef80290ee9570a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,21 +211,29 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ae657b26cd8d1ca9d5f763cffd4647384 inherit pub_types_classMotorController" id="r_ae657b26cd8d1ca9d5f763cffd4647384"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorController.html#ae657b26cd8d1ca9d5f763cffd4647384">Side</a> { <a class="el" href="classMotorController.html#ae657b26cd8d1ca9d5f763cffd4647384a811882fecd5c7618d7099ebbd39ea254">left</a>
 , <a class="el" href="classMotorController.html#ae657b26cd8d1ca9d5f763cffd4647384a7c4f29407893c334a6cb7a87bf045c0d">right</a>
  }</td></tr>
+<tr class="memdesc:ae657b26cd8d1ca9d5f763cffd4647384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates which side of the robot is being referenced (used in diagonal moves).  <a href="classMotorController.html#ae657b26cd8d1ca9d5f763cffd4647384">More...</a><br /></td></tr>
 <tr class="separator:ae657b26cd8d1ca9d5f763cffd4647384 inherit pub_types_classMotorController"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classMotorController"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classMotorController')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classMotorController.html">MotorController</a></td></tr>
 <tr class="memitem:a6285067dce96b15d8e3947d1191c3423 inherit pub_static_methods_classMotorController" id="r_a6285067dce96b15d8e3947d1191c3423"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classMotorController.html">MotorController</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorController.html#a6285067dce96b15d8e3947d1191c3423">get_instance</a> ()</td></tr>
+<tr class="memdesc:a6285067dce96b15d8e3947d1191c3423 inherit pub_static_methods_classMotorController"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the global singleton instance of the motor controller.  <br /></td></tr>
 <tr class="separator:a6285067dce96b15d8e3947d1191c3423 inherit pub_static_methods_classMotorController"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c084cb5e17bb413e9775e6e26025208 inherit pub_static_methods_classMotorController" id="r_a6c084cb5e17bb413e9775e6e26025208"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorController.html#a6c084cb5e17bb413e9775e6e26025208">set_instance</a> (std::shared_ptr&lt; <a class="el" href="classMotorController.html">MotorController</a> &gt; instance)</td></tr>
+<tr class="memdesc:a6c084cb5e17bb413e9775e6e26025208 inherit pub_static_methods_classMotorController"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global singleton motor controller instance.  <br /></td></tr>
 <tr class="separator:a6c084cb5e17bb413e9775e6e26025208 inherit pub_static_methods_classMotorController"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classMotorController"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classMotorController')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classMotorController.html">MotorController</a></td></tr>
 <tr class="memitem:aee5922ba1c673eea2cb91a3a0476ee01 inherit pro_attribs_classMotorController" id="r_aee5922ba1c673eea2cb91a3a0476ee01"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorController.html#aee5922ba1c673eea2cb91a3a0476ee01">movement_mutex</a></td></tr>
+<tr class="memdesc:aee5922ba1c673eea2cb91a3a0476ee01 inherit pro_attribs_classMotorController"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe movement lock.  <br /></td></tr>
 <tr class="separator:aee5922ba1c673eea2cb91a3a0476ee01 inherit pro_attribs_classMotorController"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a113cbac016b265663e927f9cf42cb208 inherit pro_attribs_classMotorController" id="r_a113cbac016b265663e927f9cf42cb208"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorController.html#a113cbac016b265663e927f9cf42cb208">current_angle</a> {}</td></tr>
+<tr class="memdesc:a113cbac016b265663e927f9cf42cb208 inherit pro_attribs_classMotorController"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current robot orientation in degrees.  <br /></td></tr>
 <tr class="separator:a113cbac016b265663e927f9cf42cb208 inherit pro_attribs_classMotorController"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac48fbee78728c4967420194aed9556af inherit pro_attribs_classMotorController" id="r_ac48fbee78728c4967420194aed9556af"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classSensorRegistry.html">SensorRegistry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorController.html#ac48fbee78728c4967420194aed9556af">sensor_registry</a></td></tr>
+<tr class="memdesc:ac48fbee78728c4967420194aed9556af inherit pro_attribs_classMotorController"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sensor integration (e.g., gyroscope, encoders).  <br /></td></tr>
 <tr class="separator:ac48fbee78728c4967420194aed9556af inherit pro_attribs_classMotorController"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implements full omni-directional control for robots with 4 Mecanum wheels. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a591b0c066013680f03a6d5607b457c4e" name="a591b0c066013680f03a6d5607b457c4e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a591b0c066013680f03a6d5607b457c4e">&#9670;&#160;</a></span>MecanumMotorController()</h2>
 
@@ -235,6 +267,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classMecanumMotorController.html" title="Implements full omni-directional control for robots with 4 Mecanum wheels.">MecanumMotorController</a> using 4 motors and a sensor registry. </p>
 
 </div>
 </div>
@@ -287,6 +321,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Moves backward at given speed. </p>
+
 <p>Implements <a class="el" href="classMotorController.html#ae35c61346d3af9c84891605403a84286">MotorController</a>.</p>
 
 </div>
@@ -318,6 +354,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Moves backward for a specified distance. </p>
+
 <p>Implements <a class="el" href="classMotorController.html#a385fab3df4fc3762195d5b0a00fe3f2d">MotorController</a>.</p>
 
 </div>
@@ -344,6 +382,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Recalibrates motor positions or sensors. </p>
 
 <p>Implements <a class="el" href="classMotorController.html#a089dfc052c0f32301d6bd7701d1c120c">MotorController</a>.</p>
 
@@ -375,6 +415,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Moves diagonally relative to robot front. </p>
+<dl class="section note"><dt>Note</dt><dd>Only available for omni-directional drive systems. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not supported on differential drive robots. </dd></dl>
 
 <p>Implements <a class="el" href="classMotorController.html#ad2dc7b00ea83139324c12704f1c52e0d">MotorController</a>.</p>
 
@@ -412,6 +456,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Moves diagonally for a specific distance. </p>
+<dl class="section note"><dt>Note</dt><dd>Only available on omni-directional platforms. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not supported on differential drive robots. </dd></dl>
+
 <p>Implements <a class="el" href="classMotorController.html#a5622ddb4209cccf80e0efb0d87840482">MotorController</a>.</p>
 
 </div>
@@ -438,6 +486,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Drives the robot using a 2D movement vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>X = strafe, Y = forward. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classMotorController.html#a81c95b4de2a3bcc7259b902c09c42d2d">MotorController</a>.</p>
 
@@ -466,6 +522,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Drives the robot using a 3D movement vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>X = strafe, Y = forward, Z = rotation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="classMotorController.html#ab3ee063265ef061ff9df1bdd99985c23">MotorController</a>.</p>
 
 </div>
@@ -492,6 +556,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Moves forward at given speed. </p>
 
 <p>Implements <a class="el" href="classMotorController.html#a7d5548022f131abd01d9d3f133895e15">MotorController</a>.</p>
 
@@ -524,6 +590,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Moves forward for a specified distance. </p>
+
 <p>Implements <a class="el" href="classMotorController.html#ab2bf1b33836f3c5da5817dfc1f04735e">MotorController</a>.</p>
 
 </div>
@@ -551,6 +619,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Immediately stops all motors. </p>
+
 <p>Implements <a class="el" href="classMotorController.html#a66b5709fbdecbcfae0c3f9103757b077">MotorController</a>.</p>
 
 </div>
@@ -577,6 +647,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Strafes left (lateral movement). </p>
+<dl class="section note"><dt>Note</dt><dd>Only available for omni-directional drive systems (e.g., Mecanum). </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not supported on differential drive robots. </dd></dl>
 
 <p>Implements <a class="el" href="classMotorController.html#a26c5187937439ab17e78b40ea5e26ade">MotorController</a>.</p>
 
@@ -609,6 +683,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Strafes left for a specified distance. </p>
+<dl class="section note"><dt>Note</dt><dd>Only available on omni-directional robots. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not supported on differential drive robots. </dd></dl>
+
 <p>Implements <a class="el" href="classMotorController.html#a6befa516a247d4c17d3a2732d813af53">MotorController</a>.</p>
 
 </div>
@@ -635,6 +713,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Drives only the left-side motors. </p>
+<dl class="section note"><dt>Note</dt><dd>Useful for wall square-ups or differential control. </dd></dl>
 
 <p>Implements <a class="el" href="classMotorController.html#a6515fa769ef7e4ed3688789d34b5cf0c">MotorController</a>.</p>
 
@@ -663,6 +744,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Checks if the controller supports omni-directional movement. </p>
+<dl class="section return"><dt>Returns</dt><dd>true for mecanum or holonomic drives, false for differential. </dd></dl>
+
 <p>Implements <a class="el" href="classMotorController.html#a4cb9a6851df94393ca598d279cc9f7ee">MotorController</a>.</p>
 
 </div>
@@ -689,6 +773,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Strafes right (lateral movement). </p>
+<dl class="section note"><dt>Note</dt><dd>Only available for omni-directional drive systems. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not supported on differential drive robots. </dd></dl>
 
 <p>Implements <a class="el" href="classMotorController.html#a7126fdea75cb2298991fb7132a976568">MotorController</a>.</p>
 
@@ -721,6 +809,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Strafes right for a specified distance. </p>
+<dl class="section note"><dt>Note</dt><dd>Only available on omni-directional robots. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not supported on differential drive robots. </dd></dl>
+
 <p>Implements <a class="el" href="classMotorController.html#aedbe91fea865b55e107d8bbbb2cf16c3">MotorController</a>.</p>
 
 </div>
@@ -747,6 +839,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Drives only the right-side motors. </p>
+<dl class="section note"><dt>Note</dt><dd>Useful for wall square-ups or differential control. </dd></dl>
 
 <p>Implements <a class="el" href="classMotorController.html#ae7ecaac1c4cb59e48625cb9f5728f309">MotorController</a>.</p>
 
@@ -775,6 +870,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Turns left by a relative amount (degrees). </p>
+
 <p>Implements <a class="el" href="classMotorController.html#a96e9cc7a9f2e1d65f882eef1a78296b1">MotorController</a>.</p>
 
 </div>
@@ -802,6 +899,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Turns right by a relative amount (degrees). </p>
+
 <p>Implements <a class="el" href="classMotorController.html#a592fb5e31607b1d573cecd6a6a312fc1">MotorController</a>.</p>
 
 </div>
@@ -828,6 +927,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Turns to an absolute heading (degrees). </p>
 
 <p>Implements <a class="el" href="classMotorController.html#aac346b15b87b234a2f5f5ab3412c261f">MotorController</a>.</p>
 

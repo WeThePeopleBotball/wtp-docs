@@ -109,7 +109,7 @@ $(function(){initNavTree('classSensorRegistry.html',''); initResizable(true); })
 </div><!--header-->
 <div class="contents">
 
-<p>A class for managing sensors and their calibration data.  
+<p>Central registry for managing analog and digital sensors, including access to their calibration data.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="registry_8hpp_source.html">registry.hpp</a>&gt;</code></p>
@@ -117,51 +117,46 @@ $(function(){initNavTree('classSensorRegistry.html',''); initResizable(true); })
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a16111486116901502de42d95bf6d903c" id="r_a16111486116901502de42d95bf6d903c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16111486116901502de42d95bf6d903c">create_analog</a> (string id, int port)</td></tr>
-<tr class="memdesc:a16111486116901502de42d95bf6d903c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new analog sensor and stores it in the analog registry.  <br /></td></tr>
+<tr class="memdesc:a16111486116901502de42d95bf6d903c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and registers a new analog sensor.  <br /></td></tr>
 <tr class="separator:a16111486116901502de42d95bf6d903c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dd94cac2a5a645223066d16174dfd73" id="r_a0dd94cac2a5a645223066d16174dfd73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dd94cac2a5a645223066d16174dfd73">create_digital</a> (string id, int port)</td></tr>
-<tr class="memdesc:a0dd94cac2a5a645223066d16174dfd73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new digital sensor and stores it in the digital registry.  <br /></td></tr>
+<tr class="memdesc:a0dd94cac2a5a645223066d16174dfd73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and registers a new digital sensor.  <br /></td></tr>
 <tr class="separator:a0dd94cac2a5a645223066d16174dfd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3725eec647d08812ff97d5a2f60cecb6" id="r_a3725eec647d08812ff97d5a2f60cecb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3725eec647d08812ff97d5a2f60cecb6">add_analog</a> (string id, shared_ptr&lt; sensor::Sensor&lt; unsigned short &gt; &gt; s)</td></tr>
-<tr class="memdesc:a3725eec647d08812ff97d5a2f60cecb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an analog sensor to the registry.  <br /></td></tr>
+<tr class="memdesc:a3725eec647d08812ff97d5a2f60cecb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an existing analog sensor under a given ID.  <br /></td></tr>
 <tr class="separator:a3725eec647d08812ff97d5a2f60cecb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82d45757b850038ab1ac6bd7b19b269c" id="r_a82d45757b850038ab1ac6bd7b19b269c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82d45757b850038ab1ac6bd7b19b269c">add_digital</a> (string id, shared_ptr&lt; sensor::Sensor&lt; bool &gt; &gt; s)</td></tr>
-<tr class="memdesc:a82d45757b850038ab1ac6bd7b19b269c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a digital sensor to the registry.  <br /></td></tr>
+<tr class="memdesc:a82d45757b850038ab1ac6bd7b19b269c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an existing digital sensor under a given ID.  <br /></td></tr>
 <tr class="separator:a82d45757b850038ab1ac6bd7b19b269c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad01cf42df6a959739767ed1e56ab44f1" id="r_ad01cf42df6a959739767ed1e56ab44f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad01cf42df6a959739767ed1e56ab44f1">add_analog_calibration</a> (string id, <a class="el" href="classCalibrationStore.html">CalibrationStore</a>&lt; unsigned short &gt; calibration)</td></tr>
-<tr class="memdesc:ad01cf42df6a959739767ed1e56ab44f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an analog calibration store to the registry.  <br /></td></tr>
-<tr class="separator:ad01cf42df6a959739767ed1e56ab44f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73fcdadf2bba8f9592c006c9114c44f8" id="r_a73fcdadf2bba8f9592c006c9114c44f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73fcdadf2bba8f9592c006c9114c44f8">add_digital_calibration</a> (string id, <a class="el" href="classCalibrationStore.html">CalibrationStore</a>&lt; bool &gt; calibration)</td></tr>
-<tr class="memdesc:a73fcdadf2bba8f9592c006c9114c44f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a digital calibration store to the registry.  <br /></td></tr>
-<tr class="separator:a73fcdadf2bba8f9592c006c9114c44f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7191ce954dfe3626e0726d1e577a5566" id="r_a7191ce954dfe3626e0726d1e577a5566"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7191ce954dfe3626e0726d1e577a5566">add_analog_calibration</a> (string id, <a class="el" href="classCalibrationStore.html">CalibrationStore</a> calibration)</td></tr>
+<tr class="memdesc:a7191ce954dfe3626e0726d1e577a5566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates a calibration store with a specific analog sensor.  <br /></td></tr>
+<tr class="separator:a7191ce954dfe3626e0726d1e577a5566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c29209c88972d7dcdc4e027e3cdf98" id="r_a62c29209c88972d7dcdc4e027e3cdf98"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; sensor::Sensor&lt; unsigned short &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62c29209c88972d7dcdc4e027e3cdf98">get_analog</a> (string id)</td></tr>
-<tr class="memdesc:a62c29209c88972d7dcdc4e027e3cdf98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an analog sensor from the registry by its <code>id</code>.  <br /></td></tr>
+<tr class="memdesc:a62c29209c88972d7dcdc4e027e3cdf98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an analog sensor by its ID.  <br /></td></tr>
 <tr class="separator:a62c29209c88972d7dcdc4e027e3cdf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6b72aab7e3aca833242c6fc335cf7a8" id="r_ac6b72aab7e3aca833242c6fc335cf7a8"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; sensor::Sensor&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6b72aab7e3aca833242c6fc335cf7a8">get_digital</a> (string id)</td></tr>
-<tr class="memdesc:ac6b72aab7e3aca833242c6fc335cf7a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a digital sensor from the registry by its <code>id</code>.  <br /></td></tr>
+<tr class="memdesc:ac6b72aab7e3aca833242c6fc335cf7a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a digital sensor by its ID.  <br /></td></tr>
 <tr class="separator:ac6b72aab7e3aca833242c6fc335cf7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87db110c3acd3aef75b85fd6b8c0a41b" id="r_a87db110c3acd3aef75b85fd6b8c0a41b"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87db110c3acd3aef75b85fd6b8c0a41b">get_analog_calibration</a> (string id, string calibration_id)</td></tr>
-<tr class="memdesc:a87db110c3acd3aef75b85fd6b8c0a41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the calibration value for an analog sensor by its <code>id</code> and calibration <code>id</code>.  <br /></td></tr>
+<tr class="memdesc:a87db110c3acd3aef75b85fd6b8c0a41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a specific calibration value for an analog sensor.  <br /></td></tr>
 <tr class="separator:a87db110c3acd3aef75b85fd6b8c0a41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefea56dc4f3abb5ae9d090a7d5c3a0d8" id="r_aefea56dc4f3abb5ae9d090a7d5c3a0d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefea56dc4f3abb5ae9d090a7d5c3a0d8">get_digital_calibration</a> (string id, string calibration_id)</td></tr>
-<tr class="memdesc:aefea56dc4f3abb5ae9d090a7d5c3a0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the calibration value for a digital sensor by its <code>id</code> and calibration <code>id</code>.  <br /></td></tr>
-<tr class="separator:aefea56dc4f3abb5ae9d090a7d5c3a0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6759e3c5dc0fe032f3c59e534186508" id="r_ab6759e3c5dc0fe032f3c59e534186508"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6759e3c5dc0fe032f3c59e534186508">get_analog_value</a> (string id)</td></tr>
-<tr class="memdesc:ab6759e3c5dc0fe032f3c59e534186508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current value of an analog sensor.  <br /></td></tr>
+<tr class="memdesc:ab6759e3c5dc0fe032f3c59e534186508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the current value from an analog sensor.  <br /></td></tr>
 <tr class="separator:ab6759e3c5dc0fe032f3c59e534186508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b2b3410bac882597f251be84a3ab02" id="r_a74b2b3410bac882597f251be84a3ab02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74b2b3410bac882597f251be84a3ab02">get_digital_value</a> (string id)</td></tr>
-<tr class="memdesc:a74b2b3410bac882597f251be84a3ab02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current value of a digital sensor.  <br /></td></tr>
+<tr class="memdesc:a74b2b3410bac882597f251be84a3ab02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the current value from a digital sensor.  <br /></td></tr>
 <tr class="separator:a74b2b3410bac882597f251be84a3ab02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6d24f9c7aa03264dd9ae942a67a354f" id="r_ac6d24f9c7aa03264dd9ae942a67a354f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6d24f9c7aa03264dd9ae942a67a354f">gyro_calibrate</a> ()</td></tr>
-<tr class="memdesc:ac6d24f9c7aa03264dd9ae942a67a354f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calibrates the gyroscope.  <br /></td></tr>
+<tr class="memdesc:ac6d24f9c7aa03264dd9ae942a67a354f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calibrates the gyroscope (implementation depends on robot platform).  <br /></td></tr>
 <tr class="separator:ac6d24f9c7aa03264dd9ae942a67a354f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec5324c1cafce211a8f168cb0a4b5b70" id="r_aec5324c1cafce211a8f168cb0a4b5b70"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec5324c1cafce211a8f168cb0a4b5b70">gyro_z</a> ()</td></tr>
-<tr class="memdesc:aec5324c1cafce211a8f168cb0a4b5b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the gyroscope's Z-axis value.  <br /></td></tr>
+<tr class="memdesc:aec5324c1cafce211a8f168cb0a4b5b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current angular velocity from the gyroscope's Z-axis.  <br /></td></tr>
 <tr class="separator:aec5324c1cafce211a8f168cb0a4b5b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for managing sensors and their calibration data. </p>
-<p>The <code><a class="el" href="classSensorRegistry.html" title="A class for managing sensors and their calibration data.">SensorRegistry</a></code> class is used to store and manage sensors (both analog and digital), as well as their associated calibration data. The class supports creating sensors, adding them to registries, and retrieving their values. It also handles internal sensors such as the accelerometer and gyroscope. </p>
+<div class="textblock"><p>Central registry for managing analog and digital sensors, including access to their calibration data. </p>
+<p>Provides methods to create, add, and retrieve sensors by ID. Supports both <code>unsigned short</code> analog sensors and <code>bool</code> digital sensors.</p>
+<p>Also allows associating each analog sensor with a <code><a class="el" href="classCalibrationStore.html" title="A utility class that stores and retrieves calibration values for analog sensors.">CalibrationStore</a></code> for retrieving named calibration values like <code>"black"</code> or <code>"white"</code>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3725eec647d08812ff97d5a2f60cecb6" name="a3725eec647d08812ff97d5a2f60cecb6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3725eec647d08812ff97d5a2f60cecb6">&#9670;&#160;</a></span>add_analog()</h2>
@@ -182,20 +177,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds an analog sensor to the registry. </p>
-<p>This method adds a shared pointer to an existing analog sensor to the analog registry. The sensor is associated with a given <code>id</code>, and its value can be retrieved later.</p>
+<p>Registers an existing analog sensor under a given ID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>The unique identifier for the analog sensor. </td></tr>
-    <tr><td class="paramname">s</td><td>A shared pointer to a <code>sensor::Sensor&lt;short&gt;</code> representing the analog sensor. </td></tr>
+    <tr><td class="paramname">id</td><td>Unique identifier. </td></tr>
+    <tr><td class="paramname">s</td><td>Shared pointer to a sensor object. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ad01cf42df6a959739767ed1e56ab44f1" name="ad01cf42df6a959739767ed1e56ab44f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad01cf42df6a959739767ed1e56ab44f1">&#9670;&#160;</a></span>add_analog_calibration()</h2>
+<a id="a7191ce954dfe3626e0726d1e577a5566" name="a7191ce954dfe3626e0726d1e577a5566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7191ce954dfe3626e0726d1e577a5566">&#9670;&#160;</a></span>add_analog_calibration()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,17 +202,16 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCalibrationStore.html">CalibrationStore</a>&lt; unsigned short &gt;</td>          <td class="paramname"><span class="paramname"><em>calibration</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classCalibrationStore.html">CalibrationStore</a></td>          <td class="paramname"><span class="paramname"><em>calibration</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds an analog calibration store to the registry. </p>
-<p>This method adds a <code><a class="el" href="classCalibrationStore.html" title="A template class that stores and retrieves calibration values for sensors.">CalibrationStore</a>&lt;short&gt;</code> for an analog sensor to the <code>analog_calibration_store</code>. The <code>id</code> of the sensor is associated with a corresponding calibration store.</p>
+<p>Associates a calibration store with a specific analog sensor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>The unique identifier for the analog sensor. </td></tr>
-    <tr><td class="paramname">calibration</td><td>A <code><a class="el" href="classCalibrationStore.html" title="A template class that stores and retrieves calibration values for sensors.">CalibrationStore</a>&lt;short&gt;</code> object containing calibration data for the sensor. </td></tr>
+    <tr><td class="paramname">id</td><td>Sensor ID. </td></tr>
+    <tr><td class="paramname">calibration</td><td>Store containing calibration values (e.g., <code>"white"</code>, <code>"black"</code>). </td></tr>
   </table>
   </dd>
 </dl>
@@ -244,43 +237,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a digital sensor to the registry. </p>
-<p>This method adds a shared pointer to an existing digital sensor to the digital registry. The sensor is associated with a given <code>id</code>, and its value can be retrieved later.</p>
+<p>Registers an existing digital sensor under a given ID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>The unique identifier for the digital sensor. </td></tr>
-    <tr><td class="paramname">s</td><td>A shared pointer to a <code>sensor::Sensor&lt;bool&gt;</code> representing the digital sensor. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a73fcdadf2bba8f9592c006c9114c44f8" name="a73fcdadf2bba8f9592c006c9114c44f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73fcdadf2bba8f9592c006c9114c44f8">&#9670;&#160;</a></span>add_digital_calibration()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SensorRegistry::add_digital_calibration </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classCalibrationStore.html">CalibrationStore</a>&lt; bool &gt;</td>          <td class="paramname"><span class="paramname"><em>calibration</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Adds a digital calibration store to the registry. </p>
-<p>This method adds a <code><a class="el" href="classCalibrationStore.html" title="A template class that stores and retrieves calibration values for sensors.">CalibrationStore</a>&lt;bool&gt;</code> for a digital sensor to the <code>digital_calibration_store</code>. The <code>id</code> of the sensor is associated with a corresponding calibration store.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>The unique identifier for the digital sensor. </td></tr>
-    <tr><td class="paramname">calibration</td><td>A <code><a class="el" href="classCalibrationStore.html" title="A template class that stores and retrieves calibration values for sensors.">CalibrationStore</a>&lt;bool&gt;</code> object containing calibration data for the sensor. </td></tr>
+    <tr><td class="paramname">id</td><td>Unique identifier. </td></tr>
+    <tr><td class="paramname">s</td><td>Shared pointer to a sensor object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -306,12 +267,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new analog sensor and stores it in the analog registry. </p>
-<p>This method creates an analog sensor with the given <code>id</code> and stores it in the analog registry. The sensor is not yet associated with any calibration data.</p>
+<p>Creates and registers a new analog sensor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>The unique identifier for the analog sensor. </td></tr>
-    <tr><td class="paramname">port</td><td>The port of the analog sensor </td></tr>
+    <tr><td class="paramname">id</td><td>Unique identifier for the sensor. </td></tr>
+    <tr><td class="paramname">port</td><td>Analog port number to bind to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -337,12 +297,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new digital sensor and stores it in the digital registry. </p>
-<p>This method creates a digital sensor with the given <code>id</code> and stores it in the digital registry. The sensor is not yet associated with any calibration data.</p>
+<p>Creates and registers a new digital sensor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>The unique identifier for the digital sensor. </td></tr>
-    <tr><td class="paramname">port</td><td>The port of the digital sensor </td></tr>
+    <tr><td class="paramname">id</td><td>Unique identifier for the sensor. </td></tr>
+    <tr><td class="paramname">port</td><td>Digital port number to bind to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -364,15 +323,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves an analog sensor from the registry by its <code>id</code>. </p>
-<p>This method retrieves an analog sensor from the registry using its unique <code>id</code>. It returns a shared pointer to the sensor, which allows access to its data.</p>
+<p>Retrieves an analog sensor by its ID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>The unique identifier for the analog sensor. </td></tr>
+    <tr><td class="paramname">id</td><td>Sensor ID. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the <code>sensor::Sensor&lt;short&gt;</code> object representing the analog sensor. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Shared pointer to the analog sensor. </dd></dl>
 
 </div>
 </div>
@@ -395,16 +353,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the calibration value for an analog sensor by its <code>id</code> and calibration <code>id</code>. </p>
-<p>This method retrieves the calibration data for an analog sensor stored in the <code>analog_calibration_store</code>, identified by the <code>id</code> of the sensor and the <code>calibration_id</code>.</p>
+<p>Retrieves a specific calibration value for an analog sensor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>The unique identifier for the analog sensor. </td></tr>
-    <tr><td class="paramname">calibration_id</td><td>The unique identifier for the calibration data. </td></tr>
+    <tr><td class="paramname">id</td><td>Sensor ID (e.g., <code>"lf-left"</code>). </td></tr>
+    <tr><td class="paramname">calibration_id</td><td>Calibration value ID (e.g., <code>"white"</code> or <code>"black"</code>). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The requested calibration value. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The stored calibration value. </dd></dl>
 
 </div>
 </div>
@@ -423,15 +380,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the current value of an analog sensor. </p>
-<p>This method retrieves the current value of an analog sensor by accessing the sensor registry and returning the sensor value.</p>
+<p>Reads the current value from an analog sensor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>The unique identifier for the analog sensor. </td></tr>
+    <tr><td class="paramname">id</td><td>Sensor ID. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The current value of the analog sensor. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Latest <code>unsigned short</code> reading. </dd></dl>
 
 </div>
 </div>
@@ -450,47 +406,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves a digital sensor from the registry by its <code>id</code>. </p>
-<p>This method retrieves a digital sensor from the registry using its unique <code>id</code>. It returns a shared pointer to the sensor, which allows access to its data.</p>
+<p>Retrieves a digital sensor by its ID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>The unique identifier for the digital sensor. </td></tr>
+    <tr><td class="paramname">id</td><td>Sensor ID. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the <code>sensor::Sensor&lt;bool&gt;</code> object representing the digital sensor. </dd></dl>
-
-</div>
-</div>
-<a id="aefea56dc4f3abb5ae9d090a7d5c3a0d8" name="aefea56dc4f3abb5ae9d090a7d5c3a0d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefea56dc4f3abb5ae9d090a7d5c3a0d8">&#9670;&#160;</a></span>get_digital_calibration()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool SensorRegistry::get_digital_calibration </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>calibration_id</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Retrieves the calibration value for a digital sensor by its <code>id</code> and calibration <code>id</code>. </p>
-<p>This method retrieves the calibration data for a digital sensor stored in the <code>digital_calibration_store</code>, identified by the <code>id</code> of the sensor and the <code>calibration_id</code>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>The unique identifier for the digital sensor. </td></tr>
-    <tr><td class="paramname">calibration_id</td><td>The unique identifier for the calibration data. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The requested calibration value. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Shared pointer to the digital sensor. </dd></dl>
 
 </div>
 </div>
@@ -509,15 +432,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the current value of a digital sensor. </p>
-<p>This method retrieves the current value of a digital sensor by accessing the sensor registry and returning the sensor value.</p>
+<p>Reads the current value from a digital sensor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>The unique identifier for the digital sensor. </td></tr>
+    <tr><td class="paramname">id</td><td>Sensor ID. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The current value of the digital sensor. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the sensor is active; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -536,8 +458,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calibrates the gyroscope. </p>
-<p>This method calibrates the gyroscope. It should be called to set the initial reference values for the gyroscope readings. </p>
+<p>Calibrates the gyroscope (implementation depends on robot platform). </p>
 
 </div>
 </div>
@@ -556,9 +477,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the gyroscope's Z-axis value. </p>
-<p>This method retrieves the current value from the gyroscope's Z-axis.</p>
-<dl class="section return"><dt>Returns</dt><dd>The Z-axis value of the gyroscope. </dd></dl>
+<p>Returns the current angular velocity from the gyroscope's Z-axis. </p>
+<dl class="section return"><dt>Returns</dt><dd>Gyro Z value (short integer). </dd></dl>
 
 </div>
 </div>

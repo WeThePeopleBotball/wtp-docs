@@ -1,6 +1,6 @@
 <map id="src/component/arm_controller.cpp" name="src/component/arm_controller.cpp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="307,5,524,31"/>
-<area shape="rect" id="Node000002" href="$arm__controller_8hpp.html" title=" " alt="" coords="159,79,354,105"/>
+<area shape="rect" id="Node000002" href="$arm__controller_8hpp.html" title="Defines the ArmController class for controlling an N&#45;link planar robotic arm with a claw." alt="" coords="159,79,354,105"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="390,34,299,75,296,70,387,29"/>
 <area shape="rect" id="Node000003" href="$vector_8hpp.html" title=" " alt="" coords="5,153,122,178"/>
 <area shape="poly" id="edge17_Node000001_Node000003" title=" " alt="" coords="307,29,221,46,177,61,137,81,104,109,80,141,76,138,100,106,134,77,175,56,219,41,306,23"/>
@@ -18,7 +18,7 @@
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="245,107,201,144,198,140,241,103"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="227,153,294,178"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="260,105,262,137,257,137,255,105"/>
-<area shape="rect" id="Node000006" href="$improved__servo_8hpp.html" title=" " alt="" coords="318,153,521,178"/>
+<area shape="rect" id="Node000006" href="$improved__servo_8hpp.html" title="Defines the ImprovedServo class for smooth and controlled servo movement using threads and easing fun..." alt="" coords="318,153,521,178"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="285,103,379,144,377,148,283,108"/>
 <area shape="rect" id="Node000007" href="$ticks_8hpp.html" title=" " alt="" coords="15,226,123,252"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="360,182,139,226,138,221,359,176"/>

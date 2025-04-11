@@ -12,7 +12,7 @@
 <area shape="poly" id="edge36_Node000001_Node000025" title=" " alt="" coords="835,29,907,69,905,73,833,34"/>
 <area shape="rect" id="Node000026" title=" " alt="" coords="1004,79,1078,105"/>
 <area shape="poly" id="edge37_Node000001_Node000026" title=" " alt="" coords="852,29,990,72,989,77,850,34"/>
-<area shape="rect" id="Node000003" href="$motor__controller_8hpp.html" title=" " alt="" coords="252,300,458,326"/>
+<area shape="rect" id="Node000003" href="$motor__controller_8hpp.html" title="Defines the abstract motor controller interface and concrete implementations for omni and differentia..." alt="" coords="252,300,458,326"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="501,108,456,126,435,139,417,154,394,185,378,221,361,285,356,284,373,219,389,183,413,151,432,134,454,121,499,103"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="562,374,630,399"/>
 <area shape="poly" id="edge28_Node000002_Node000004" title=" " alt="" coords="520,108,487,126,472,139,461,154,458,165,461,177,484,232,515,283,547,327,576,360,572,364,543,330,510,286,479,235,456,179,453,165,456,152,468,135,484,122,517,103"/>
@@ -20,9 +20,9 @@
 <area shape="poly" id="edge32_Node000002_Node000006" title=" " alt="" coords="484,108,417,126,349,155,275,205,208,263,152,320,113,364,109,360,148,316,204,259,272,201,347,150,415,121,483,103"/>
 <area shape="rect" id="Node000016" href="$vector_8hpp.html" title=" " alt="" coords="144,374,261,399"/>
 <area shape="poly" id="edge27_Node000002_Node000016" title=" " alt="" coords="506,108,449,127,392,155,343,188,307,218,277,253,242,301,226,331,214,360,209,358,221,329,238,299,273,250,304,214,340,184,389,150,447,122,504,103"/>
-<area shape="rect" id="Node000017" href="$line__manager_8hpp.html" title=" " alt="" coords="583,226,769,252"/>
+<area shape="rect" id="Node000017" href="$line__manager_8hpp.html" title="Defines the LineManager class for two&#45;sensor line following and crossing detection." alt="" coords="583,226,769,252"/>
 <area shape="poly" id="edge18_Node000002_Node000017" title=" " alt="" coords="587,103,621,122,653,151,668,181,676,211,671,212,663,183,649,154,618,127,584,108"/>
-<area shape="rect" id="Node000018" href="$square__up_8hpp.html" title=" " alt="" coords="470,153,639,178"/>
+<area shape="rect" id="Node000018" href="$square__up_8hpp.html" title="Contains square&#45;up mechanisms for aligning the robot to walls or lines." alt="" coords="470,153,639,178"/>
 <area shape="poly" id="edge23_Node000002_Node000018" title=" " alt="" coords="557,105,557,137,552,137,552,105"/>
 <area shape="rect" id="Node000019" title=" " alt="" coords="714,153,780,178"/>
 <area shape="poly" id="edge29_Node000002_Node000019" title=" " alt="" coords="588,103,701,144,699,149,586,108"/>
@@ -34,7 +34,7 @@
 <area shape="rect" id="Node000005" title=" " alt="" coords="536,447,592,473"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="402,324,452,343,502,372,531,401,553,432,548,435,527,405,498,376,450,347,401,329"/>
 <area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="309,329,137,375,135,370,308,324"/>
-<area shape="rect" id="Node000007" href="$improved__motor_8hpp.html" title=" " alt="" coords="285,374,488,399"/>
+<area shape="rect" id="Node000007" href="$improved__motor_8hpp.html" title="Defines the ImprovedMotor class for advanced motor control with PID and easing support." alt="" coords="285,374,488,399"/>
 <area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="362,325,377,358,373,360,358,327"/>
 <area shape="poly" id="edge17_Node000003_Node000016" title=" " alt="" coords="330,329,244,369,241,364,328,324"/>
 <area shape="poly" id="edge15_Node000007_Node000005" title=" " alt="" coords="418,397,523,439,521,444,416,402"/>

@@ -110,7 +110,7 @@ $(function(){initNavTree('classLineSquareUp.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Aligns the robot with a line for recalibration by backing up until both line sensors detect the line.  
+<p>Aligns the robot with a black line by backing up until both line sensors detect alignment.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="square__up_8hpp_source.html">square_up.hpp</a>&gt;</code></p>
@@ -118,23 +118,28 @@ $(function(){initNavTree('classLineSquareUp.html',''); initResizable(true); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acb848d365342ab6838dcf5763092edba" id="r_acb848d365342ab6838dcf5763092edba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb848d365342ab6838dcf5763092edba">LineSquareUp</a> (std::shared_ptr&lt; <a class="el" href="classMotorController.html">MotorController</a> &gt; motor_controller, std::shared_ptr&lt; <a class="el" href="classLineManager.html">LineManager</a> &gt; line_manager)</td></tr>
-<tr class="memdesc:acb848d365342ab6838dcf5763092edba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classLineSquareUp.html" title="Aligns the robot with a line for recalibration by backing up until both line sensors detect the line.">LineSquareUp</a> instance.  <br /></td></tr>
+<tr class="memdesc:acb848d365342ab6838dcf5763092edba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classLineSquareUp.html" title="Aligns the robot with a black line by backing up until both line sensors detect alignment.">LineSquareUp</a> instance.  <br /></td></tr>
 <tr class="separator:acb848d365342ab6838dcf5763092edba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6d5688907f156764d710f59765345bd" id="r_ae6d5688907f156764d710f59765345bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6d5688907f156764d710f59765345bd">execute</a> (float speed)</td></tr>
-<tr class="memdesc:ae6d5688907f156764d710f59765345bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes one iteration of the line squaring process. Drives both sides backward until both sensors detect the line.  <br /></td></tr>
-<tr class="separator:ae6d5688907f156764d710f59765345bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9365d0fa7d9e43baed48d796a4092cfd" id="r_a9365d0fa7d9e43baed48d796a4092cfd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9365d0fa7d9e43baed48d796a4092cfd">execute</a> (float speed, bool invert=false)</td></tr>
+<tr class="memdesc:a9365d0fa7d9e43baed48d796a4092cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes one iteration of the line squaring process.  <br /></td></tr>
+<tr class="separator:a9365d0fa7d9e43baed48d796a4092cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3aadf8d1d5a5b67103504e68c5bddc80" id="r_a3aadf8d1d5a5b67103504e68c5bddc80"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classLineSquareUp.html">LineSquareUp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3aadf8d1d5a5b67103504e68c5bddc80">get_instance</a> ()</td></tr>
-<tr class="memdesc:a3aadf8d1d5a5b67103504e68c5bddc80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the singleton instance.  <br /></td></tr>
+<tr class="memdesc:a3aadf8d1d5a5b67103504e68c5bddc80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the singleton instance of <a class="el" href="classLineSquareUp.html" title="Aligns the robot with a black line by backing up until both line sensors detect alignment.">LineSquareUp</a>.  <br /></td></tr>
 <tr class="separator:a3aadf8d1d5a5b67103504e68c5bddc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ae06586124cd3383b60840ac37948d2" id="r_a3ae06586124cd3383b60840ac37948d2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ae06586124cd3383b60840ac37948d2">set_instance</a> (std::shared_ptr&lt; <a class="el" href="classLineSquareUp.html">LineSquareUp</a> &gt; instance)</td></tr>
-<tr class="memdesc:a3ae06586124cd3383b60840ac37948d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the singleton instance.  <br /></td></tr>
+<tr class="memdesc:a3ae06586124cd3383b60840ac37948d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the singleton instance of <a class="el" href="classLineSquareUp.html" title="Aligns the robot with a black line by backing up until both line sensors detect alignment.">LineSquareUp</a>.  <br /></td></tr>
 <tr class="separator:a3ae06586124cd3383b60840ac37948d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Aligns the robot with a line for recalibration by backing up until both line sensors detect the line. </p>
+<div class="textblock"><p>Aligns the robot with a black line by backing up until both line sensors detect alignment. </p>
+<p>This class is typically used at a black line junction to help the robot square its rear side. It supports both standard (white-to-black transition) and inverted (black-to-white transition) alignment modes.</p>
+<p>Requires:</p><ul>
+<li>A <code><a class="el" href="classLineManager.html" title="Manages two light sensors for line-following, crossing detection, and proportional correction.">LineManager</a></code> with calibrated line sensors ("lf-left" and "lf-right")</li>
+<li>A <code><a class="el" href="classMotorController.html" title="Abstract base class for robot movement using different drive systems.">MotorController</a></code> for backward movement </li>
+</ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acb848d365342ab6838dcf5763092edba" name="acb848d365342ab6838dcf5763092edba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb848d365342ab6838dcf5763092edba">&#9670;&#160;</a></span>LineSquareUp()</h2>
@@ -155,11 +160,11 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classLineSquareUp.html" title="Aligns the robot with a line for recalibration by backing up until both line sensors detect the line.">LineSquareUp</a> instance. </p>
+<p>Constructs a <a class="el" href="classLineSquareUp.html" title="Aligns the robot with a black line by backing up until both line sensors detect alignment.">LineSquareUp</a> instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">motor_controller</td><td>Shared pointer to the motor controller. </td></tr>
-    <tr><td class="paramname">line_manager</td><td>Shared pointer to <code><a class="el" href="classLineManager.html" title="Manages two light sensors for line following.">LineManager</a></code> for line detection. </td></tr>
+    <tr><td class="paramname">line_manager</td><td>Shared pointer to <code><a class="el" href="classLineManager.html" title="Manages two light sensors for line-following, crossing detection, and proportional correction.">LineManager</a></code> for line detection. </td></tr>
   </table>
   </dd>
 </dl>
@@ -167,8 +172,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae6d5688907f156764d710f59765345bd" name="ae6d5688907f156764d710f59765345bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6d5688907f156764d710f59765345bd">&#9670;&#160;</a></span>execute()</h2>
+<a id="a9365d0fa7d9e43baed48d796a4092cfd" name="a9365d0fa7d9e43baed48d796a4092cfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9365d0fa7d9e43baed48d796a4092cfd">&#9670;&#160;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,20 +181,26 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool LineSquareUp::execute </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>speed</em></span></td><td>)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>speed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>invert</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Executes one iteration of the line squaring process. Drives both sides backward until both sensors detect the line. </p>
+<p>Executes one iteration of the line squaring process. </p>
+<p>Each motor side is driven backward until the corresponding line sensor detects alignment. This aligns the rear of the robot with the line.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">speed</td><td>Movement speed (negative direction is applied inside the function). </td></tr>
+    <tr><td class="paramname">speed</td><td>Speed to move (must be <b>negative</b> to drive backwards). </td></tr>
+    <tr><td class="paramname">invert</td><td>If <code>true</code>, the robot adjusts from black → white transition (e.g., it's already on a black line). If <code>false</code>, it aligns to a black line from a white surface.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if aligned (both sensors on line), false otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if both sensors are aligned (on target), <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -216,7 +227,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retrieves the singleton instance. </p>
+<p>Retrieves the singleton instance of <a class="el" href="classLineSquareUp.html" title="Aligns the robot with a black line by backing up until both line sensors detect alignment.">LineSquareUp</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>Shared pointer to the current instance. </dd></dl>
 
 </div>
 </div>
@@ -243,7 +255,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the singleton instance. </p>
+<p>Sets the singleton instance of <a class="el" href="classLineSquareUp.html" title="Aligns the robot with a black line by backing up until both line sensors detect alignment.">LineSquareUp</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>Shared pointer to set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

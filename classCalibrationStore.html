@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Venti-Lib: CalibrationStore&lt; T &gt; Class Template Reference</title>
+<title>Venti-Lib: CalibrationStore Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,78 +105,68 @@ $(function(){initNavTree('classCalibrationStore.html',''); initResizable(true); 
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classCalibrationStore-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">CalibrationStore&lt; T &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">CalibrationStore Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>A template class that stores and retrieves calibration values for sensors.  
+<p>A utility class that stores and retrieves calibration values for analog sensors.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="registry_8hpp_source.html">registry.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afd35f0f0dd7bf7efecbb32af82d3fb98" id="r_afd35f0f0dd7bf7efecbb32af82d3fb98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd35f0f0dd7bf7efecbb32af82d3fb98">CalibrationStore</a> (unordered_map&lt; string, function&lt; T()&gt; &gt; initiator_funcs)</td></tr>
-<tr class="memdesc:afd35f0f0dd7bf7efecbb32af82d3fb98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classCalibrationStore.html" title="A template class that stores and retrieves calibration values for sensors.">CalibrationStore</a> object with a set of initiator functions.  <br /></td></tr>
-<tr class="separator:afd35f0f0dd7bf7efecbb32af82d3fb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75a986355eff713a9ac6643c4f81bc8d" id="r_a75a986355eff713a9ac6643c4f81bc8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75a986355eff713a9ac6643c4f81bc8d">CalibrationStore</a> ()=default</td></tr>
-<tr class="separator:a75a986355eff713a9ac6643c4f81bc8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a964d734852b03ec14173fbcbbe390444" id="r_a964d734852b03ec14173fbcbbe390444"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a964d734852b03ec14173fbcbbe390444">get_value</a> (string id)</td></tr>
-<tr class="memdesc:a964d734852b03ec14173fbcbbe390444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a calibration value from the store using its ID.  <br /></td></tr>
-<tr class="separator:a964d734852b03ec14173fbcbbe390444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd2fe1d909b7ee430b1bf85dc0679c4" id="r_a6bd2fe1d909b7ee430b1bf85dc0679c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bd2fe1d909b7ee430b1bf85dc0679c4">CalibrationStore</a> (unordered_map&lt; string, function&lt; unsigned short()&gt; &gt; initiator_funcs)</td></tr>
+<tr class="memdesc:a6bd2fe1d909b7ee430b1bf85dc0679c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code><a class="el" href="classCalibrationStore.html" title="A utility class that stores and retrieves calibration values for analog sensors.">CalibrationStore</a></code> and immediately initializes its values.  <br /></td></tr>
+<tr class="separator:a6bd2fe1d909b7ee430b1bf85dc0679c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ac15d1126a2c0111aeb641325654bc" id="r_ae6ac15d1126a2c0111aeb641325654bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6ac15d1126a2c0111aeb641325654bc">CalibrationStore</a> ()=default</td></tr>
+<tr class="memdesc:ae6ac15d1126a2c0111aeb641325654bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty <code><a class="el" href="classCalibrationStore.html" title="A utility class that stores and retrieves calibration values for analog sensors.">CalibrationStore</a></code>.  <br /></td></tr>
+<tr class="separator:ae6ac15d1126a2c0111aeb641325654bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed5fbb8a5903fe91033ad02a53bf046" id="r_a9ed5fbb8a5903fe91033ad02a53bf046"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ed5fbb8a5903fe91033ad02a53bf046">get_value</a> (string id)</td></tr>
+<tr class="memdesc:a9ed5fbb8a5903fe91033ad02a53bf046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a stored calibration value.  <br /></td></tr>
+<tr class="separator:a9ed5fbb8a5903fe91033ad02a53bf046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
-class CalibrationStore&lt; T &gt;</div><p>A template class that stores and retrieves calibration values for sensors. </p>
-<p>This class is used to manage the calibration values for sensors. Each calibration value is associated with an <code>id</code>, and the class stores these values in a map. The calibration values are initiated by calling the corresponding initiator function.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type of the calibration value. It can be any type that represents the calibration data for the sensors, such as <code>short</code>, <code>float</code>, or <code>bool</code>. </td></tr>
-  </table>
-  </dd>
-</dl>
+<div class="textblock"><p>A utility class that stores and retrieves calibration values for analog sensors. </p>
+<p>Each calibration value is associated with a string <code>id</code>, and the values are generated using provided initiator functions. This is useful for managing dynamic values such as black/white thresholds for line sensors. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afd35f0f0dd7bf7efecbb32af82d3fb98" name="afd35f0f0dd7bf7efecbb32af82d3fb98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd35f0f0dd7bf7efecbb32af82d3fb98">&#9670;&#160;</a></span>CalibrationStore() <span class="overload">[1/2]</span></h2>
+<a id="a6bd2fe1d909b7ee430b1bf85dc0679c4" name="a6bd2fe1d909b7ee430b1bf85dc0679c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bd2fe1d909b7ee430b1bf85dc0679c4">&#9670;&#160;</a></span>CalibrationStore() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCalibrationStore.html">CalibrationStore</a>&lt; T &gt;<a class="el" href="classCalibrationStore.html">::CalibrationStore</a> </td>
+          <td class="memname">CalibrationStore::CalibrationStore </td>
           <td>(</td>
-          <td class="paramtype">unordered_map&lt; string, function&lt; T()&gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>initiator_funcs</em></span></td><td>)</td>
+          <td class="paramtype">unordered_map&lt; string, function&lt; unsigned short()&gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>initiator_funcs</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classCalibrationStore.html" title="A template class that stores and retrieves calibration values for sensors.">CalibrationStore</a> object with a set of initiator functions. </p>
-<p>Initializes the <code><a class="el" href="classCalibrationStore.html" title="A template class that stores and retrieves calibration values for sensors.">CalibrationStore</a></code> with a set of initiator functions that generate calibration values. The initiator functions are mapped to unique <code>id</code> strings. These functions are expected to return values of type <code>T</code> (e.g., short, float).</p>
+<p>Constructs a <code><a class="el" href="classCalibrationStore.html" title="A utility class that stores and retrieves calibration values for analog sensors.">CalibrationStore</a></code> and immediately initializes its values. </p>
+<p>Each key in the given map corresponds to a calibration ID (e.g. <code>"black"</code>, <code>"white"</code>), and each function returns the measured value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">initiator_funcs</td><td>A map where each key is a calibration <code>id</code> (string), and the corresponding value is a function that returns a calibration value of type <code>T</code>. </td></tr>
+    <tr><td class="paramname">initiator_funcs</td><td>Map of calibration ID → function that returns <code>unsigned short</code>. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a75a986355eff713a9ac6643c4f81bc8d" name="a75a986355eff713a9ac6643c4f81bc8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75a986355eff713a9ac6643c4f81bc8d">&#9670;&#160;</a></span>CalibrationStore() <span class="overload">[2/2]</span></h2>
+<a id="ae6ac15d1126a2c0111aeb641325654bc" name="ae6ac15d1126a2c0111aeb641325654bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ac15d1126a2c0111aeb641325654bc">&#9670;&#160;</a></span>CalibrationStore() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCalibrationStore.html">CalibrationStore</a>&lt; T &gt;<a class="el" href="classCalibrationStore.html">::CalibrationStore</a> </td>
+          <td class="memname">CalibrationStore::CalibrationStore </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -189,19 +179,19 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Constructs an empty <code><a class="el" href="classCalibrationStore.html" title="A utility class that stores and retrieves calibration values for analog sensors.">CalibrationStore</a></code>. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a964d734852b03ec14173fbcbbe390444" name="a964d734852b03ec14173fbcbbe390444"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a964d734852b03ec14173fbcbbe390444">&#9670;&#160;</a></span>get_value()</h2>
+<a id="a9ed5fbb8a5903fe91033ad02a53bf046" name="a9ed5fbb8a5903fe91033ad02a53bf046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed5fbb8a5903fe91033ad02a53bf046">&#9670;&#160;</a></span>get_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="classCalibrationStore.html">CalibrationStore</a>&lt; T &gt;::get_value </td>
+          <td class="memname">unsigned short CalibrationStore::get_value </td>
           <td>(</td>
           <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
           <td></td>
@@ -209,15 +199,14 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves a calibration value from the store using its ID. </p>
-<p>This method retrieves a stored calibration value based on the specified <code>id</code>. If the <code>id</code> exists in the store, it returns the associated value.</p>
+<p>Retrieves a stored calibration value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>The unique identifier associated with the desired calibration value. </td></tr>
+    <tr><td class="paramname">id</td><td>Calibration ID to retrieve (e.g., <code>"white"</code>, <code>"black"</code>). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The calibration value associated with the given <code>id</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The corresponding value (e.g., analog reading from sensor). </dd></dl>
 
 </div>
 </div>

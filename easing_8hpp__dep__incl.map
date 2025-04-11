@@ -1,9 +1,7 @@
 <map id="include/utils/easing.hpp" name="include/utils/easing.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="98,5,254,31"/>
-<area shape="rect" id="Node000002" href="$main_8cpp.html" title=" " alt="" coords="5,79,101,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,41,75,81,73,76,141,37"/>
-<area shape="rect" id="Node000003" href="$main2_8cpp.html" title=" " alt="" coords="124,79,227,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,46,178,79,173,79,173,46"/>
-<area shape="rect" id="Node000004" href="$easing_8cpp.html" title=" " alt="" coords="250,79,384,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="214,36,294,76,292,81,212,41"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="49,5,205,31"/>
+<area shape="rect" id="Node000002" href="$main2_8cpp.html" title=" " alt="" coords="5,79,108,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,44,70,80,67,77,103,40"/>
+<area shape="rect" id="Node000003" href="$easing_8cpp.html" title=" " alt="" coords="131,79,264,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,40,188,77,184,80,148,44"/>
 </map>

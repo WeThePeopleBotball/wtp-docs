@@ -111,7 +111,7 @@ $(function(){initNavTree('classLineManager.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Manages two light sensors for line following.  
+<p>Manages two light sensors for line-following, crossing detection, and proportional correction.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="line__manager_8hpp_source.html">line_manager.hpp</a>&gt;</code></p>
@@ -121,43 +121,51 @@ Public Types</h2></td></tr>
 <tr class="memitem:a8e39389c78487208e813c6871f7a1c05" id="r_a8e39389c78487208e813c6871f7a1c05"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e39389c78487208e813c6871f7a1c05">Side</a> { <a class="el" href="#a8e39389c78487208e813c6871f7a1c05a811882fecd5c7618d7099ebbd39ea254">left</a>
 , <a class="el" href="#a8e39389c78487208e813c6871f7a1c05a7c4f29407893c334a6cb7a87bf045c0d">right</a>
  }</td></tr>
-<tr class="memdesc:a8e39389c78487208e813c6871f7a1c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the left or right sensor.  <a href="#a8e39389c78487208e813c6871f7a1c05">More...</a><br /></td></tr>
+<tr class="memdesc:a8e39389c78487208e813c6871f7a1c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents which side's sensor is being referred to.  <a href="#a8e39389c78487208e813c6871f7a1c05">More...</a><br /></td></tr>
 <tr class="separator:a8e39389c78487208e813c6871f7a1c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8155f9efafda62eda1bbf83a28b49cc" id="r_ad8155f9efafda62eda1bbf83a28b49cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8155f9efafda62eda1bbf83a28b49cc">LineManager</a> (std::shared_ptr&lt; <a class="el" href="classSensorRegistry.html">SensorRegistry</a> &gt; sensor_registry, std::shared_ptr&lt; <a class="el" href="classMotorController.html">MotorController</a> &gt; motor_controller, float line_correction_divisor=6.0f)</td></tr>
-<tr class="memdesc:ad8155f9efafda62eda1bbf83a28b49cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classLineManager.html" title="Manages two light sensors for line following.">LineManager</a> for managing two sensors.  <br /></td></tr>
+<tr class="memdesc:ad8155f9efafda62eda1bbf83a28b49cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classLineManager.html" title="Manages two light sensors for line-following, crossing detection, and proportional correction.">LineManager</a> instance.  <br /></td></tr>
 <tr class="separator:ad8155f9efafda62eda1bbf83a28b49cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab3d21e4ebb85fd6013163b41a6e1ae2" id="r_aab3d21e4ebb85fd6013163b41a6e1ae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab3d21e4ebb85fd6013163b41a6e1ae2">line_follower_backward</a> (<a class="el" href="#a8e39389c78487208e813c6871f7a1c05">Side</a> s=<a class="el" href="#a8e39389c78487208e813c6871f7a1c05a811882fecd5c7618d7099ebbd39ea254">Side::left</a>)</td></tr>
+<tr class="memdesc:aab3d21e4ebb85fd6013163b41a6e1ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Follows a line <b>backward</b> using the specified sensor.  <br /></td></tr>
 <tr class="separator:aab3d21e4ebb85fd6013163b41a6e1ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a537cc298655716c068b49718676fbb3e" id="r_a537cc298655716c068b49718676fbb3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a537cc298655716c068b49718676fbb3e">is_on_line</a> (<a class="el" href="#a8e39389c78487208e813c6871f7a1c05">Side</a> s)</td></tr>
-<tr class="memdesc:a537cc298655716c068b49718676fbb3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a sensor is detecting a line.  <br /></td></tr>
+<tr class="memdesc:a537cc298655716c068b49718676fbb3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified sensor is currently detecting a line.  <br /></td></tr>
 <tr class="separator:a537cc298655716c068b49718676fbb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d14de60944c71992a680694c7043619" id="r_a3d14de60944c71992a680694c7043619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d14de60944c71992a680694c7043619">calibrate</a> (<a class="el" href="#a8e39389c78487208e813c6871f7a1c05">Side</a> s)</td></tr>
-<tr class="memdesc:a3d14de60944c71992a680694c7043619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the line_follower and prepares it for driving on side <code>s</code>  <br /></td></tr>
+<tr class="memdesc:a3d14de60944c71992a680694c7043619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares the line follower correction for a given sensor side.  <br /></td></tr>
 <tr class="separator:a3d14de60944c71992a680694c7043619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd0fd82443757daefc5a941c01f790d1" id="r_acd0fd82443757daefc5a941c01f790d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd0fd82443757daefc5a941c01f790d1">line_follower</a> (<a class="el" href="#a8e39389c78487208e813c6871f7a1c05">Side</a> s=<a class="el" href="#a8e39389c78487208e813c6871f7a1c05a811882fecd5c7618d7099ebbd39ea254">Side::left</a>)</td></tr>
-<tr class="memdesc:acd0fd82443757daefc5a941c01f790d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Follows a line using the specified sensor.  <br /></td></tr>
+<tr class="memdesc:acd0fd82443757daefc5a941c01f790d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts following a line forward using the given sensor.  <br /></td></tr>
 <tr class="separator:acd0fd82443757daefc5a941c01f790d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5582127d91d7dc42a96ddb2a4e7d46ec" id="r_a5582127d91d7dc42a96ddb2a4e7d46ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5582127d91d7dc42a96ddb2a4e7d46ec">execute_until_line</a> (std::function&lt; void()&gt; fn)</td></tr>
-<tr class="memdesc:a5582127d91d7dc42a96ddb2a4e7d46ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a function until a sensor detects a line.  <br /></td></tr>
+<tr class="memdesc:a5582127d91d7dc42a96ddb2a4e7d46ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repeatedly runs a function until the robot drives over a line.  <br /></td></tr>
 <tr class="separator:a5582127d91d7dc42a96ddb2a4e7d46ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3051a4b4cb1d2918700f71a0431b021e" id="r_a3051a4b4cb1d2918700f71a0431b021e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3051a4b4cb1d2918700f71a0431b021e">execute_until_crossing</a> (std::function&lt; void()&gt; fn)</td></tr>
-<tr class="memdesc:a3051a4b4cb1d2918700f71a0431b021e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs line-following until both sensors detect a line.  <br /></td></tr>
+<tr class="memdesc:a3051a4b4cb1d2918700f71a0431b021e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repeatedly follows a line until <b>both</b> sensors detect a crossing.  <br /></td></tr>
 <tr class="separator:a3051a4b4cb1d2918700f71a0431b021e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e17639b27e3f4c2c47bf34b514ada6f" id="r_a8e17639b27e3f4c2c47bf34b514ada6f"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classLineManager.html">LineManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e17639b27e3f4c2c47bf34b514ada6f">get_instance</a> ()</td></tr>
-<tr class="memdesc:a8e17639b27e3f4c2c47bf34b514ada6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the singleton instance.  <br /></td></tr>
+<tr class="memdesc:a8e17639b27e3f4c2c47bf34b514ada6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the globally registered singleton instance of the <a class="el" href="classLineManager.html" title="Manages two light sensors for line-following, crossing detection, and proportional correction.">LineManager</a>.  <br /></td></tr>
 <tr class="separator:a8e17639b27e3f4c2c47bf34b514ada6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a03f7d74d81b3fbdadb5080e6b06b90" id="r_a0a03f7d74d81b3fbdadb5080e6b06b90"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a03f7d74d81b3fbdadb5080e6b06b90">set_instance</a> (std::shared_ptr&lt; <a class="el" href="classLineManager.html">LineManager</a> &gt; instance)</td></tr>
-<tr class="memdesc:a0a03f7d74d81b3fbdadb5080e6b06b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the singleton instance.  <br /></td></tr>
+<tr class="memdesc:a0a03f7d74d81b3fbdadb5080e6b06b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global singleton instance of the <a class="el" href="classLineManager.html" title="Manages two light sensors for line-following, crossing detection, and proportional correction.">LineManager</a>.  <br /></td></tr>
 <tr class="separator:a0a03f7d74d81b3fbdadb5080e6b06b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manages two light sensors for line following. </p>
+<div class="textblock"><p>Manages two light sensors for line-following, crossing detection, and proportional correction. </p>
+<p>The <code><a class="el" href="classLineManager.html" title="Manages two light sensors for line-following, crossing detection, and proportional correction.">LineManager</a></code> handles black line following using two light sensors (left and right). These sensors must be registered in the <code><a class="el" href="classSensorRegistry.html" title="Central registry for managing analog and digital sensors, including access to their calibration data.">SensorRegistry</a></code> as analog sensors under the keys:</p><ul>
+<li><code>"lf-left"</code> for the left sensor</li>
+<li><code>"lf-right"</code> for the right sensor</li>
+</ul>
+<p>This class uses a <code><a class="el" href="classMotorController.html" title="Abstract base class for robot movement using different drive systems.">MotorController</a></code> to steer based on a <b>proportional control algorithm</b>.</p>
+<p>Before executing <code><a class="el" href="#acd0fd82443757daefc5a941c01f790d1" title="Starts following a line forward using the given sensor.">line_follower(Side)</a></code>, you <b>must</b> call <code><a class="el" href="#a3d14de60944c71992a680694c7043619" title="Prepares the line follower correction for a given sensor side.">calibrate(Side)</a></code> to compute the correction value for the chosen sensor side. This calibration is <b>not for the sensors themselves</b>, but for preparing internal tuning data used during runtime.</p>
+<p>This class is implemented as a singleton. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a8e39389c78487208e813c6871f7a1c05" name="a8e39389c78487208e813c6871f7a1c05"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e39389c78487208e813c6871f7a1c05">&#9670;&#160;</a></span>Side</h2>
@@ -179,7 +187,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Represents the left or right sensor. </p>
+<p>Represents which side's sensor is being referred to. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8e39389c78487208e813c6871f7a1c05a811882fecd5c7618d7099ebbd39ea254" name="a8e39389c78487208e813c6871f7a1c05a811882fecd5c7618d7099ebbd39ea254"></a>left&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a8e39389c78487208e813c6871f7a1c05a7c4f29407893c334a6cb7a87bf045c0d" name="a8e39389c78487208e813c6871f7a1c05a7c4f29407893c334a6cb7a87bf045c0d"></a>right&#160;</td><td class="fielddoc"></td></tr>
@@ -212,14 +220,12 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a <a class="el" href="classLineManager.html" title="Manages two light sensors for line following.">LineManager</a> for managing two sensors. </p>
+<p>Constructs a new <a class="el" href="classLineManager.html" title="Manages two light sensors for line-following, crossing detection, and proportional correction.">LineManager</a> instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">left_sensor_id</td><td>ID of the left light sensor. </td></tr>
-    <tr><td class="paramname">right_sensor_id</td><td>ID of the right light sensor. </td></tr>
-    <tr><td class="paramname">sensor_registry</td><td>Shared pointer to a <code><a class="el" href="classSensorRegistry.html" title="A class for managing sensors and their calibration data.">SensorRegistry</a></code> instance. </td></tr>
-    <tr><td class="paramname">motor_controller</td><td>Shared pointer to a <code><a class="el" href="classMotorController.html" title="Abstract base class for motor controllers.">MotorController</a></code> instance </td></tr>
-    <tr><td class="paramname">line_correction_divisor</td><td>Correction constant for the linefollower </td></tr>
+    <tr><td class="paramname">sensor_registry</td><td>Shared pointer to the sensor registry used to read line sensor values. </td></tr>
+    <tr><td class="paramname">motor_controller</td><td>Shared pointer to the motor controller to drive the robot. </td></tr>
+    <tr><td class="paramname">line_correction_divisor</td><td>A divisor that controls how aggressively the robot corrects its path. A <b>higher value</b> results in <b>smoother but slower correction</b>, while a <b>lower value</b> causes <b>sharper and more aggressive turning</b>. Default is 6.0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -242,7 +248,15 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Resets the line_follower and prepares it for driving on side <code>s</code> </p>
+<p>Prepares the line follower correction for a given sensor side. </p>
+<p>This method must be called <b>before</b> using <code><a class="el" href="#acd0fd82443757daefc5a941c01f790d1" title="Starts following a line forward using the given sensor.">line_follower(Side)</a></code> or <code><a class="el" href="#aab3d21e4ebb85fd6013163b41a6e1ae2" title="Follows a line backward using the specified sensor.">line_follower_backward(Side)</a></code> to initialize the internal correction logic for the chosen side.</p>
+<dl class="section note"><dt>Note</dt><dd>This method does <b>not</b> calibrate the sensors themselves. Sensor calibration (e.g., storing white/black levels) must be done separately in <code><a class="el" href="classSensorRegistry.html" title="Central registry for managing analog and digital sensors, including access to their calibration data.">SensorRegistry</a></code>.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Side (<code>left</code> or <code>right</code>) that will be used during line following. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -261,10 +275,11 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Runs line-following until both sensors detect a line. </p>
+<p>Repeatedly follows a line until <b>both</b> sensors detect a crossing. </p>
+<p>This is typically used for detecting black line intersections or tape crosses.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fn</td><td>Function to execute while following the line. </td></tr>
+    <tr><td class="paramname">fn</td><td>Function to run on each iteration while following the line. </td></tr>
   </table>
   </dd>
 </dl>
@@ -286,10 +301,11 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Runs a function until a sensor detects a line. </p>
+<p>Repeatedly runs a function until the robot drives over a line. </p>
+<p>This can be used to execute arbitrary logic (e.g., slow movement) until one of the sensors detects a line.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fn</td><td>Function to execute while waiting for line detection. </td></tr>
+    <tr><td class="paramname">fn</td><td>Function to run repeatedly while waiting. </td></tr>
   </table>
   </dd>
 </dl>
@@ -319,7 +335,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the singleton instance. </p>
+<p>Returns the globally registered singleton instance of the <a class="el" href="classLineManager.html" title="Manages two light sensors for line-following, crossing detection, and proportional correction.">LineManager</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>Shared pointer to the instance. </dd></dl>
 
 </div>
 </div>
@@ -338,14 +355,14 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks if a sensor is detecting a line. </p>
+<p>Checks whether the specified sensor is currently detecting a line. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Side to check (<code>left</code> or <code>right</code>). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the sensor is on the line, otherwise <code>false</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the sensor detects the line, <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -364,10 +381,11 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Follows a line using the specified sensor. </p>
+<p>Starts following a line forward using the given sensor. </p>
+<dl class="section note"><dt>Note</dt><dd>You must call <code><a class="el" href="#a3d14de60944c71992a680694c7043619" title="Prepares the line follower correction for a given sensor side.">calibrate(Side)</a></code> beforehand using the same side.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Side to use (<code>left</code> or <code>right</code>). Defaults to <code>left</code>. </td></tr>
+    <tr><td class="paramname">s</td><td>Side to follow (<code>left</code> or <code>right</code>). Defaults to <code>left</code>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -388,6 +406,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Follows a line <b>backward</b> using the specified sensor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Side to use for line detection (<code>left</code> or <code>right</code>). Defaults to <code>left</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -414,7 +440,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the singleton instance. </p>
+<p>Sets the global singleton instance of the <a class="el" href="classLineManager.html" title="Manages two light sensors for line-following, crossing detection, and proportional correction.">LineManager</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>Shared pointer to assign. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

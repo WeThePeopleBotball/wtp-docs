@@ -122,7 +122,7 @@ Include dependency graph for heartbeat.cpp:</div>
 <div class="center"><img src="heartbeat_8cpp__incl.png" border="0" usemap="#asrc_2communication_2heartbeat_8cpp" alt=""/></div>
 <map name="asrc_2communication_2heartbeat_8cpp" id="asrc_2communication_2heartbeat_8cpp">
 <area shape="rect" title=" " alt="" coords="344,5,557,31"/>
-<area shape="rect" href="heartbeat_8hpp.html" title=" " alt="" coords="5,79,197,105"/>
+<area shape="rect" href="heartbeat_8hpp.html" title="Provides UDP&#45;based communication for robot position broadcasting." alt="" coords="5,79,197,105"/>
 <area shape="poly" title=" " alt="" coords="391,34,176,78,175,73,390,29"/>
 <area shape="rect" title=" " alt="" coords="221,79,290,105"/>
 <area shape="poly" title=" " alt="" coords="418,34,304,76,302,71,416,29"/>
@@ -156,7 +156,7 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9ce0fad53624012c821bc8fbec6e86b5" id="r_a9ce0fad53624012c821bc8fbec6e86b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ce0fad53624012c821bc8fbec6e86b5">sender</a> ()</td></tr>
-<tr class="memdesc:a9ce0fad53624012c821bc8fbec6e86b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a UDP heartbeat message with the robot's position.  <br /></td></tr>
+<tr class="memdesc:a9ce0fad53624012c821bc8fbec6e86b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a UDP heartbeat message with the robot's current navigation state.  <br /></td></tr>
 <tr class="separator:a9ce0fad53624012c821bc8fbec6e86b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47b20ca9bd215d52c9afd9d3edcd7b8e" id="r_a47b20ca9bd215d52c9afd9d3edcd7b8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47b20ca9bd215d52c9afd9d3edcd7b8e">receiver</a> ()</td></tr>
 <tr class="memdesc:a47b20ca9bd215d52c9afd9d3edcd7b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a UDP heartbeat message from another robot.  <br /></td></tr>
@@ -237,7 +237,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Receives a UDP heartbeat message from another robot. </p>
-<p>Listens for incoming JSON messages over UDP, updating the system with the received position data. </p>
+<p>This function listens for incoming UDP packets on a predefined port. When a valid JSON heartbeat message is received, it can be parsed to extract the sending robot’s current node, path, and offset vector. This information can then be used for coordination or visualization.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Malformed or incomplete messages will be ignored. The function should run in a loop or thread. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2github_2workspace_2include_2communication_2heartbeat_8hpp-example.html#a1">/github/workspace/include/communication/heartbeat.hpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -256,8 +259,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sends a UDP heartbeat message with the robot's position. </p>
-<p>Transmits a JSON message over UDP containing the robot's current position and an offset vector. </p>
+<p>Sends a UDP heartbeat message with the robot's current navigation state. </p>
+<p>This function constructs a JSON-formatted message containing the robot's current node, the path it is following, and an offset vector indicating its fine position adjustment. The message is sent over UDP to a predefined target (e.g., a broadcast address).</p>
+<p>Example JSON structure: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;current_node&quot;</span>: 12,</div>
+<div class="line">    <span class="stringliteral">&quot;path&quot;</span>: [12, 13, 14, 15],</div>
+<div class="line">    <span class="stringliteral">&quot;offset_vector&quot;</span>: { <span class="stringliteral">&quot;x&quot;</span>: 0.05, <span class="stringliteral">&quot;y&quot;</span>: -0.02 }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>This function is typically called at regular intervals (e.g., every 100ms). </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2github_2workspace_2include_2communication_2heartbeat_8hpp-example.html#a0">/github/workspace/include/communication/heartbeat.hpp</a>.</dd>
+</dl>
 
 </div>
 </div>

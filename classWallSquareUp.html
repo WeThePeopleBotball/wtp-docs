@@ -110,7 +110,7 @@ $(function(){initNavTree('classWallSquareUp.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Aligns the robot with a wall to recalibrate its position using bumper sensors.  
+<p>Aligns the robot with a wall using bumper sensors to recalibrate its orientation.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="square__up_8hpp_source.html">square_up.hpp</a>&gt;</code></p>
@@ -118,23 +118,38 @@ $(function(){initNavTree('classWallSquareUp.html',''); initResizable(true); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3f7d9b68253eb626c5903ea1d0052f4e" id="r_a3f7d9b68253eb626c5903ea1d0052f4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f7d9b68253eb626c5903ea1d0052f4e">WallSquareUp</a> (std::shared_ptr&lt; <a class="el" href="classMotorController.html">MotorController</a> &gt; motor_controller, std::shared_ptr&lt; <a class="el" href="classSensorRegistry.html">SensorRegistry</a> &gt; sensor_registry)</td></tr>
-<tr class="memdesc:a3f7d9b68253eb626c5903ea1d0052f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classWallSquareUp.html" title="Aligns the robot with a wall to recalibrate its position using bumper sensors.">WallSquareUp</a> instance.  <br /></td></tr>
+<tr class="memdesc:a3f7d9b68253eb626c5903ea1d0052f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classWallSquareUp.html" title="Aligns the robot with a wall using bumper sensors to recalibrate its orientation.">WallSquareUp</a> instance.  <br /></td></tr>
 <tr class="separator:a3f7d9b68253eb626c5903ea1d0052f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3707a246f2510fb5899e209a0a756122" id="r_a3707a246f2510fb5899e209a0a756122"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3707a246f2510fb5899e209a0a756122">execute</a> (float speed)</td></tr>
-<tr class="memdesc:a3707a246f2510fb5899e209a0a756122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes one iteration of the wall squaring process. Drives both sides forward until each bumper is pressed.  <br /></td></tr>
+<tr class="memdesc:a3707a246f2510fb5899e209a0a756122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes one iteration of the wall squaring process.  <br /></td></tr>
 <tr class="separator:a3707a246f2510fb5899e209a0a756122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9407b1bbefa9b6e33e1c0cf4637c398d" id="r_a9407b1bbefa9b6e33e1c0cf4637c398d"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classWallSquareUp.html">WallSquareUp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9407b1bbefa9b6e33e1c0cf4637c398d">get_instance</a> ()</td></tr>
-<tr class="memdesc:a9407b1bbefa9b6e33e1c0cf4637c398d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the singleton instance.  <br /></td></tr>
+<tr class="memdesc:a9407b1bbefa9b6e33e1c0cf4637c398d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the singleton instance of <a class="el" href="classWallSquareUp.html" title="Aligns the robot with a wall using bumper sensors to recalibrate its orientation.">WallSquareUp</a>.  <br /></td></tr>
 <tr class="separator:a9407b1bbefa9b6e33e1c0cf4637c398d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b58c8b4783de9f4cdce04a7a5ac99c1" id="r_a7b58c8b4783de9f4cdce04a7a5ac99c1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b58c8b4783de9f4cdce04a7a5ac99c1">set_instance</a> (std::shared_ptr&lt; <a class="el" href="classWallSquareUp.html">WallSquareUp</a> &gt; instance)</td></tr>
-<tr class="memdesc:a7b58c8b4783de9f4cdce04a7a5ac99c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the singleton instance.  <br /></td></tr>
+<tr class="memdesc:a7b58c8b4783de9f4cdce04a7a5ac99c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the singleton instance of <a class="el" href="classWallSquareUp.html" title="Aligns the robot with a wall using bumper sensors to recalibrate its orientation.">WallSquareUp</a>.  <br /></td></tr>
 <tr class="separator:a7b58c8b4783de9f4cdce04a7a5ac99c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Aligns the robot with a wall to recalibrate its position using bumper sensors. </p>
+<div class="textblock"><p>Aligns the robot with a wall using bumper sensors to recalibrate its orientation. </p>
+<p>The <code><a class="el" href="classWallSquareUp.html" title="Aligns the robot with a wall using bumper sensors to recalibrate its orientation.">WallSquareUp</a></code> class aligns the robot by driving both sides forward until bumper sensors indicate contact with a wall. Once both bumpers are pressed, the robot is considered aligned.</p>
+<h3><a class="anchor" id="autotoc_md0"></a>
+Sensor Requirements</h3>
+<p>This class depends on <b>two digital sensors</b> registered in the <code><a class="el" href="classSensorRegistry.html" title="Central registry for managing analog and digital sensors, including access to their calibration data.">SensorRegistry</a></code>:</p><ul>
+<li><code>"squareup-left"</code>: left bumper</li>
+<li><code>"squareup-right"</code>: right bumper</li>
+</ul>
+<p>These sensors must return <code>true</code> when their respective button is pressed.</p>
+<h3><a class="anchor" id="autotoc_md1"></a>
+Usage Flow</h3>
+<ol type="1">
+<li>Call <code>execute(speed)</code> inside a loop or once per control tick.</li>
+<li>Monitor the return value to detect successful alignment.</li>
+</ol>
+<p>This class is implemented as a singleton. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3f7d9b68253eb626c5903ea1d0052f4e" name="a3f7d9b68253eb626c5903ea1d0052f4e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f7d9b68253eb626c5903ea1d0052f4e">&#9670;&#160;</a></span>WallSquareUp()</h2>
@@ -155,11 +170,11 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classWallSquareUp.html" title="Aligns the robot with a wall to recalibrate its position using bumper sensors.">WallSquareUp</a> instance. </p>
+<p>Constructs a <a class="el" href="classWallSquareUp.html" title="Aligns the robot with a wall using bumper sensors to recalibrate its orientation.">WallSquareUp</a> instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">motor_controller</td><td>Shared pointer to the motor controller. </td></tr>
-    <tr><td class="paramname">sensor_registry</td><td>Shared pointer to the <code><a class="el" href="classSensorRegistry.html" title="A class for managing sensors and their calibration data.">SensorRegistry</a></code> for sensor data management. </td></tr>
+    <tr><td class="paramname">sensor_registry</td><td>Shared pointer to the <code><a class="el" href="classSensorRegistry.html" title="Central registry for managing analog and digital sensors, including access to their calibration data.">SensorRegistry</a></code> for digital bumper sensors. </td></tr>
   </table>
   </dd>
 </dl>
@@ -182,14 +197,15 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Executes one iteration of the wall squaring process. Drives both sides forward until each bumper is pressed. </p>
+<p>Executes one iteration of the wall squaring process. </p>
+<p>Drives both motor sides forward until their corresponding bumper sensors are pressed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">speed</td><td>Movement speed during squaring. </td></tr>
+    <tr><td class="paramname">speed</td><td>Speed used to move forward. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if aligned (both buttons pressed), false otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if both bumpers are pressed (aligned), <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -216,7 +232,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retrieves the singleton instance. </p>
+<p>Retrieves the singleton instance of <a class="el" href="classWallSquareUp.html" title="Aligns the robot with a wall using bumper sensors to recalibrate its orientation.">WallSquareUp</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>Shared pointer to the current instance. </dd></dl>
 
 </div>
 </div>
@@ -243,7 +260,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the singleton instance. </p>
+<p>Sets the singleton instance of <a class="el" href="classWallSquareUp.html" title="Aligns the robot with a wall using bumper sensors to recalibrate its orientation.">WallSquareUp</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>Shared pointer to set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -157,15 +157,36 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Fetches JSON data from a given API endpoint. </p>
-<p>Sends an HTTP GET request to the specified URL and returns the response as a JSON object.</p>
+<p>This function sends an HTTP GET request to the specified URL using libcurl, retrieves the response body, and parses it into a JSON object using nlohmann::json.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">endpoint</td><td>The API URL to fetch data from. </td></tr>
+    <tr><td class="paramname">endpoint</td><td>The API URL to fetch data from (e.g., "https://api.example.com/data"). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A nlohmann::json object with the response data or a nullptr if the request fails. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>A nlohmann::json object containing the response data. If the request fails or the response is not valid JSON, an empty JSON object is returned.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Requires libcurl and nlohmann::json to be properly linked in your build system.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://github.com/nlohmann/json">https://github.com/nlohmann/json</a> </dd>
+<dd>
+<a href="https://curl.se/libcurl/c/">https://curl.se/libcurl/c/</a></dd></dl>
+<div class="fragment"><div class="line"><span class="comment">// Example usage:</span></div>
+<div class="line"><span class="preprocessor">#include &quot;fetch_data.hpp&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>() {</div>
+<div class="line">    std::string url = <span class="stringliteral">&quot;https://api.agify.io/?name=michael&quot;</span>;</div>
+<div class="line">    nlohmann::json data = <a class="code hl_function" href="client_8cpp.html#ad1833fb9f154da47198357df3b4e624b">fetch_data</a>(url);</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">if</span> (!data.empty()) {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Estimated age: &quot;</span> &lt;&lt; data[<span class="stringliteral">&quot;age&quot;</span>] &lt;&lt; std::endl;</div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">        std::cerr &lt;&lt; <span class="stringliteral">&quot;Failed to fetch or parse JSON data.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aclient_8cpp_html_ad1833fb9f154da47198357df3b4e624b"><div class="ttname"><a href="client_8cpp.html#ad1833fb9f154da47198357df3b4e624b">fetch_data</a></div><div class="ttdeci">nlohmann::json fetch_data(const std::string endpoint)</div><div class="ttdoc">Fetches JSON data from a given API endpoint.</div><div class="ttdef"><b>Definition</b> client.cpp:11</div></div>
+<div class="ttc" id="amain_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition</b> main.cpp:1</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->

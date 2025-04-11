@@ -1,12 +1,12 @@
 <map id="include/component/motor_controller.hpp" name="include/component/motor_controller.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="93,5,260,46"/>
+<area shape="rect" id="Node000001" title="Defines the abstract motor controller interface and concrete implementations for omni and differentia..." alt="" coords="93,5,260,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="6,94,73,120"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,49,75,88,72,84,141,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="48,168,105,193"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,48,95,156,91,153,162,45"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="148,94,205,120"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,46,179,78,174,78,174,46"/>
-<area shape="rect" id="Node000005" href="$improved__motor_8hpp.html" title=" " alt="" coords="230,94,433,120"/>
+<area shape="rect" id="Node000005" href="$improved__motor_8hpp.html" title="Defines the ImprovedMotor class for advanced motor control with PID and easing support." alt="" coords="230,94,433,120"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="217,44,295,84,293,89,214,49"/>
 <area shape="rect" id="Node000014" href="$vector_8hpp.html" title=" " alt="" coords="457,94,574,120"/>
 <area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="261,44,449,87,448,93,260,49"/>
