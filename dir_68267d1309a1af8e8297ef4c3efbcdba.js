@@ -6,6 +6,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "navigation", "dir_b9f4d283f63ed92d53714bab84845a59.html", "dir_b9f4d283f63ed92d53714bab84845a59" ],
     [ "sensor", "dir_919653a6098570dc99a63e645d1b29db.html", "dir_919653a6098570dc99a63e645d1b29db" ],
     [ "utils", "dir_313caf1132e152dd9b58bea13a4052ca.html", "dir_313caf1132e152dd9b58bea13a4052ca" ],
-    [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
-    [ "main2.cpp", "main2_8cpp.html", "main2_8cpp" ]
+    [ "lifecycle.cpp", "lifecycle_8cpp.html", null ],
+    [ "main.cpp", "main_8cpp.html", "main_8cpp" ]
 ];

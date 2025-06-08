@@ -1,12 +1,9 @@
 var annotated_dup =
 [
-    [ "ArmController", "classArmController.html", "classArmController" ],
     [ "CalibrationStore", "classCalibrationStore.html", "classCalibrationStore" ],
-    [ "Candidate", "structCandidate.html", "structCandidate" ],
-    [ "DefaultMotorController", "classDefaultMotorController.html", "classDefaultMotorController" ],
-    [ "IKCostFunctor", "structIKCostFunctor.html", "structIKCostFunctor" ],
     [ "ImprovedMotor", "classImprovedMotor.html", "classImprovedMotor" ],
     [ "ImprovedServo", "classImprovedServo.html", "classImprovedServo" ],
+    [ "Lifecycle", "classLifecycle.html", "classLifecycle" ],
     [ "LineManager", "classLineManager.html", "classLineManager" ],
     [ "LineSquareUp", "classLineSquareUp.html", "classLineSquareUp" ],
     [ "MecanumMotorController", "classMecanumMotorController.html", "classMecanumMotorController" ],
@@ -15,6 +12,8 @@ var annotated_dup =
     [ "PlaygroundLocation", "structPlaygroundLocation.html", "structPlaygroundLocation" ],
     [ "PlaygroundNode", "structPlaygroundNode.html", "structPlaygroundNode" ],
     [ "SensorRegistry", "classSensorRegistry.html", "classSensorRegistry" ],
+    [ "SolarboticMotorController", "classSolarboticMotorController.html", "classSolarboticMotorController" ],
+    [ "Task", "classTask.html", "classTask" ],
     [ "Vector2D", "classVector2D.html", "classVector2D" ],
     [ "Vector3D", "classVector3D.html", "classVector3D" ],
     [ "WallSquareUp", "classWallSquareUp.html", "classWallSquareUp" ]

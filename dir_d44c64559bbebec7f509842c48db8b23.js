@@ -6,5 +6,6 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "navigation", "dir_f9a97623eb43c4acaa6b56958e1c8546.html", "dir_f9a97623eb43c4acaa6b56958e1c8546" ],
     [ "sensor", "dir_7b271abf9afd8594ceaf3484d66fcdf7.html", "dir_7b271abf9afd8594ceaf3484d66fcdf7" ],
     [ "types", "dir_0ad255a918b7fba820a1ddafed6fa637.html", "dir_0ad255a918b7fba820a1ddafed6fa637" ],
-    [ "utils", "dir_821002d4f10779a80d4fb17bc32f21f1.html", "dir_821002d4f10779a80d4fb17bc32f21f1" ]
+    [ "utils", "dir_821002d4f10779a80d4fb17bc32f21f1.html", "dir_821002d4f10779a80d4fb17bc32f21f1" ],
+    [ "lifecycle.hpp", "lifecycle_8hpp.html", "lifecycle_8hpp" ]
 ];

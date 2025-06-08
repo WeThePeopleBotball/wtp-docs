@@ -1,31 +1,33 @@
 <map id="include/component/motor_controller.hpp" name="include/component/motor_controller.hpp">
-<area shape="rect" id="Node000001" title="Defines the abstract motor controller interface and concrete implementations for omni and differentia..." alt="" coords="93,5,260,46"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="6,94,73,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,49,75,88,72,84,141,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="48,168,105,193"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,48,95,156,91,153,162,45"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="148,94,205,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,46,179,78,174,78,174,46"/>
-<area shape="rect" id="Node000005" href="$improved__motor_8hpp.html" title="Defines the ImprovedMotor class for advanced motor control with PID and easing support." alt="" coords="230,94,433,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="217,44,295,84,293,89,214,49"/>
-<area shape="rect" id="Node000014" href="$vector_8hpp.html" title=" " alt="" coords="457,94,574,120"/>
-<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="261,44,449,87,448,93,260,49"/>
-<area shape="poly" id="edge13_Node000005_Node000003" title=" " alt="" coords="288,123,121,169,120,164,287,118"/>
-<area shape="rect" id="Node000006" href="$registry_8hpp.html" title=" " alt="" coords="129,168,259,193"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="309,123,232,162,230,158,307,118"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="267,241,345,267"/>
-<area shape="poly" id="edge11_Node000005_Node000008" title=" " alt="" coords="332,120,313,226,308,225,327,120"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="334,168,395,193"/>
-<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="339,119,355,152,350,155,334,121"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="419,168,545,193"/>
-<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="358,118,444,158,441,163,356,123"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="569,168,710,193"/>
-<area shape="poly" id="edge12_Node000005_Node000012" title=" " alt="" coords="385,118,573,161,571,166,383,123"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="733,168,791,193"/>
-<area shape="poly" id="edge14_Node000005_Node000013" title=" " alt="" coords="434,117,566,136,719,165,718,170,565,142,433,123"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="5,241,103,267"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="171,196,92,236,90,232,169,191"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="214,192,276,230,273,235,212,196"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="126,241,243,267"/>
-<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="195,194,191,226,186,226,190,193"/>
+<area shape="rect" id="Node000001" title="Defines the abstract motor controller interface and concrete implementations for omni and differentia..." alt="" coords="536,5,704,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="288,94,355,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="546,49,371,95,369,90,545,44"/>
+<area shape="rect" id="Node000003" href="$improved__motor_8hpp.html" title="Defines the ImprovedMotor class for advanced motor control with PID, position and easing support." alt="" coords="380,94,583,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="587,49,517,88,514,84,584,44"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="736,168,792,193"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="623,46,630,82,637,101,647,118,678,139,723,160,720,165,675,143,643,122,632,103,625,84,618,47"/>
+<area shape="rect" id="Node000014" href="$vector_8hpp.html" title=" " alt="" coords="658,94,774,120"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="645,44,691,82,688,86,642,48"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="798,94,855,120"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="673,44,784,87,782,92,671,49"/>
+<area shape="rect" id="Node000004" href="$registry_8hpp.html" title="Defines the CalibrationStore and SensorRegistry classes used for managing sensor access and calibrati..." alt="" coords="100,168,230,193"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="428,123,235,166,233,161,427,118"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,241,83,267"/>
+<area shape="poly" id="edge10_Node000003_Node000005" title=" " alt="" coords="380,121,202,144,129,157,89,170,77,182,67,196,53,228,48,226,62,194,73,178,87,165,127,152,201,139,379,116"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="255,168,316,193"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="449,123,331,165,329,160,447,118"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="340,168,465,193"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="470,122,429,159,425,155,466,118"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="490,168,630,193"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="496,118,537,155,534,159,493,122"/>
+<area shape="poly" id="edge12_Node000003_Node000012" title=" " alt="" coords="534,118,721,164,720,169,532,123"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="654,168,711,193"/>
+<area shape="poly" id="edge13_Node000003_Node000013" title=" " alt="" coords="516,118,640,161,638,166,515,123"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="146,196,79,235,76,231,143,192"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="107,241,224,267"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="168,194,168,226,163,226,163,194"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="248,241,301,267"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="185,192,245,230,242,235,182,196"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="325,241,435,267"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="203,191,330,233,328,239,201,196"/>
 </map>

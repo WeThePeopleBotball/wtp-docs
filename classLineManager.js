@@ -1,9 +1,5 @@
 var classLineManager =
 [
-    [ "Side", "classLineManager.html#a8e39389c78487208e813c6871f7a1c05", [
-      [ "left", "classLineManager.html#a8e39389c78487208e813c6871f7a1c05a811882fecd5c7618d7099ebbd39ea254", null ],
-      [ "right", "classLineManager.html#a8e39389c78487208e813c6871f7a1c05a7c4f29407893c334a6cb7a87bf045c0d", null ]
-    ] ],
     [ "LineManager", "classLineManager.html#ad8155f9efafda62eda1bbf83a28b49cc", null ],
     [ "calibrate", "classLineManager.html#a3d14de60944c71992a680694c7043619", null ],
     [ "execute_until_crossing", "classLineManager.html#a3051a4b4cb1d2918700f71a0431b021e", null ],

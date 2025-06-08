@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mecanummotorcontroller_0',['MecanumMotorController',['../classMecanumMotorController.html',1,'']]],
-  ['motorcontroller_1',['MotorController',['../classMotorController.html',1,'']]]
+  ['sensorregistry_0',['SensorRegistry',['../classSensorRegistry.html',1,'']]],
+  ['solarboticmotorcontroller_1',['SolarboticMotorController',['../classSolarboticMotorController.html',1,'']]]
 ];

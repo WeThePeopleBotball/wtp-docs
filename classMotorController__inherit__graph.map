@@ -1,7 +1,7 @@
 <map id="MotorController" name="MotorController">
-<area shape="rect" id="Node000001" title="Abstract base class for robot movement using different drive systems." alt="" coords="116,5,226,31"/>
-<area shape="rect" id="Node000002" href="$classDefaultMotorController.html" title="Implements basic differential drive logic using two motors." alt="" coords="5,79,156,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,43,97,81,94,77,142,39"/>
-<area shape="rect" id="Node000003" href="$classMecanumMotorController.html" title="Implements full omni&#45;directional control for robots with 4 Mecanum wheels." alt="" coords="180,79,346,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,39,249,77,246,81,197,43"/>
+<area shape="rect" id="Node000001" title="Abstract base class for robot movement using different drive systems." alt="" coords="128,5,238,31"/>
+<area shape="rect" id="Node000002" href="$classMecanumMotorController.html" title="Implements full omni&#45;directional control for robots with 4 Mecanum wheels." alt="" coords="5,79,172,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,43,106,81,103,77,153,39"/>
+<area shape="rect" id="Node000003" href="$classSolarboticMotorController.html" title="Implements basic differential drive logic using two motors." alt="" coords="196,79,363,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,38,265,76,262,81,210,43"/>
 </map>

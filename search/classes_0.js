@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['armcontroller_0',['ArmController',['../classArmController.html',1,'']]]
+  ['calibrationstore_0',['CalibrationStore',['../classCalibrationStore.html',1,'']]]
 ];

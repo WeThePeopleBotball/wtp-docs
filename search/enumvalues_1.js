@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['right_0',['right',['../classMotorController.html#ae657b26cd8d1ca9d5f763cffd4647384a7c4f29407893c334a6cb7a87bf045c0d',1,'MotorController::right'],['../classLineManager.html#a8e39389c78487208e813c6871f7a1c05a7c4f29407893c334a6cb7a87bf045c0d',1,'LineManager::right']]]
+  ['none_0',['NONE',['../improved__motor_8hpp.html#a1af74a820fe5dfe2ba8109cec07fbb43ab50339a10e1de285ac99d4c3990b8693',1,'improved_motor.hpp']]]
 ];

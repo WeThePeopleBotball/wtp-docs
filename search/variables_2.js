@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['deg2rad_0',['DEG2RAD',['../arm__controller_8cpp.html#a030c8a0ae95bed031859a0dfaecf3962',1,'arm_controller.cpp']]]
+  ['id_0',['id',['../structPlaygroundNode.html#a63f9c8838076ccc268412f254e3d5407',1,'PlaygroundNode']]],
+  ['is_5fsecondary_1',['is_secondary',['../structPlaygroundNode.html#addef1508307d0235662a6c183fe1c282',1,'PlaygroundNode']]]
 ];

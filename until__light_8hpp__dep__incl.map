@@ -1,5 +1,5 @@
 <map id="include/sensor/until_light.hpp" name="include/sensor/until_light.hpp">
-<area shape="rect" id="Node000001" title="Contains a utility function to calibrate and wait for a light start signal." alt="" coords="5,5,139,46"/>
-<area shape="rect" id="Node000002" href="$main2_8cpp.html" title=" " alt="" coords="21,94,123,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,62,75,93,69,93,69,62"/>
+<area shape="rect" id="Node000001" title="Contains a utility function to calibrate and wait for a light start signal, including failsafe timeou..." alt="" coords="21,5,155,46"/>
+<area shape="rect" id="Node000002" href="$until__light_8cpp.html" title=" " alt="" coords="5,94,171,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,62,91,93,85,93,85,62"/>
 </map>

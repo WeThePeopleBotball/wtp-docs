@@ -121,11 +121,11 @@ Inheritance diagram for MotorController:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMotorController__inherit__graph.png" border="0" usemap="#aMotorController_inherit__map" alt="Inheritance graph"/></div>
 <map name="aMotorController_inherit__map" id="aMotorController_inherit__map">
-<area shape="rect" title="Abstract base class for robot movement using different drive systems." alt="" coords="116,5,226,31"/>
-<area shape="rect" href="classDefaultMotorController.html" title="Implements basic differential drive logic using two motors." alt="" coords="5,79,156,105"/>
-<area shape="poly" title=" " alt="" coords="146,43,97,81,94,77,142,39"/>
-<area shape="rect" href="classMecanumMotorController.html" title="Implements full omni&#45;directional control for robots with 4 Mecanum wheels." alt="" coords="180,79,346,105"/>
-<area shape="poly" title=" " alt="" coords="200,39,249,77,246,81,197,43"/>
+<area shape="rect" title="Abstract base class for robot movement using different drive systems." alt="" coords="128,5,238,31"/>
+<area shape="rect" href="classMecanumMotorController.html" title="Implements full omni&#45;directional control for robots with 4 Mecanum wheels." alt="" coords="5,79,172,105"/>
+<area shape="poly" title=" " alt="" coords="156,43,106,81,103,77,153,39"/>
+<area shape="rect" href="classSolarboticMotorController.html" title="Implements basic differential drive logic using two motors." alt="" coords="196,79,363,105"/>
+<area shape="poly" title=" " alt="" coords="213,38,265,76,262,81,210,43"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -190,15 +190,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4cb9a6851df94393ca598d279cc9f7ee" id="r_a4cb9a6851df94393ca598d279cc9f7ee"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cb9a6851df94393ca598d279cc9f7ee">omni_directional_movement_supported</a> () const =0</td></tr>
 <tr class="memdesc:a4cb9a6851df94393ca598d279cc9f7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the controller supports omni-directional movement.  <br /></td></tr>
 <tr class="separator:a4cb9a6851df94393ca598d279cc9f7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81c95b4de2a3bcc7259b902c09c42d2d" id="r_a81c95b4de2a3bcc7259b902c09c42d2d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81c95b4de2a3bcc7259b902c09c42d2d">drive_vector</a> (const <a class="el" href="classVector2D.html">Vector2D</a> &amp;vec)=0</td></tr>
-<tr class="memdesc:a81c95b4de2a3bcc7259b902c09c42d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drives the robot using a 2D movement vector.  <br /></td></tr>
-<tr class="separator:a81c95b4de2a3bcc7259b902c09c42d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3ee063265ef061ff9df1bdd99985c23" id="r_ab3ee063265ef061ff9df1bdd99985c23"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3ee063265ef061ff9df1bdd99985c23">drive_vector</a> (const <a class="el" href="classVector3D.html">Vector3D</a> &amp;vec)=0</td></tr>
-<tr class="memdesc:ab3ee063265ef061ff9df1bdd99985c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drives the robot using a 3D movement vector.  <br /></td></tr>
-<tr class="separator:ab3ee063265ef061ff9df1bdd99985c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a089dfc052c0f32301d6bd7701d1c120c" id="r_a089dfc052c0f32301d6bd7701d1c120c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a089dfc052c0f32301d6bd7701d1c120c">calibrate</a> ()=0</td></tr>
-<tr class="memdesc:a089dfc052c0f32301d6bd7701d1c120c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalibrates motor positions or sensors.  <br /></td></tr>
-<tr class="separator:a089dfc052c0f32301d6bd7701d1c120c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450f69101f291674cba6535acdfefb05" id="r_a450f69101f291674cba6535acdfefb05"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a450f69101f291674cba6535acdfefb05">drive_vector</a> (const <a class="el" href="classVector2D.html">Vector2D</a> &amp;vec, float speed=50.0f)=0</td></tr>
+<tr class="memdesc:a450f69101f291674cba6535acdfefb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drives the robot using a 2D movement vector.  <br /></td></tr>
+<tr class="separator:a450f69101f291674cba6535acdfefb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55c11f67ed4a1c1b07f464259b88404" id="r_aa55c11f67ed4a1c1b07f464259b88404"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa55c11f67ed4a1c1b07f464259b88404">drive_vector</a> (const <a class="el" href="classVector3D.html">Vector3D</a> &amp;vec, float speed=50.0f)=0</td></tr>
+<tr class="memdesc:aa55c11f67ed4a1c1b07f464259b88404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drives the robot using a 3D movement vector.  <br /></td></tr>
+<tr class="separator:aa55c11f67ed4a1c1b07f464259b88404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3acd4acf80782ae72d92f4c92389981" id="r_aa3acd4acf80782ae72d92f4c92389981"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3acd4acf80782ae72d92f4c92389981">~MotorController</a> ()=default</td></tr>
 <tr class="separator:aa3acd4acf80782ae72d92f4c92389981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -311,7 +308,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Moves backward at given speed. </p>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a3c6e4eb0bb8008d9aaebf97cf1d59c76">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#a480a47012082a842bba88d6e65e63e03">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#a480a47012082a842bba88d6e65e63e03">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#a1d04228b0e94300af3174408de9c82ac">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -344,36 +341,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Moves backward for a specified distance. </p>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a8c8f3eda1225c0caecc5e728094c1f80">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#a1407e3b4f354686a56aae9d197433726">MecanumMotorController</a>.</p>
-
-</div>
-</div>
-<a id="a089dfc052c0f32301d6bd7701d1c120c" name="a089dfc052c0f32301d6bd7701d1c120c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a089dfc052c0f32301d6bd7701d1c120c">&#9670;&#160;</a></span>calibrate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void MotorController::calibrate </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Recalibrates motor positions or sensors. </p>
-
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a90384518517207a71ea31289a25f016f">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#ad0107a4296d94ee3a0f2059889738795">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#a1407e3b4f354686a56aae9d197433726">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#a07a173be63e35e095d4786cd3305500d">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -408,7 +376,7 @@ Protected Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Only available for omni-directional drive systems. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Not supported on differential drive robots. </dd></dl>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a63daa1f6e9e327a6fb07228f57d9a4d2">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#ac6debcf65277ed206e5cd19539f475c6">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#ac6debcf65277ed206e5cd19539f475c6">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#a7c46f7e5441315b12c79621823320414">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -448,12 +416,12 @@ Protected Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Only available on omni-directional platforms. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Not supported on differential drive robots. </dd></dl>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a3f013a90094fa119d661c9b1007fa840">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#aa9031fb6dea42b509bf8aa14ce4414a6">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#aa9031fb6dea42b509bf8aa14ce4414a6">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#a8db0bad4d4eb9f3dcc8886fff7d39d46">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
-<a id="a81c95b4de2a3bcc7259b902c09c42d2d" name="a81c95b4de2a3bcc7259b902c09c42d2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81c95b4de2a3bcc7259b902c09c42d2d">&#9670;&#160;</a></span>drive_vector() <span class="overload">[1/2]</span></h2>
+<a id="a450f69101f291674cba6535acdfefb05" name="a450f69101f291674cba6535acdfefb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450f69101f291674cba6535acdfefb05">&#9670;&#160;</a></span>drive_vector() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -464,8 +432,12 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void MotorController::drive_vector </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classVector2D.html">Vector2D</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classVector2D.html">Vector2D</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>speed</em></span><span class="paramdefsep"> = </span><span class="paramdefval">50.0f</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -479,16 +451,17 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vec</td><td>X = strafe, Y = forward. </td></tr>
+    <tr><td class="paramname">speed</td><td>Optional speed (default: 50.0f). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a1dbb3b57e97b5a99fa3e0174d53e726b">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#ae9645510e210893af60a169ca46e0a2b">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#ae06a8eb0bc13da1a9f964348f3ac4402">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#a62c1dc559bf632a3907d8ac5e73d62a8">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
-<a id="ab3ee063265ef061ff9df1bdd99985c23" name="ab3ee063265ef061ff9df1bdd99985c23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3ee063265ef061ff9df1bdd99985c23">&#9670;&#160;</a></span>drive_vector() <span class="overload">[2/2]</span></h2>
+<a id="aa55c11f67ed4a1c1b07f464259b88404" name="aa55c11f67ed4a1c1b07f464259b88404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55c11f67ed4a1c1b07f464259b88404">&#9670;&#160;</a></span>drive_vector() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -499,8 +472,12 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void MotorController::drive_vector </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classVector3D.html">Vector3D</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classVector3D.html">Vector3D</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>speed</em></span><span class="paramdefsep"> = </span><span class="paramdefval">50.0f</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -514,11 +491,12 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vec</td><td>X = strafe, Y = forward, Z = rotation. </td></tr>
+    <tr><td class="paramname">speed</td><td>Optional speed (default: 50.0f). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#adc112993a5b47757b119b613df02ecdf">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#acb2375c4355d62952efcd7a0771609a7">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#a0728f3f5584841ab787bb5eb90bd6003">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#aca2005184615118020a4e58fc1c4a55a">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -547,7 +525,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Moves forward at given speed. </p>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a9584516fddd3e5aeea0f50723d975183">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#a53baf0fe8ccb814e8677cbfe9641838a">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#a53baf0fe8ccb814e8677cbfe9641838a">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#abe71fa5ac72914a70bcec7ec66211463">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -580,7 +558,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Moves forward for a specified distance. </p>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a21aaa35e89da27db7f6ece950da6effc">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#a079bcff916c495fa48903cd554b70269">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#a079bcff916c495fa48903cd554b70269">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#a932ef8705628ff02e75c342c79695882">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -609,7 +587,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Immediately stops all motors. </p>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a228e0478d9bd7110a51119d5d02a74f8">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#aae418d3abfcb873e2a62c943d0a37ce1">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#aae418d3abfcb873e2a62c943d0a37ce1">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#af7c2dc0283165be2057f87383ef05741">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -667,7 +645,7 @@ Protected Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Only available for omni-directional drive systems (e.g., Mecanum). </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Not supported on differential drive robots. </dd></dl>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#ae363fc1a3c148871771ed79e26835a6a">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#a65201fb5b69ef9e7650b58db07bd9b1e">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#a65201fb5b69ef9e7650b58db07bd9b1e">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#a730e2b0ba6073d9a1f9b3d6e9492c57f">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -702,7 +680,7 @@ Protected Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Only available on omni-directional robots. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Not supported on differential drive robots. </dd></dl>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a45357517e1f19bdeeeabdd844890c394">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#a7206173b82237bbea81ec160150f00e5">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#a7206173b82237bbea81ec160150f00e5">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#a830775022bf1cec252df91b332955ef7">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -732,7 +710,7 @@ Protected Attributes</h2></td></tr>
 <p>Drives only the left-side motors. </p>
 <dl class="section note"><dt>Note</dt><dd>Useful for wall square-ups or differential control. </dd></dl>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#abaa09a04795d3ca4a8521e35c46d975b">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#a6e6eb18896b701409a9e5567d2162d17">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#a6e6eb18896b701409a9e5567d2162d17">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#a3a2426ae9281a46db4803a56a22e4db1">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -762,7 +740,7 @@ Protected Attributes</h2></td></tr>
 <p>Checks if the controller supports omni-directional movement. </p>
 <dl class="section return"><dt>Returns</dt><dd>true for mecanum or holonomic drives, false for differential. </dd></dl>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a615ad0f410891005f3b39a4c14a289e5">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#ad7b3bdf9ada7701a9e331ffb6df54c13">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#ad7b3bdf9ada7701a9e331ffb6df54c13">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#ad962236c1fe3f02a77f3c07bb3a4d094">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -793,7 +771,7 @@ Protected Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Only available for omni-directional drive systems. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Not supported on differential drive robots. </dd></dl>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a4df97f40d02defe369958d445303bd11">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#a5e1d23affa6007c001bb0d2a798b9d46">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#a5e1d23affa6007c001bb0d2a798b9d46">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#af232c028b096e6e915a14363e7b048a6">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -828,7 +806,7 @@ Protected Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Only available on omni-directional robots. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Not supported on differential drive robots. </dd></dl>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#aaad9cce88883fd8287531f915ffe03a4">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#a7fcc69390084890d023227f6ccfc4bc1">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#a7fcc69390084890d023227f6ccfc4bc1">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#a4903634eed84315ab08155dfdad4566b">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -858,7 +836,7 @@ Protected Attributes</h2></td></tr>
 <p>Drives only the right-side motors. </p>
 <dl class="section note"><dt>Note</dt><dd>Useful for wall square-ups or differential control. </dd></dl>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a441f270ed898438e3072330e607d53f0">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#a67793608e7984fe3d874e9b6f1bb53f7">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#a67793608e7984fe3d874e9b6f1bb53f7">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#a8a20e34acfae4cc7b80803f45ecd5895">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -914,7 +892,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Turns left by a relative amount (degrees). </p>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a97862e9cb285e88cc80d7715c21d2732">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#a068271e74eee216c2a913af623df9f86">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#a068271e74eee216c2a913af623df9f86">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#ae019005198b6bd870c5453d054e696bc">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -943,7 +921,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Turns right by a relative amount (degrees). </p>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a97cbcc316d6823a661f00afd7e09a580">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#ab5125e8a7d2a79fa80c24ffcf3f2e8dc">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#ab5125e8a7d2a79fa80c24ffcf3f2e8dc">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#ab45a2218ccabd1a56327be7208e6012f">SolarboticMotorController</a>.</p>
 
 </div>
 </div>
@@ -972,7 +950,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Turns to an absolute heading (degrees). </p>
 
-<p>Implemented in <a class="el" href="classDefaultMotorController.html#a7625708681fa2ebbe9e67f4536a6a727">DefaultMotorController</a>, and <a class="el" href="classMecanumMotorController.html#a8d038cf31a71c9727e726b440efe7eca">MecanumMotorController</a>.</p>
+<p>Implemented in <a class="el" href="classMecanumMotorController.html#a8d038cf31a71c9727e726b440efe7eca">MecanumMotorController</a>, and <a class="el" href="classSolarboticMotorController.html#aeb5271bbbd1ae690492a5853d8a6d766">SolarboticMotorController</a>.</p>
 
 </div>
 </div>

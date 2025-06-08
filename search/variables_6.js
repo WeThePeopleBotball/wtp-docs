@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['offset_5ffrom_5fnode_0',['offset_from_node',['../structPlaygroundLocation.html#a1cf9a9026269077f43811723bfaf50d8',1,'PlaygroundLocation']]]
+  ['sensor_5fregistry_0',['sensor_registry',['../classMotorController.html#ac48fbee78728c4967420194aed9556af',1,'MotorController']]]
 ];

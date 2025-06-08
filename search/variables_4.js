@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['max_5fcalibration_5fvalues_0',['MAX_CALIBRATION_VALUES',['../until__light_8cpp.html#a26dafc5b5bb5a335ba1180c912b3f892',1,'until_light.cpp']]],
-  ['movement_5fmutex_1',['movement_mutex',['../classMotorController.html#aee5922ba1c673eea2cb91a3a0476ee01',1,'MotorController']]]
+  ['name_0',['name',['../structPlaygroundLocation.html#a7acae206aa67104a22171aaf511e2569',1,'PlaygroundLocation']]],
+  ['nearest_5fnode_5fid_1',['nearest_node_id',['../structPlaygroundLocation.html#a9cf816196f5c37e7f31ed30cf7d28d8a',1,'PlaygroundLocation']]],
+  ['neighbors_2',['neighbors',['../structPlaygroundNode.html#aaf665a8b79d7730f2f8613054b60e75b',1,'PlaygroundNode']]]
 ];

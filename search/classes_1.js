@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['calibrationstore_0',['CalibrationStore',['../classCalibrationStore.html',1,'']]],
-  ['candidate_1',['Candidate',['../structCandidate.html',1,'']]]
+  ['improvedmotor_0',['ImprovedMotor',['../classImprovedMotor.html',1,'']]],
+  ['improvedservo_1',['ImprovedServo',['../classImprovedServo.html',1,'']]]
 ];

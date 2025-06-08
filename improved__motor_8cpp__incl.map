@@ -1,30 +1,32 @@
 <map id="src/movement/improved_motor.cpp" name="src/movement/improved_motor.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="652,5,813,46"/>
-<area shape="rect" id="Node000002" href="$improved__motor_8hpp.html" title="Defines the ImprovedMotor class for advanced motor control with PID and easing support." alt="" coords="384,94,588,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="672,49,539,91,538,86,670,44"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="612,94,738,120"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="721,48,695,83,691,79,716,45"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="763,94,820,120"/>
-<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="749,45,775,80,771,83,745,48"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="844,94,954,120"/>
-<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="775,44,861,85,859,89,773,49"/>
-<area shape="rect" id="Node000003" href="$registry_8hpp.html" title=" " alt="" coords="129,168,259,193"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="437,123,259,166,258,161,436,118"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="267,241,345,267"/>
-<area shape="poly" id="edge8_Node000002_Node000005" title=" " alt="" coords="411,123,366,140,346,153,328,169,314,197,309,226,303,225,309,195,324,166,342,149,364,136,409,118"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="338,168,399,193"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="467,122,403,162,400,157,465,118"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="423,168,549,193"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="489,120,489,152,483,152,483,120"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="573,168,714,193"/>
-<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="514,118,604,158,602,163,512,123"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="738,168,794,193"/>
-<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="538,118,723,164,722,169,537,123"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="819,168,876,193"/>
-<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="562,118,672,137,804,165,803,170,671,143,561,123"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,241,103,267"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="171,196,92,236,90,232,169,191"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="214,192,276,230,273,235,212,196"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="126,241,243,267"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="195,194,191,226,186,226,190,193"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="534,5,695,46"/>
+<area shape="rect" id="Node000002" href="$improved__motor_8hpp.html" title="Defines the ImprovedMotor class for advanced motor control with PID, position and easing support." alt="" coords="301,94,504,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="563,49,450,91,449,86,561,44"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="529,94,586,120"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="603,48,577,83,573,79,598,45"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="610,94,736,120"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="631,45,657,80,653,83,627,48"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="761,94,871,120"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="666,44,772,85,770,90,664,49"/>
+<area shape="rect" id="Node000003" href="$registry_8hpp.html" title="Defines the CalibrationStore and SensorRegistry classes used for managing sensor access and calibrati..." alt="" coords="100,168,230,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="363,123,221,165,220,160,362,118"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,241,83,267"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="301,120,178,139,125,153,90,170,77,182,67,196,53,227,48,225,62,194,73,178,86,165,123,148,177,134,300,115"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="255,168,316,193"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="384,122,319,162,317,157,381,118"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="340,168,465,193"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="405,120,405,152,400,152,400,120"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="490,168,630,193"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="430,118,520,158,518,163,428,123"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="654,168,711,193"/>
+<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="454,118,640,164,639,169,453,123"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="735,168,793,193"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="479,118,589,137,721,165,720,170,588,143,478,123"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="146,196,79,235,76,231,143,192"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="107,241,224,267"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="168,194,168,226,163,226,163,194"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="248,241,301,267"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="185,192,245,230,242,235,182,196"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="325,241,435,267"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="203,191,330,233,328,239,201,196"/>
 </map>

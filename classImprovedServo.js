@@ -2,6 +2,7 @@ var classImprovedServo =
 [
     [ "ImprovedServo", "classImprovedServo.html#a9aec317df64ff9bdab871815e7bf8e31", null ],
     [ "~ImprovedServo", "classImprovedServo.html#ae50923f3bd4787b33c6488eeeb77c38f", null ],
+    [ "add_point", "classImprovedServo.html#a49adc8a77202474796432f3f0fdae9a9", null ],
     [ "enable", "classImprovedServo.html#a08254a5266c63e330bf6205d5c4a1a37", null ],
     [ "get_degrees", "classImprovedServo.html#a010b4420fff857f86e6ec7f34d537652", null ],
     [ "get_max_degrees", "classImprovedServo.html#a4fa44389f7c716e8ead57bdfa2fa7b01", null ],

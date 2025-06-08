@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ikcostfunctor_0',['IKCostFunctor',['../structIKCostFunctor.html',1,'']]],
-  ['improvedmotor_1',['ImprovedMotor',['../classImprovedMotor.html',1,'']]],
-  ['improvedservo_2',['ImprovedServo',['../classImprovedServo.html',1,'']]]
+  ['mecanummotorcontroller_0',['MecanumMotorController',['../classMecanumMotorController.html',1,'']]],
+  ['motorcontroller_1',['MotorController',['../classMotorController.html',1,'']]]
 ];
