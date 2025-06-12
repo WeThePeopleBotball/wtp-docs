@@ -104,6 +104,7 @@ $(function(){initNavTree('classSensorRegistry.html',''); initResizable(true); })
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classSensorRegistry-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">SensorRegistry Class Reference</div></div>
 </div><!--header-->
@@ -116,12 +117,9 @@ $(function(){initNavTree('classSensorRegistry.html',''); initResizable(true); })
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0e1353935f2225a0e47ea30d6479098e" id="r_a0e1353935f2225a0e47ea30d6479098e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e1353935f2225a0e47ea30d6479098e">SensorRegistry</a> ()</td></tr>
-<tr class="memdesc:a0e1353935f2225a0e47ea30d6479098e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
-<tr class="separator:a0e1353935f2225a0e47ea30d6479098e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ed90f8e7457d9b62f5311144d5fe7eb" id="r_a8ed90f8e7457d9b62f5311144d5fe7eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ed90f8e7457d9b62f5311144d5fe7eb">SensorRegistry</a> (float gyro_calibrate_angle, float gyro_calibrate_value)</td></tr>
-<tr class="memdesc:a8ed90f8e7457d9b62f5311144d5fe7eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with custom gyro calibration parameters.  <br /></td></tr>
-<tr class="separator:a8ed90f8e7457d9b62f5311144d5fe7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35f7aa76f22e4368dfb828ddeb6707e5" id="r_a35f7aa76f22e4368dfb828ddeb6707e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35f7aa76f22e4368dfb828ddeb6707e5">SensorRegistry</a> (float gyro_calibrate_angle=360, float gyro_calibrate_value=1440)</td></tr>
+<tr class="memdesc:a35f7aa76f22e4368dfb828ddeb6707e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with custom gyro calibration parameters.  <br /></td></tr>
+<tr class="separator:a35f7aa76f22e4368dfb828ddeb6707e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80992fb51dbb4b0c2508d83bcdb88a82" id="r_a80992fb51dbb4b0c2508d83bcdb88a82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80992fb51dbb4b0c2508d83bcdb88a82">set_gyro_calibration</a> (float angle, float value)</td></tr>
 <tr class="memdesc:a80992fb51dbb4b0c2508d83bcdb88a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both angle and value used for gyro calibration.  <br /></td></tr>
 <tr class="separator:a80992fb51dbb4b0c2508d83bcdb88a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +159,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aec5324c1cafce211a8f168cb0a4b5b70" id="r_aec5324c1cafce211a8f168cb0a4b5b70"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec5324c1cafce211a8f168cb0a4b5b70">gyro_z</a> ()</td></tr>
 <tr class="memdesc:aec5324c1cafce211a8f168cb0a4b5b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the calibrated z-axis gyro value, normalized by the configured constants. Small values (±4) are clamped to zero.  <br /></td></tr>
 <tr class="separator:aec5324c1cafce211a8f168cb0a4b5b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a64a8a79251d6acccd15ff8f7902cd88e" id="r_a64a8a79251d6acccd15ff8f7902cd88e"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classSensorRegistry.html">SensorRegistry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64a8a79251d6acccd15ff8f7902cd88e">get_instance</a> ()</td></tr>
+<tr class="memdesc:a64a8a79251d6acccd15ff8f7902cd88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the global singleton instance of the sensor registry.  <br /></td></tr>
+<tr class="separator:a64a8a79251d6acccd15ff8f7902cd88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8366c3dc9dfad75e3e0ff4eaf2e2596a" id="r_a8366c3dc9dfad75e3e0ff4eaf2e2596a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8366c3dc9dfad75e3e0ff4eaf2e2596a">set_instance</a> (std::shared_ptr&lt; <a class="el" href="classSensorRegistry.html">SensorRegistry</a> &gt; instance)</td></tr>
+<tr class="memdesc:a8366c3dc9dfad75e3e0ff4eaf2e2596a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global singleton sensor registry instance.  <br /></td></tr>
+<tr class="separator:a8366c3dc9dfad75e3e0ff4eaf2e2596a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Centralized manager for analog, digital, and calibrated sensors, including gyro support. </p>
@@ -172,40 +179,13 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="keyword">auto</span> value = registry.<a class="code hl_function" href="#a05308e3199b9954ececdde2926d380a2">get_analog_value</a>(<span class="stringliteral">&quot;line_left&quot;</span>);</div>
 <div class="line"><span class="keyword">auto</span> pressed = registry.<a class="code hl_function" href="#a0d0def499ad1776c2d4f07bfef20c44d">get_digital_value</a>(<span class="stringliteral">&quot;button&quot;</span>);</div>
 <div class="ttc" id="aclassSensorRegistry_html"><div class="ttname"><a href="classSensorRegistry.html">SensorRegistry</a></div><div class="ttdoc">Centralized manager for analog, digital, and calibrated sensors, including gyro support.</div><div class="ttdef"><b>Definition</b> registry.hpp:82</div></div>
-<div class="ttc" id="aclassSensorRegistry_html_a05308e3199b9954ececdde2926d380a2"><div class="ttname"><a href="#a05308e3199b9954ececdde2926d380a2">SensorRegistry::get_analog_value</a></div><div class="ttdeci">unsigned short get_analog_value(std::string id)</div><div class="ttdoc">Reads current value from an analog sensor.</div><div class="ttdef"><b>Definition</b> registry.cpp:103</div></div>
-<div class="ttc" id="aclassSensorRegistry_html_a0a5c733e38ace4f8f250372669e6da4d"><div class="ttname"><a href="#a0a5c733e38ace4f8f250372669e6da4d">SensorRegistry::create_analog</a></div><div class="ttdeci">void create_analog(std::string id, int port)</div><div class="ttdoc">Creates and registers a new analog sensor.</div><div class="ttdef"><b>Definition</b> registry.cpp:53</div></div>
-<div class="ttc" id="aclassSensorRegistry_html_a0d0def499ad1776c2d4f07bfef20c44d"><div class="ttname"><a href="#a0d0def499ad1776c2d4f07bfef20c44d">SensorRegistry::get_digital_value</a></div><div class="ttdeci">bool get_digital_value(std::string id)</div><div class="ttdoc">Reads current value from a digital sensor.</div><div class="ttdef"><b>Definition</b> registry.cpp:108</div></div>
-<div class="ttc" id="aclassSensorRegistry_html_a5a07b49ac96a610ede876e83ae48e0fa"><div class="ttname"><a href="#a5a07b49ac96a610ede876e83ae48e0fa">SensorRegistry::create_digital</a></div><div class="ttdeci">void create_digital(std::string id, int port)</div><div class="ttdoc">Creates and registers a new digital sensor.</div><div class="ttdef"><b>Definition</b> registry.cpp:58</div></div>
+<div class="ttc" id="aclassSensorRegistry_html_a05308e3199b9954ececdde2926d380a2"><div class="ttname"><a href="#a05308e3199b9954ececdde2926d380a2">SensorRegistry::get_analog_value</a></div><div class="ttdeci">unsigned short get_analog_value(std::string id)</div><div class="ttdoc">Reads current value from an analog sensor.</div><div class="ttdef"><b>Definition</b> registry.cpp:101</div></div>
+<div class="ttc" id="aclassSensorRegistry_html_a0a5c733e38ace4f8f250372669e6da4d"><div class="ttname"><a href="#a0a5c733e38ace4f8f250372669e6da4d">SensorRegistry::create_analog</a></div><div class="ttdeci">void create_analog(std::string id, int port)</div><div class="ttdoc">Creates and registers a new analog sensor.</div><div class="ttdef"><b>Definition</b> registry.cpp:51</div></div>
+<div class="ttc" id="aclassSensorRegistry_html_a0d0def499ad1776c2d4f07bfef20c44d"><div class="ttname"><a href="#a0d0def499ad1776c2d4f07bfef20c44d">SensorRegistry::get_digital_value</a></div><div class="ttdeci">bool get_digital_value(std::string id)</div><div class="ttdoc">Reads current value from a digital sensor.</div><div class="ttdef"><b>Definition</b> registry.cpp:106</div></div>
+<div class="ttc" id="aclassSensorRegistry_html_a5a07b49ac96a610ede876e83ae48e0fa"><div class="ttname"><a href="#a5a07b49ac96a610ede876e83ae48e0fa">SensorRegistry::create_digital</a></div><div class="ttdeci">void create_digital(std::string id, int port)</div><div class="ttdoc">Creates and registers a new digital sensor.</div><div class="ttdef"><b>Definition</b> registry.cpp:56</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0e1353935f2225a0e47ea30d6479098e" name="a0e1353935f2225a0e47ea30d6479098e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e1353935f2225a0e47ea30d6479098e">&#9670;&#160;</a></span>SensorRegistry() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SensorRegistry::SensorRegistry </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-
-</div>
-</div>
-<a id="a8ed90f8e7457d9b62f5311144d5fe7eb" name="a8ed90f8e7457d9b62f5311144d5fe7eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ed90f8e7457d9b62f5311144d5fe7eb">&#9670;&#160;</a></span>SensorRegistry() <span class="overload">[2/2]</span></h2>
+<a id="a35f7aa76f22e4368dfb828ddeb6707e5" name="a35f7aa76f22e4368dfb828ddeb6707e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35f7aa76f22e4368dfb828ddeb6707e5">&#9670;&#160;</a></span>SensorRegistry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,12 +193,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">SensorRegistry::SensorRegistry </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>gyro_calibrate_angle</em></span>, </td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>gyro_calibrate_angle</em></span><span class="paramdefsep"> = </span><span class="paramdefval">360</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>gyro_calibrate_value</em></span>&#160;)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>gyro_calibrate_value</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1440</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -538,6 +518,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a64a8a79251d6acccd15ff8f7902cd88e" name="a64a8a79251d6acccd15ff8f7902cd88e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a8a79251d6acccd15ff8f7902cd88e">&#9670;&#160;</a></span>get_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classSensorRegistry.html">SensorRegistry</a> &gt; SensorRegistry::get_instance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the global singleton instance of the sensor registry. </p>
+
+</div>
+</div>
 <a id="ac6d24f9c7aa03264dd9ae942a67a354f" name="ac6d24f9c7aa03264dd9ae942a67a354f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6d24f9c7aa03264dd9ae942a67a354f">&#9670;&#160;</a></span>gyro_calibrate()</h2>
 
@@ -604,6 +611,33 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8366c3dc9dfad75e3e0ff4eaf2e2596a" name="a8366c3dc9dfad75e3e0ff4eaf2e2596a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8366c3dc9dfad75e3e0ff4eaf2e2596a">&#9670;&#160;</a></span>set_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SensorRegistry::set_instance </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classSensorRegistry.html">SensorRegistry</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>instance</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the global singleton sensor registry instance. </p>
 
 </div>
 </div>

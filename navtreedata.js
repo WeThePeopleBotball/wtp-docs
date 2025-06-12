@@ -54,7 +54,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_2github_2workspace_2include_2communication_2heartbeat_8hpp-example.html",
-"functions_f.html"
+"easing_8cpp.html#a941ea095260b180c3979946248b8fe95"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

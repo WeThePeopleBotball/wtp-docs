@@ -103,15 +103,94 @@ $(function(){initNavTree('main_8cpp.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="motor__controller_8hpp_source.html">component/motor_controller.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="improved__motor_8hpp_source.html">movement/improved_motor.hpp</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;<a class="el" href="lifecycle_8hpp_source.html">lifecycle.hpp</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#asrc_2main_8cpp" alt=""/></div>
+<map name="asrc_2main_8cpp" id="asrc_2main_8cpp">
+<area shape="rect" title=" " alt="" coords="385,5,481,31"/>
+<area shape="rect" href="motor__controller_8hpp.html" title="Defines the abstract motor controller interface and concrete implementations for omni and differentia..." alt="" coords="260,79,467,105"/>
+<area shape="poly" title=" " alt="" coords="423,33,388,70,384,66,420,29"/>
+<area shape="rect" href="improved__motor_8hpp.html" title="Defines the ImprovedMotor class for advanced motor control with PID, position and easing support." alt="" coords="497,153,700,178"/>
+<area shape="poly" title=" " alt="" coords="448,29,531,103,575,141,571,145,527,107,444,33"/>
+<area shape="rect" title=" " alt="" coords="541,79,613,105"/>
+<area shape="poly" title=" " alt="" coords="459,29,540,69,538,74,456,34"/>
+<area shape="rect" href="lifecycle_8hpp.html" title=" " alt="" coords="132,79,224,105"/>
+<area shape="poly" title=" " alt="" coords="391,34,237,77,236,72,389,29"/>
+<area shape="rect" title=" " alt="" coords="133,153,200,178"/>
+<area shape="poly" title=" " alt="" coords="331,108,215,150,213,144,329,103"/>
+<area shape="poly" title=" " alt="" coords="404,103,545,145,543,150,403,108"/>
+<area shape="rect" title=" " alt="" coords="237,226,293,252"/>
+<area shape="poly" title=" " alt="" coords="388,103,410,117,430,136,441,157,442,169,436,180,389,200,309,227,307,222,387,195,432,176,436,167,436,158,426,139,406,122,385,107"/>
+<area shape="rect" href="vector_8hpp.html" title=" " alt="" coords="306,153,422,178"/>
+<area shape="poly" title=" " alt="" coords="366,105,366,137,361,137,361,105"/>
+<area shape="rect" title=" " alt="" coords="224,153,282,178"/>
+<area shape="poly" title=" " alt="" coords="346,107,286,146,283,142,343,103"/>
+<area shape="rect" href="registry_8hpp.html" title="Defines the CalibrationStore and SensorRegistry classes used for managing sensor access and calibrati..." alt="" coords="764,226,894,252"/>
+<area shape="poly" title=" " alt="" coords="638,176,776,219,775,224,637,181"/>
+<area shape="rect" title=" " alt="" coords="673,300,750,326"/>
+<area shape="poly" title=" " alt="" coords="637,176,673,195,689,209,703,225,715,254,717,284,712,284,709,256,699,228,686,212,670,200,634,181"/>
+<area shape="rect" title=" " alt="" coords="919,226,979,252"/>
+<area shape="poly" title=" " alt="" coords="670,176,904,223,903,229,668,182"/>
+<area shape="rect" title=" " alt="" coords="317,226,442,252"/>
+<area shape="poly" title=" " alt="" coords="562,181,432,224,431,218,560,176"/>
+<area shape="rect" title=" " alt="" coords="467,226,607,252"/>
+<area shape="poly" title=" " alt="" coords="590,180,559,216,555,213,586,177"/>
+<area shape="poly" title=" " alt="" coords="532,182,309,228,308,223,530,176"/>
+<area shape="rect" title=" " alt="" coords="631,226,688,252"/>
+<area shape="poly" title=" " alt="" coords="610,177,641,213,637,216,606,180"/>
+<area shape="poly" title=" " alt="" coords="810,255,746,294,743,289,808,250"/>
+<area shape="rect" title=" " alt="" coords="908,300,1024,326"/>
+<area shape="poly" title=" " alt="" coords="854,250,931,290,928,295,851,255"/>
+<area shape="rect" title=" " alt="" coords="1049,300,1102,326"/>
+<area shape="poly" title=" " alt="" coords="872,250,1035,297,1033,302,871,255"/>
+<area shape="rect" title=" " alt="" coords="774,300,884,326"/>
+<area shape="poly" title=" " alt="" coords="832,252,832,284,826,284,826,252"/>
+<area shape="poly" title=" " alt="" coords="179,105,174,138,168,137,174,104"/>
+<area shape="poly" title=" " alt="" coords="193,103,232,140,228,144,189,107"/>
+<area shape="rect" title=" " alt="" coords="5,153,109,178"/>
+<area shape="poly" title=" " alt="" coords="159,108,92,147,89,142,156,103"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorTestLifecycle.html">MotorTestLifecycle</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMovingUpTask.html">MovingUpTask</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMovingDownTask.html">MovingDownTask</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMovingTask.html">MovingTask</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97" id="r_a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae8e637e516ca0642f6c81960d889eaef" id="r_ae8e637e516ca0642f6c81960d889eaef"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8e637e516ca0642f6c81960d889eaef">moving_motor_port</a> = 1</td></tr>
+<tr class="separator:ae8e637e516ca0642f6c81960d889eaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb20e1659ecaacd3c7f54a058528fc8" id="r_a5eb20e1659ecaacd3c7f54a058528fc8"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5eb20e1659ecaacd3c7f54a058528fc8">left_motor_port</a> = 0</td></tr>
+<tr class="separator:a5eb20e1659ecaacd3c7f54a058528fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14712f8d52ca35ebb4d5b5492ccac25b" id="r_a14712f8d52ca35ebb4d5b5492ccac25b"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14712f8d52ca35ebb4d5b5492ccac25b">right_motor_port</a> = 3</td></tr>
+<tr class="separator:a14712f8d52ca35ebb4d5b5492ccac25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86305feaba088524495a848db7bbc2dc" id="r_a86305feaba088524495a848db7bbc2dc"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86305feaba088524495a848db7bbc2dc">upper_switch</a> = 2</td></tr>
+<tr class="separator:a86305feaba088524495a848db7bbc2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e09f53c15298909a7d30df403a2c42" id="r_ae1e09f53c15298909a7d30df403a2c42"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1e09f53c15298909a7d30df403a2c42">lower_switch</a> = 4</td></tr>
+<tr class="separator:ae1e09f53c15298909a7d30df403a2c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
@@ -129,6 +208,77 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>[]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a5eb20e1659ecaacd3c7f54a058528fc8" name="a5eb20e1659ecaacd3c7f54a058528fc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb20e1659ecaacd3c7f54a058528fc8">&#9670;&#160;</a></span>left_motor_port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int left_motor_port = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1e09f53c15298909a7d30df403a2c42" name="ae1e09f53c15298909a7d30df403a2c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e09f53c15298909a7d30df403a2c42">&#9670;&#160;</a></span>lower_switch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int lower_switch = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8e637e516ca0642f6c81960d889eaef" name="ae8e637e516ca0642f6c81960d889eaef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8e637e516ca0642f6c81960d889eaef">&#9670;&#160;</a></span>moving_motor_port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int moving_motor_port = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14712f8d52ca35ebb4d5b5492ccac25b" name="a14712f8d52ca35ebb4d5b5492ccac25b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14712f8d52ca35ebb4d5b5492ccac25b">&#9670;&#160;</a></span>right_motor_port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int right_motor_port = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86305feaba088524495a848db7bbc2dc" name="a86305feaba088524495a848db7bbc2dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86305feaba088524495a848db7bbc2dc">&#9670;&#160;</a></span>upper_switch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int upper_switch = 2</td>
         </tr>
       </table>
 </div><div class="memdoc">

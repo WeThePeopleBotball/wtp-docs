@@ -2,14 +2,14 @@ var searchData=
 [
   ['sender_0',['sender',['../heartbeat_8cpp.html#a9ce0fad53624012c821bc8fbec6e86b5',1,'sender():&#160;heartbeat.cpp'],['../heartbeat_8hpp.html#a9ce0fad53624012c821bc8fbec6e86b5',1,'sender():&#160;heartbeat.cpp']]],
   ['sensor_20requirements_1',['Sensor Requirements',['../classWallSquareUp.html#autotoc_md0',1,'']]],
-  ['sensor_5fregistry_2',['sensor_registry',['../classMotorController.html#ac48fbee78728c4967420194aed9556af',1,'MotorController']]],
-  ['sensorregistry_3',['SensorRegistry',['../classSensorRegistry.html',1,'SensorRegistry'],['../classSensorRegistry.html#a0e1353935f2225a0e47ea30d6479098e',1,'SensorRegistry::SensorRegistry()'],['../classSensorRegistry.html#a8ed90f8e7457d9b62f5311144d5fe7eb',1,'SensorRegistry::SensorRegistry(float gyro_calibrate_angle, float gyro_calibrate_value)']]],
+  ['sensor_5fregistry_2',['sensor_registry',['../classMotorTestLifecycle.html#a32852c5d830b8558181f7741f1a99eb8',1,'MotorTestLifecycle::sensor_registry'],['../classMotorController.html#ac48fbee78728c4967420194aed9556af',1,'MotorController::sensor_registry']]],
+  ['sensorregistry_3',['SensorRegistry',['../classSensorRegistry.html',1,'SensorRegistry'],['../classSensorRegistry.html#a35f7aa76f22e4368dfb828ddeb6707e5',1,'SensorRegistry::SensorRegistry()']]],
   ['set_4',['set',['../classVector2D.html#a8db867ab9ff96e8b0c68ae0ebe883373',1,'Vector2D::set()'],['../classVector3D.html#af0a78c7d57565f6fbb3940faeb878bc5',1,'Vector3D::set()']]],
   ['set_5fdegrees_5',['set_degrees',['../classImprovedServo.html#a6574c56e02798949530bd152366c4a73',1,'ImprovedServo']]],
   ['set_5feasing_6',['set_easing',['../classImprovedMotor.html#abe3d1f46a93eb38cbad26dc74c3ab19b',1,'ImprovedMotor::set_easing()'],['../classImprovedServo.html#af658411d187f91ce79e887f614db499e',1,'ImprovedServo::set_easing()']]],
   ['set_5ffailsafe_5fenabled_7',['set_failsafe_enabled',['../until__light_8cpp.html#a6fd2988233ae7edc0af10c14c0f748b4',1,'set_failsafe_enabled(bool enabled):&#160;until_light.cpp'],['../until__light_8hpp.html#a6fd2988233ae7edc0af10c14c0f748b4',1,'set_failsafe_enabled(bool enabled):&#160;until_light.cpp']]],
   ['set_5fgyro_5fcalibration_8',['set_gyro_calibration',['../classSensorRegistry.html#a80992fb51dbb4b0c2508d83bcdb88a82',1,'SensorRegistry']]],
-  ['set_5finstance_9',['set_instance',['../classMotorController.html#a6c084cb5e17bb413e9775e6e26025208',1,'MotorController::set_instance()'],['../classLineManager.html#a0a03f7d74d81b3fbdadb5080e6b06b90',1,'LineManager::set_instance()'],['../classWallSquareUp.html#a7b58c8b4783de9f4cdce04a7a5ac99c1',1,'WallSquareUp::set_instance()'],['../classLineSquareUp.html#a3ae06586124cd3383b60840ac37948d2',1,'LineSquareUp::set_instance()']]],
+  ['set_5finstance_9',['set_instance',['../classMotorController.html#a6c084cb5e17bb413e9775e6e26025208',1,'MotorController::set_instance()'],['../classLineManager.html#a0a03f7d74d81b3fbdadb5080e6b06b90',1,'LineManager::set_instance()'],['../classWallSquareUp.html#a7b58c8b4783de9f4cdce04a7a5ac99c1',1,'WallSquareUp::set_instance()'],['../classLineSquareUp.html#a3ae06586124cd3383b60840ac37948d2',1,'LineSquareUp::set_instance()'],['../classSensorRegistry.html#a8366c3dc9dfad75e3e0ff4eaf2e2596a',1,'SensorRegistry::set_instance()']]],
   ['set_5fpid_10',['set_pid',['../classImprovedMotor.html#a24fbf1803b55884089404914ea1e3abb',1,'ImprovedMotor']]],
   ['set_5fposition_11',['set_position',['../classImprovedServo.html#a8fa1fb00e538471c63ca2a7b07cabb34',1,'ImprovedServo']]],
   ['set_5fstart_5fnode_12',['set_start_node',['../classPlayground.html#aa53cde6f36afba1be6f14b5155237c29',1,'Playground']]],
@@ -21,5 +21,6 @@ var searchData=
   ['solarboticmotorcontroller_18',['SolarboticMotorController',['../classSolarboticMotorController.html',1,'SolarboticMotorController'],['../classSolarboticMotorController.html#ae9098e493b9fa22a891c9013137aecad',1,'SolarboticMotorController::SolarboticMotorController()']]],
   ['square_5fup_2ecpp_19',['square_up.cpp',['../square__up_8cpp.html',1,'']]],
   ['square_5fup_2ehpp_20',['square_up.hpp',['../square__up_8hpp.html',1,'']]],
-  ['stop_21',['stop',['../classImprovedMotor.html#a47b4ae6ecdcc5d355e22e5ad0f907213',1,'ImprovedMotor']]]
+  ['stop_21',['stop',['../classImprovedMotor.html#a47b4ae6ecdcc5d355e22e5ad0f907213',1,'ImprovedMotor']]],
+  ['successful_5ftasks_5f_22',['successful_tasks_',['../classLifecycle.html#a8d6486fb8fadbda8cc951b5dbb58f74f',1,'Lifecycle']]]
 ];
